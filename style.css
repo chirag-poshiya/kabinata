@@ -1,7 +1,8 @@
 
 html {
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px; 
   }
   
   html {
@@ -275,13 +276,6 @@ html {
       vertical-align: middle;
   }
   
-  img,
-  video {
-      max-width: 100%;
-      height: auto
-  }
-  
-  
     /* container MEADIA SCREEN */
   
     @media (min-width:640px) {
@@ -416,12 +410,12 @@ html {
 
   /* header-css-start */
 
-.header-container{
+  .header-container{
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    
-}
+    padding: 36px 30px 60px;
+  }  
 
 .main-logo{
     width: 198px;
@@ -468,6 +462,7 @@ html {
 .login-btn:hover{
     background-color: #666666;
     color: #ffffff;
+    border: 1px solid #666666;
 }
 
 .register-btn{
@@ -487,6 +482,8 @@ html {
     background-color: #666666;
     color: #ffffff;
 }
+
+
 
   /* home container  */
 
@@ -545,7 +542,18 @@ html {
   padding: 16px 25px;
   background-color: #000;
   border-radius: 10px;
+  width: 10%;
 }
+
+.register-btn{
+  display: flex;
+}
+
+.register-btn img{
+    filter: #ffffff(100%);
+  
+}
+
 
 .country-list-container{
   display: flex;
@@ -558,5 +566,116 @@ html {
 }
 
 .country-list p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 22px;
+  color: #666666;
+}
 
+  /* second-container */
+
+.second-container{
+   background-color: #FFF9EB;
+   display: flex;
+   justify-content: space-between;
+   column-gap: 80px;
+   align-items: center;
+}
+
+.learn-online{
+   padding: 80px 0px ;
+}
+
+.content2-tittle{
+  font-family: 'Crimson Pro' , sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 53px;
+  color: #000;
+}
+
+.content2-p{
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 35px;
+  color:#666666;
+  margin: 20px 0px;
+}
+
+.learn-more{
+  display: flex;
+  align-items: center;
+}
+
+.learn-more a{
+  font-weight: 400;
+  font-size: 1.625rem;
+  line-height: 35px;
+}
+
+
+      /* content2 end */
+      /* content3 start */
+
+.content3-container{
+  text-align: center;
+
+}
+
+.content3-tittle{
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.75rem;
+  line-height: 67px;
+  color: #000;
+  margin: 83px 0px 25px;
+}
+
+
+.content3-language{
+  display: flex;
+  padding: 30px 40px;
+  background: #FFF9EB;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+
+.arrow-btn{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.03);
+  padding: 22px 25px;
+  border-radius: 35px;
+  border: none;
+  border: 1px solid #FFFFFF;
+}
+
+.arrow-btn:hover{
+  border: 1px solid #FFD25D;
+}
+
+.language-btn{
+  background: #FFFFFF;
+  border: 1px solid #E9E2D1;
+  border-radius: 0.875rem;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 35px;
+  color: #666666;
+  padding: 20px 30px;
+}
+
+.language-btn:hover{
+  border: 1px solid #FFD25D;
+  color: #000;
+}
+
+.arrow-btn img{
+  width: auto;
+  height: auto;
+}
+
+.language-btn:focus {
+  outline: 1px solid #FFD25D;
+  color: #000;
 }
