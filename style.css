@@ -413,7 +413,7 @@ html {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    padding: 36px 30px 60px;
+    padding: 36px 133px 60px 0px;
   }  
 
 .main-logo{
@@ -564,11 +564,17 @@ html {
 .register-btn:hover{
   background-color: #ffd25d;
   color: #000000;
+  -webkit-box-shadow: -2px 25px 49px -7px rgba(0,0,0,0.2);
+  -moz-box-shadow: -2px 25px 49px -7px rgba(0,0,0,0.2);
+  box-shadow: -2px 25px 49px -7px rgba(0,0,0,0.2); 
 }
 
 
 .country-list-container{
-  display: flex;
+    display: flex;
+    position: absolute;
+    column-gap: 30px;
+    left: 85px;
 }
 
 .country-list{
@@ -577,7 +583,7 @@ html {
 
 }
 
-.country-list p {
+.country-list p,a {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 22px;
@@ -618,12 +624,18 @@ html {
 .learn-more{
   display: flex;
   align-items: center;
+  column-gap: 13px;
+  align-items: center;
 }
 
 .learn-more a{
   font-weight: 400;
   font-size: 1.625rem;
   line-height: 35px;
+}
+
+.learn-more img{
+  padding-top: 9px;
 }
 
 
@@ -722,6 +734,7 @@ html {
   color: #000;
 }
 
+
 /* lesson card */
 
 .lesson-card-container{
@@ -738,6 +751,9 @@ html {
 
 .lesson-card:hover{
   border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 0px 29px 89px -17px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 29px 89px -17px rgba(0,0,0,0.25);
+  box-shadow: 0px 29px 89px -17px rgba(0,0,0,0.25);
 }
 
 
@@ -745,13 +761,13 @@ html {
   font-weight: 500;
   font-size: 1.688rem;
   line-height: 33px;
-
+  
 }
 
 .lesson-date{
- display: flex;
- align-items: center;
- margin: 10px 0px 15px 0px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 15px 0px;
 }
 
 .live-btn{
@@ -765,6 +781,10 @@ html {
   border-radius: 30px;
   margin-right: 10px;
   column-gap: 6px;
+}
+
+.lession-thoughts{
+  padding-top: 20px;
 }
 
 .lesson-date p{
@@ -833,6 +853,7 @@ html {
 
 .onther-lesson-btn:hover{
   background-color: rgba(255, 209, 93, 0.814);
+  color: #000000;
 }
 .card2-gread-btn1{
   background: #8DC153;
@@ -889,15 +910,17 @@ html {
 
 
 .score-card1{
+  text-align: center;
   background: linear-gradient(102.79deg, #FFFFFF 16.35%, rgba(255, 255, 255, 0.6) 118.55%);
   padding: 40px 70px;
   border-radius: 20px;
   position: absolute;
-    top: 80px;
-    left: 240px;
+  top: 80px;
+  left: 240px;
 }
 
 .score-card2{
+  text-align: center;
   background: linear-gradient(102.79deg, #FFFFFF 16.35%, rgba(255, 255, 255, 0.6) 118.55%);
   padding: 40px 70px;
   border-radius: 20px;
@@ -907,6 +930,7 @@ html {
 }
 
 .score-card3{
+  text-align: center;
   background: linear-gradient(102.79deg, #FFFFFF 16.35%, rgba(255, 255, 255, 0.6) 118.55%);
   padding: 40px 70px;
   border-radius: 20px;
@@ -916,6 +940,7 @@ html {
 }
 
 .score-card4{
+  text-align: center;
   background: linear-gradient(102.79deg, #FFFFFF 16.35%, rgba(255, 255, 255, 0.6) 118.55%);
   padding: 40px 70px;
   border-radius: 20px;
@@ -1054,7 +1079,8 @@ html {
 
     .other-teacher-btn:hover{
       background-color: rgba(255, 209, 93, 0.89); 
-      border: 1px solid rgba(208, 171, 77, 0.814); ;
+      border: 1px solid rgba(208, 171, 77, 0.814);
+      color: #000;
     }
 
     /* content6-container start */
@@ -1090,6 +1116,9 @@ html {
 
   .opinion-card:hover{
     border: 1px solid #d4d4d4;
+    -webkit-box-shadow: 0px 29px 89px -17px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 29px 89px -17px rgba(0,0,0,0.25);
+    box-shadow: 0px 29px 89px -17px rgba(0,0,0,0.25);
   }
 
   .opinion-profile{
@@ -1166,6 +1195,9 @@ html {
 
   .blog:hover{
     border: 1px solid #d4d4d4;
+    -webkit-box-shadow: 0px 29px 89px -17px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 29px 89px -17px rgba(0,0,0,0.25);
+    box-shadow: 0px 29px 89px -17px rgba(0,0,0,0.25);
   }
 
 
