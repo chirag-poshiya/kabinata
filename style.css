@@ -1546,7 +1546,7 @@ html {
 
   
     html{
-      font-size: 13px;
+      font-size: 12px;
     }
   
     .header-container{
@@ -1571,10 +1571,11 @@ html {
     }
     
     .home-container{
+      padding: 285px 130px 0px;
     }
   
     .home-tittle{
-      line-height: 60px;
+      line-height: 55px;
     }
   
     .home-list-container{
@@ -1724,34 +1725,36 @@ html {
   
      .score-card1{
          padding: 30px 35px;
-         top: 30px;
+         top: 40px;
          left: 170px;
      }
   
     .score-card2{
           padding: 30px 35px;
-          top: 30px;
-          left: 400px;
+          top: 40px;
+          left: 395px;
       }
   
     .score-card3{
           padding: 30px 35px;
-          top: 183px;
+          top: 200px;
           left: 245px;
       }
   
     .score-card4{
           padding: 30px 35px;
-          top: 183px;
-          left: 491px;
+          top: 200px;
+          left: 485px;
       }
   
     .content4-img img{
       width: 21.22%;
-      left: 760px;
-      top: 41px;
+      left: 830px;
+      top: 52px;
     }  
-  
+
+
+
   
   
   
