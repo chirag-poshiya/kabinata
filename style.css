@@ -495,6 +495,49 @@ html {
     color: #ffffff;
 }
 
+  /* mobile menu */
+
+  .humburger-icon{
+    align-items: center;
+    display: none;
+  }
+
+.mobile-menu-container{
+  box-shadow: 4px 1px 9px rgb(21 20 57 / 30%);
+  padding: 5px 0;
+  background-color: #FFFFFF;
+  display: none;
+}
+.mobile-menu-container.show-menu{
+  display: block;
+}
+/* .mobile-nav-bar{} */
+
+.mobile-navigation{
+  padding: 0px;
+}
+
+.mobile-nav-item{
+  list-style: none;
+  padding: 10px 0;
+  padding-left: 60px;
+}
+.mobile-nav-item:hover{
+  background-color: rgb(21 20 57 / 30%);
+}
+
+.mobile-nav-item:hover a{
+  color: #FFFFFF;
+}
+
+.mobile-nav-item{
+  font-family: Rubik, 'sans-serif';
+  font-size: 1.5rem;
+  color: rgba(21, 20, 57, 0.4);
+}
+
+
+
   /* home container  */
 
 .home-container{
@@ -644,6 +687,9 @@ html {
   color: #000;
 }
 
+.content2-img img{
+}
+
 .content2-p{
   font-weight: 400;
   font-size: 1.5rem;
@@ -702,10 +748,16 @@ html {
 .arrow-btn{
   background: #FFFFFF;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.03);
-  padding: 22px 25px;
-  border-radius: 35px;
+  /* padding: 22px 25px; */
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
   border: none;
   border: 1px solid #FFFFFF;
+  display: inline;
+}
+.arrow-btn svg{
+  display: inline;
 }
 
 .arrow-btn:hover{
@@ -748,7 +800,7 @@ html {
 
 .language-header a {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 35px;
   color: #666666;
 }
@@ -760,7 +812,7 @@ html {
 
 .language-tittle p {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 36px;
   color: #000;
 }
@@ -770,7 +822,7 @@ html {
 
 .lesson-card-container{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
 }
 
@@ -850,30 +902,31 @@ html {
  right: 0px;
 }
 
-.card1-gread-btn1{
-  background: #CAE6AB;
-  border: 1px solid #8DC153;
+.card-gread-btn{
   border-radius: 20px;
   padding: 6px 8px;
   font-size: 0.5rem;
   font-weight: 400;
   line-height: 9px;
   font-family: 'Roboto', sans-serif;
+  min-width: 34px;
+}
+
+.card1-gread-btn1{
+  background: #CAE6AB;
+  border: 1px solid #8DC153;
+  
 }
 
 .card1-gread-btn2{
   background: #A7D473;
   border: 1px solid #8DC153;
-  border-radius: 20px;
-  padding: 6px 8px;
-  font-size: 0.5rem;
-  font-weight: 400;
-  line-height: 9px;
-  font-family: 'Roboto', sans-serif;
+ 
 }
 
 .onther-lesson-btn{
-  margin: auto;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .onther-lesson-btn a{
@@ -896,48 +949,27 @@ html {
   color: #000000;
   border: 1px solid rgba(208, 171, 77, 0.814);
 }
+
 .card2-gread-btn1{
   background: #8DC153;
   border: 1px solid #8DC153;
-  border-radius: 20px;
-  padding: 6px 8px;
-  font-size: 0.5rem;
-  font-weight: 400;
-  line-height: 9px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .card2-gread-btn2{
   background: #ffde9c;
   border: 1px solid #F6BB43;
-  border-radius: 20px;
-  padding: 6px 8px;
-  font-size: 0.5rem;
-  font-weight: 400;
-  line-height: 9px;
-  font-family: 'Roboto', sans-serif;
+ 
 }
 
 .card3-gread-btn1{
   background: #FFDE9C;
   border: 1px solid #F6BB43;
-  border-radius: 20px;
-  padding: 6px 8px;
-  font-size: 0.5rem;
-  font-weight: 400;
-  line-height: 9px;
-  font-family: 'Roboto', sans-serif;
+  
 }
 
 .card3-gread-btn2{
   background: #FB6E52;
   border: 1px solid #FB6E52;
-  border-radius: 20px;
-  padding: 6px 8px;
-  font-size: 0.5rem;
-  font-weight: 400;
-  line-height: 9px;
-  font-family: Roboto, sans-serif;
 }
 
     /* content4 start  */
@@ -1108,6 +1140,10 @@ html {
       right: 15px;
     }
 
+    .other-teacher-btn{
+      text-align: center;
+    }
+
     .other-teacher-btn a{
       padding: 15px 30px;
       background-color: #FFD25D;
@@ -1236,6 +1272,7 @@ html {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 15px;
+    border: 1px solid #FFFFFF;
   }
 
   .blog:hover{
@@ -1386,11 +1423,17 @@ html {
 
   .content2-container{
     padding: 50px 150px;
+    column-gap: 40px;
   }
 
  
  .content2-tittle{
    line-height: 53px;
+  }
+
+  .content2-img img{
+    width: 400px;
+    height: auto;
   }
  
  .content2-p{
@@ -1442,6 +1485,7 @@ html {
 
   .onther-lesson-btn{
     margin: 20px auto 0px;
+    text-align: center;
   }
 
   .teacher-w-46{
@@ -1487,7 +1531,8 @@ html {
 
   .content4-img img{
     width: 18.22%;
-    left: 945px;
+    left: 950px;
+    top: 81px;
   }  
 
 
@@ -1633,13 +1678,18 @@ html {
       /* content 2 media 1681 */
   
     .content2-container{
-      padding: 40px 65px;
-      column-gap: 40px;
+      padding: 40px 100px;
+      column-gap: 30px;
     }
   
    
    .content2-tittle{
      line-height: 40px;
+    }
+
+    .content2-img img{
+      width:  355px;
+      height: auto;
     }
    
    .content2-p{
@@ -1647,9 +1697,7 @@ html {
      margin: 15px 0px;
     }
 
-    .content2-img img{
-     
-    }
+    
    
    .learn-more{
        column-gap: 10px;
@@ -1789,12 +1837,6 @@ html {
     .teacher-details-card{
       padding: 10px;
     }
-
-    
-    .other-teacher-btn{
-      
-      padding: 10px 20px;
-    }
     
     
     
@@ -1864,7 +1906,11 @@ html {
     }
 
     .header-commpany-logo {
-      width: 185px;
+      width: 170px;
+    }
+
+    header{
+      padding: 0px 50px;
     }
 
     .contact p {
@@ -1879,6 +1925,10 @@ html {
       padding: 10px 20px;
       margin-right: 10px;
     }
+
+    .home-register-btn {
+      margin: 27px 0 22px;
+    }
     
     .home-container{
       /* padding: */
@@ -1890,6 +1940,14 @@ html {
   
     .home-list-container{
       margin-top: 15px;
+    }
+
+    .home-list{
+      column-gap: 10px;
+    }
+
+    .home-list p{
+      line-height: 40px;
     }
   
     .register-btn{
@@ -1943,26 +2001,36 @@ html {
       /* content 2 media 1681 */
   
     .content2-container{
-      padding: 50px 100px;
-      column-gap: 50px;
+        padding: 40px 100px;
+        column-gap: 35px;
     }
-  
-   
-   .content2-tittle{
-     line-height: 40px;
+    
+    
+    .content2-tittle{
+      line-height: 40px;
     }
-   
-   .content2-p{
-     line-height: 30px;
-     margin: 15px 0px;
+    
+    .content2-p{
+      line-height: 30px;
+      margin: 15px 0px;
     }
-   
-   .learn-more{
-       column-gap: 10px;
+
+    .content2-img img{
+      width:  270px;
+      height: auto;
+    }
+    
+    .learn-more{
+      line-height: 25px;
+      margin: 10px 0px;
+    }
+    
+    .learn-more{
+      column-gap: 10px;
     }
    
    .learn-more a{
-     line-height: 35px;
+     line-height: 27px;
     }
    
    .learn-more img{
@@ -1977,7 +2045,7 @@ html {
   
   
     .content3-container{
-      padding: 50px 80px;
+      padding: 40px 75px;
     }
   
     .content3-language{
@@ -2000,6 +2068,8 @@ html {
     }
 
     .language-tittle img{
+      width: 60px;
+      height: auto;
     }
   
     .onther-lesson-btn{
@@ -2039,34 +2109,35 @@ html {
   
      .score-card1{
          padding: 30px 35px;
-         top: 35px;
-         left: 165px;
+         top: 30px;
+         left: 140px;
      }
   
     .score-card2{
           padding: 30px 35px;
-          top: 35px;
-          left: 375px;
+          top: 30px;
+          left: 350px;
       }
   
     .score-card3{
           padding: 30px 35px;
-          top: 172px;
-          left: 240px;
+          top: 167px;
+          left: 210px;
       
       }
   
     .score-card4{
           padding: 30px 35px;
-          top: 172px;
-          left: 463px;
+          top: 167px;
+          left: 434px;
       
       }
   
-    .content4-img img{
+      .content4-img img{
       width: 21.22%;
-      top: 28px;
-      left: 726px;
+      top: 37px;
+      left: 710px;
+  
     }  
   
   
@@ -2112,7 +2183,7 @@ html {
     /* content 6 start  */
     
     .content6-container{
-      padding: 50px 100px;
+      padding: 50px 80px;
     }
 
     .content6-tittle{
@@ -2131,7 +2202,7 @@ html {
     /* content 7 media 1681px */
     
     .content7-container{
-      padding: 50px 100px;
+      padding: 50px 80px;
     }
     
     .blog-img-div img{
@@ -2147,10 +2218,1268 @@ html {
       line-height: 15px;
     }
     
+    /* footer media 1681px */
+
+    .footer-container{
+      padding: 45px 80px;
+    }
+
+    .footer-flex{
+      margin-top: 35px;
+    }
+
+    .footer-logo img{
+      width: 130px;
+      height: auto;
+    }
+
+    .footer-media-icon img{
+      width: 35px;
+    }
+
+    }
+   @media only screen and (max-width: 1025px){
+
+
+    html{
+      font-size: 9px;
+    }
+  
+    .header-container{
+     
+    }
+
+    .header-commpany-logo {
+      width: 150px;
+    }
+
+    .contact p {
+      margin-right: 10px;
+    }
+
+    .login-btn{
+      padding: 8px 15px;
+    }
+
+    .register-btn-navbar{
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+    
+    .home-container{
+      /* padding: */
+    }
+  
+    .home-tittle{
+      line-height: 40px;
+    }
+  
+    .home-list-container{
+      margin-top: 15px;
+    }
+
+    .home-list p{
+      line-height: 35px;
+    }
+  
+    .register-btn{
+      margin: 10px 0px;
+    }
+  
+    .nav-bar-ul{
+      column-gap: 15px;
+    }
+  
+    .register-btn{
+      column-gap: 10px;
+    }
+
+    .home-register-btn img{
+      width: 11px;
+      height: auto;
+    }
+  
+    .home-register-btn a {
+      line-height: 23px;
+      padding: 13px 16px;
+      width: 17%;
+    }
+  
+    .contact p{
+      margin-right: 15px;
+    }
+  
+    .country-list-container{
+      column-gap: 10px;
+    }
+  
+    .country-list{
+      
+    }
+
+    .home-circle{
+      top: 166px;
+      left: 690px;
+    }
+
+    .home-circle{
+      width: 90px;
+      height: auto;
+    }
+  
+    .home-arrow{
+      top: 185px;
+      left: 600.96px;
+      width: 120px;
+      height: auto;
+    }
+  
+    .home-main-img{
+  
+    }
+  
+  
+  
+  
+  
+  
+      /* content 2 media 1681 */
+  
+    .content2-container{
+      padding: 30px 45px;
+      column-gap: 25px;
+    }
+  
+   
+   .content2-tittle{
+    line-height: 23px;
+    margin: 10px 0px;
+    }
+   
+   .content2-p{
+     line-height: 30px;
+     margin: 15px 0px;
+    }
+   
+   .learn-more{
+       column-gap: 10px;
+    }
+   
+   .learn-more a{
+     line-height: 25px;
+    }
+   
+   .learn-more img{
+     padding-top: 8px;
+    }
+   
+   
+  
+  
+  
+    /* content 3 media 1681 */
+  
+  
+    .content3-container{
+      padding: 30px 65px;
+    }
+  
+    .content3-language{
+      padding: 15px 20px;
+    }
+  
+    .language-btn{
+      line-height: 20px;
+      color: #666666;
+      padding: 8px 11px;
+    }
+  
+    .learn-more{
+      padding: 0px;
+    }
+
+    .arrow-btn{
+      padding: 11px 14px ;
+    }
+  
+    .language-header {
+      justify-content: space-between;
+      padding: 10px 0px 15px;
+    }
+
+    .language-tittle img{
+      width: 57px;
+    }
+  
+    .onther-lesson-btn{
+      margin:  15PX auto 0px;
+    }
+
+    .onther-lesson-btn a{
+      padding: 15px 20px;
+    }
+  
+    .arrow-btn{
+      padding: 15px;
+    }
+    
+    .lesson-card {
+      padding: 15px;
+      border: 1px solid #ECECEC;
+      border-radius: 13px;
+    }
+
+    .lesson-date{
+    margin: 5px 0px 10px 0px;
+    }
+
+
+
+    
+
+  
+  
+    /* content4 container  */
+  
+    .content4-container{
+      padding: 0px 80px 0px ;
+    }
+  
+    .content4-background{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .score-card-tittle{
+      line-height: 35px;
+    }
+  
+     .score-card1{
+         padding: 30px 35px;
+         top: 30px;
+         left: 140px;
+     }
+  
+    .score-card2{
+          padding: 30px 35px;
+          top: 30px;
+          left: 350px;
+      }
+  
+    .score-card3{
+          padding: 30px 35px;
+          top: 167px;
+          left: 210px;
+      
+      }
+  
+    .score-card4{
+          padding: 30px 35px;
+          top: 167px;
+          left: 434px;
+      
+      }
+  
+      .content4-img img{
+      width: 21.22%;
+      top: 37px;
+      left: 710px;
+  
+    }  
+  
+  
+  
+  
+  
+    .content5-container{
+      padding: 30px 80px;
+    }
+
+    .teacher-profile img {
+      width: 50px;
+      height: auto;
+      padding: 4px 8px 0px 0px;
+    }
+
+    .BGN{
+      padding: 1px 0px 4px 0px;
+
+    }
+
+    .teacher-profile-grid{
+      column-gap: 10px;
+      row-gap: 10px;
+      padding: 20px 0px 25px;
+      grid-template-columns: auto auto;
+    }
+
+    .teacher-details-card{
+      padding: 10px;
+    }
+    
+    .other-teacher-btn a {
+      padding: 15px 20px;
+    };
+
+    
+    
+    
+    /* content 6 start  */
+    
+    .content6-container{
+      padding: 40px 60px;
+    }
+
+    .content6-tittle{
+      line-height: 55px;
+      margin-bottom: 0px;
+    }
+
+    .opinion-content{
+      line-height: 17px;
+    }
+
+    .opinion-profile{
+      margin-bottom: 10px;
+    }
+    
+    .teacher-opinion-grid{
+      column-gap: 15px;
+      padding: 20px 0px 25px;
+    }
+    
+    .opinion-card{
+      padding: 15px;
+    }
+
+    /* content 7 media 1681px */
+    
+    .content7-container{
+      padding: 50px 100px;
+    }
+
+    .content7-tittle{
+      margin-bottom: 25px;
+      line-height: 45px;
+    }
+    
+    .blog-img-div img{
+      width: 90%;
+      height: auto;
+    }
+  
+    .blog{
+      padding: 10px;
+    }
+    .blog-date{
+      padding: 10px 0px 6px 0px;
+      line-height: 15px;
+    }
+    
         /* footer media 1681px */
   
         .footer-container{
-          padding: 50px 100px;
+          padding: 40px 50px;
         }
+    }
+
+
+   @media only screen and (max-width: 768px){
+
+    html{
+      font-size: 7px;
+    }
+
+    
+    .header-container>div:not(:first-child){
+      display: none;
+    }
+
+    .humburger-icon{
+      display: flex !important;
+      width: 50px;
+      height: auto;
+    }
+
+    .header-commpany-logo {
+      width: 150px;
+    }
+
+    .mobile-nav-img img{
+      width: 50px;
+      height: auto;
+    }
+
+    .contact p {
+      margin-right: 10px;
+    }
+
+    .login-btn{
+      padding: 8px 15px;
+    }
+
+    .register-btn-navbar{
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+    
+    .home-container{
+      /* padding: */
+    }
+  
+    .home-tittle{
+      line-height: 40px;
+    }
+  
+    .home-list-container{
+      margin-top: 15px;
+    }
+
+    .home-list p{
+      line-height: 35px;
+    }
+  
+    .register-btn{
+      margin: 10px 0px;
+    }
+  
+    .nav-bar-ul{
+      column-gap: 15px;
+    }
+  
+    .register-btn{
+      column-gap: 10px;
+    }
+
+    .home-register-btn img{
+      width: 11px;
+      height: auto;
+    }
+  
+    .home-register-btn a {
+      line-height: 23px;
+      padding: 13px 16px;
+      width: 17%;
+    }
+  
+    .contact p{
+      margin-right: 15px;
+    }
+  
+    .country-list-container{
+      column-gap: 10px;
+    }
+  
+    .country-list{
+      
+    }
+
+    .home-circle{
+      top: 166px;
+      left: 690px;
+    }
+
+    .home-circle{
+      width: 90px;
+      height: auto;
+    }
+  
+    .home-arrow{
+      top: 185px;
+      left: 600.96px;
+      width: 120px;
+      height: auto;
+    }
+  
+    .home-main-img{
+  
+    }
+  
+  
+  
+  
+  
+  
+      /* content 2 media 1681 */
+  
+    .content2-container{
+      padding: 30px 45px;
+      column-gap: 25px;
+    }
+  
+    .content2-img img{
+      width: 230px;
+      height: auto;
+    }
+   
+   .content2-tittle{
+    line-height: 23px;
+    margin: 10px 0px;
+    }
+   
+   .content2-p{
+      line-height: 21px;
+      margin: 10px 0px;
+    }
+   
+   .learn-more{
+       column-gap: 8px;
+    }
+   
+   .learn-more a{
+     line-height: 20px;
+    }
+
+    .learn-more img{
+      width: 11px;
+      height: auto;
+    }
+   
+   .learn-more img{
+     padding-top: 8px;
+    }
+   
+   
+  
+  
+  
+    /* content 3 media 1681 */
+  
+  
+    .content3-container{
+      padding: 25px 50px;
+    }
+  
+    .content3-language{
+      padding: 10px 15px;
+    }
+
+    .content3-tittle{
+    line-height: 45px;
+    }
+  
+    .language-btn{
+      line-height: 20px;
+      color: #666666;
+      padding: 8px 7px;
+    }
+  
+    .learn-more{
+      padding: 0px;
+    }
+
+    .arrow-btn{
+      padding: 11px 14px ;
+    }
+  
+    .lesson-card-container{
+      column-gap: 12px;;
+    }
+
+    .language-header {
+      justify-content: space-between;
+      padding: 5px 0px 10px;
+    }
+
+    .language-tittle img{
+      width: 57px;
+    }
+  
+    .onther-lesson-btn{
+      margin:  15PX auto 0px;
+    }
+
+    .onther-lesson-btn a{
+      padding: 15px 20px;
+    }
+  
+    .arrow-btn{
+      padding: 10px;
+    }
+    
+    .lesson-card {
+      padding: 15px;
+      border: 1px solid #ECECEC;
+      border-radius: 13px;
+    }
+
+    .lesson-date{
+    margin: 5px 0px 10px 0px;
+    }
+
+
+
+    
+
+  
+  
+    /* content4 container  */
+  
+    .content4-container{
+      padding: 0px 80px 0px ;
+    }
+  
+    .content4-background{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .score-card-tittle{
+      line-height: 35px;
+    }
+  
+     .score-card1{
+         padding: 30px 35px;
+         top: 30px;
+         left: 140px;
+     }
+  
+    .score-card2{
+          padding: 30px 35px;
+          top: 30px;
+          left: 350px;
+      }
+  
+    .score-card3{
+          padding: 30px 35px;
+          top: 167px;
+          left: 210px;
+      
+      }
+  
+    .score-card4{
+          padding: 30px 35px;
+          top: 167px;
+          left: 434px;
+      
+      }
+  
+      .content4-img img{
+      width: 21.22%;
+      top: 37px;
+      left: 710px;
+  
+    }  
+  
+  
+  
+  
+  
+    .content5-container{
+      padding: 25px 60px;
+    }
+
+    .teacher-profile img {
+      width: 45px;
+      height: auto;
+      padding: 4px 8px 0px 0px;
+    }
+
+    .BGN{
+      padding: 1px 0px 4px 0px;
+
+    }
+
+    .teacher-profile-grid{
+      column-gap: 10px;
+      row-gap: 10px;
+      padding: 20px 0px 25px;
+      grid-template-columns: auto auto;
+    }
+
+    .teacher-details-card{
+      padding: 10px;
+    }
+    
+    .other-teacher-btn a {
+      padding: 15px 20px;
+    }
+
+    
+    
+    
+    /* content 6 start  */
+    
+    .content6-container{
+      padding: 25px 50px;
+    }
+
+    .content6-tittle{
+      line-height: 55px;
+      margin-bottom: 0px;
+    }
+
+    .opinion-content{
+      line-height: 7px;
+    }
+
+    .opinion-profile{
+      margin-bottom: 5px;
+    }
+
+    .opinion-sub-titlle p {
+      margin: 0 0 0 7px;
+    }
+
+    .opinion-profile img{
+      width: 30px;
+      height: auto;
+    }
+    
+    .teacher-opinion-grid{
+      column-gap: 15px;
+      padding: 20px 0px 25px;
+    }
+    
+    .opinion-card{
+      padding: 15px;
+    }
+
+    .gergana{
+      line-height: 16px;
+    }
+
+    /* content 7 media 1681px */
+    
+    .content7-container{
+      padding: 30px 60px;
+    }
+
+    .content7-tittle{
+      margin-bottom: 0;
+      line-height: 45px;
+    }
+    
+    .blog-img-div img{
+      width: 90%;
+      height: auto;
+    }
+  
+    .blog{
+      padding: 10px;
+    }
+    .blog-date{
+      padding: 10px 0px 6px 0px;
+      line-height: 15px;
+    }
+    
+        /* footer media 1681px */
+  
+        .footer-container{
+          padding: 40px 50px;
+        }
+    }
+
+
+   @media only screen and (max-width: 426px){
+
+    html{
+      font-size: 6px;
+    }
+
+    header{
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      padding: 0 20px;
+    }
+    .header-container{
+      padding: 0;
+    }
+    
+    .home-container{
+      padding: 325px 20px 20px 20px;
+      width: 100%;
+      max-width: 100% !important;
+      display: block;
+    }
+
+    .content4-container{
+      display: none;
+    }
+    
+    .header-container>div:not(:first-child){
+      display: none;
+    }
+
+    .humburger-icon{
+      display: flex !important;
+      width: auto;
+      height: auto;
+    }
+
+    .header-commpany-logo {
+      width: 135px;
+    }
+
+    .mobile-nav-img img{
+      width: 50px;
+      height: auto;
+    }
+
+    .contact p {
+      margin-right: 10px;
+    }
+
+    .login-btn{
+      padding: 8px 15px;
+    }
+
+    .register-btn-navbar{
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+  
+    .home-tittle{
+      line-height: 40px;
+    }
+  
+    .home-list-container{
+      margin-top: 15px;
+    }
+
+    .home-list p{
+      line-height: 35px;
+    }
+  
+    .register-btn{
+      margin: 10px 0px;
+    }
+  
+    .nav-bar-ul{
+      column-gap: 15px;
+    }
+  
+    .register-btn{
+      column-gap: 10px;
+    }
+
+    .home-register-btn img{
+      width: 11px;
+      height: auto;
+    }
+  
+    .home-register-btn a {
+      line-height: 23px;
+      padding: 13px 16px;
+      width: 17%;
+    }
+  
+    .contact p{
+      margin-right: 15px;
+    }
+  
+    .country-list-container{
+      column-gap: 10px;
+    }
+  
+    .country-list{
+      
+    }
+
+    .home-img{
+      position: relative;
+    }
+
+
+    .home-circle{
+      top: 115px;
+      left: 90px;
+    }
+
+    .home-circle{
+      width: 90px;
+      height: auto;
+    }
+  
+    .home-arrow{
+      top: 125px;
+      left: 190px;
+      width: 120px;
+      height: auto;
+    }
+  
+    .home-main-img{
+
+    }
+  
+  
+  
+  
+  
+  
+      /* content 2 media 1681 */
+  
+    .content2-container{
+      padding: 30px 45px;
+      column-gap: 25px;
+      display: block;
+    }
+  
+    .content2-img{
+      text-align: center;
+    }
+
+    .content2-img img{
+      width: 230px;
+      height: auto;
+      text-align: center;
+    }
+   
+   .content2-tittle{
+    line-height: 23px;
+    margin: 10px 0px;
+    }
+   
+   .content2-p{
+      line-height: 21px;
+      margin: 10px 0px;
+    }
+
+    .learn-online{
+      text-align: center;
+    }
+   
+   .learn-more{
+       column-gap: 8px;
+       text-align: center;    
+       padding: 0%;   
+      }
+   
+   .learn-more a{
+     line-height: 20px;
+    }
+
+    .learn-more img{
+      width: 11px;
+      height: auto;
+    }
+   
+   .learn-more img{
+     padding-top: 8px;
+    }
+   
+   
+  
+  
+  
+    /* content 3 media 1681 */
+  
+  
+    .content3-container {
+      padding: 25px 35px;
+    }
+  
+    .content3-language{
+      padding: 10px 15px;
+    }
+
+    .content3-tittle{
+    line-height: 45px;
+    }
+  
+    .language-btn{
+      line-height: 20px;
+      color: #666666;
+      padding: 8px 7px;
+    }
+  
+    
+
+    .arrow-btn{
+      padding: 11px 14px ;
+    }
+  
+    .lesson-card-container{
+      column-gap: 12px;;
+    }
+
+    .language-header {
+      justify-content: space-between;
+      padding: 5px 0px 10px;
+      display: block;
+      padding-top: 20px
+    }
+
+    .language-tittle img{
+      width: 57px;
+    }
+
+    .language-tittle p{
+      line-height: 0%;
+    }
+  
+    .onther-lesson-btn{
+      margin:  15PX auto 0px;
+    }
+
+    .onther-lesson-btn a{
+      padding: 15px 20px;
+    }
+  
+    .arrow-btn{
+      padding: 10px;
+    }
+    
+    .lesson-card {
+      padding: 13px;
+      border: 1px solid #ECECEC;
+      border-radius: 13px;
+      margin-top: 10px;
+    }
+
+    .lesson-card-tittle{
+      line-height: 25px;
+    }
+
+    .lesson-date{
+      margin: 0 0 5px 0;
+    }
+
+    .lesson-date p{
+      line-height: 15px;
+    }
+
+    .lession-thoughts{
+      padding: 0 0 12px 10px;
+    }
+
+    .lesson-card-container{
+      grid-template-columns: auto;
+    }
+
+    .live-btn{
+      padding: 1px 7px;
+    }
+    
+
+  
+  
+    /* content4 container  */
+  
+    .content4-container{
+      padding: 0px 80px 0px ;
+    }
+  
+    .content4-background{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .score-card-tittle{
+      line-height: 35px;
+    }
+  
+     .score-card1{
+         padding: 30px 35px;
+         top: 30px;
+         left: 140px;
+     }
+  
+    .score-card2{
+          padding: 30px 35px;
+          top: 30px;
+          left: 350px;
+      }
+  
+    .score-card3{
+          padding: 30px 35px;
+          top: 167px;
+          left: 210px;
+      
+      }
+  
+    .score-card4{
+          padding: 30px 35px;
+          top: 167px;
+          left: 434px;
+      
+      }
+  
+      .content4-img img{
+      width: 21.22%;
+      top: 37px;
+      left: 710px;
+  
+    }  
+  
+  
+  
+  
+  
+   
+    .content5-container {
+        padding: 20px 25px;
+    }
+
+    .teacher-profile img {
+      width: 45px;
+      height: auto;
+      padding: 4px 8px 0px 0px;
+    }
+
+    .BGN{
+      padding: 1px 0px 4px 0px;
+
+    }
+
+    .teacher-profile-grid{
+      column-gap: 10px;
+      row-gap: 10px;
+      padding: 20px 0px 25px;
+      grid-template-columns: auto auto;
+    }
+
+    .teacher-country img{
+      right: 7px;
+      top: 47px;
+      width: 17px;
+      height: auto;
+    }
+
+    .content5-tittle{
+      line-height: 12px;
+    }
+
+    .teacher-details-card{
+      padding: 10px;
+    }
+
+    .Guy-Hawkins{
+      display: none;
+    }
+    .Kristin-Watson{
+      display: none;
+    }
+    .Robert-Fox{
+      display: none;
+    }
+    .Ronald-Richards{
+      display: none;
+    }
+    .Bessie-Cooper{
+      display: none;
+    }
+    .floyd-Miles{
+      display: none;
+    }
+    
+
+
+
+
+    .floyd-miles-mobile{
+      display: flex;
+    }
+    
+
+    
+    .other-teacher-btn a {
+      padding: 15px 20px;
+    }
+
+    
+    
+    
+    /* content 6 start  */
+    
+    .content6-container {
+      padding: 25px 35px;
+    }
+
+    .content6-tittle{
+      line-height: 55px;
+      margin-bottom: 0px;
+    }
+
+    .opinion-content{
+      line-height: 7px;
+    }
+
+    .opinion-profile{
+      margin-bottom: 5px;
+    }
+
+    .opinion-sub-titlle p {
+      margin: 0 0 0 7px;
+    }
+
+    .opinion-profile img{
+      width: 30px;
+      height: auto;
+    }
+    
+    .teacher-opinion-grid{
+      
+      grid-template-columns: auto;
+      row-gap: 15px;
+      padding: 20px 0px 25px;
+      
+    }
+    
+    .opinion-card{
+      padding: 12px;
+    }
+
+    .gergana{
+      line-height: 16px;
+    }
+
+    /* content 7 media 1681px */
+    
+    .content7-container{
+      padding: 30px 60px;
+    }
+
+    .content7-tittle{
+      margin-bottom: 0;
+      line-height: 45px;
+    }
+
+    .blog-grid{
+      grid-template-columns: auto;
+      row-gap: 20px;
+    }
+    
+    .blog-img-div img{
+      width: 90%;
+      height: auto;
+    }
+  
+    .blog{
+      padding: 10px;
+    }
+
+    .blog3{
+      display: none;
+    }
+
+    .blog-date{
+      padding: 10px 0px 6px 0px;
+      line-height: 15px;
+    }
+
+
+
+
+    
+        /* footer media 426px */
+  
+        .footer-container{
+          padding: 20px 30px;
+        }
+
+        .footer-nav-bar-ul{
+          display: grid;
+          grid-template-columns: auto auto;
+        }
+
+        .footer-flex{
+          margin-top: 10px;
+          display: grid;
+          grid-template-columns: auto auto;
+        }
+
+
     }
 
