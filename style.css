@@ -513,27 +513,29 @@ html {
 }
 /* .mobile-nav-bar{} */
 
-.mobile-navigation{
+.mobile-nav-bar{
   padding: 0px;
 }
 
 .mobile-nav-item{
   list-style: none;
-  padding: 10px 0;
-  padding-left: 60px;
+  padding: 10px 20px ;
 }
 .mobile-nav-item:hover{
-  background-color: rgb(21 20 57 / 30%);
+  background-color: #FFD25D;
 }
 
 .mobile-nav-item:hover a{
-  color: #FFFFFF;
+  color: #000;
 }
 
 .mobile-nav-item{
-  font-family: Rubik, 'sans-serif';
-  font-size: 1.5rem;
-  color: rgba(21, 20, 57, 0.4);
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 1.7rem;
+}
+
+.mobile-nav-item:last-child{
+  border-top: 1px solid #ECECEC;
 }
 
 
@@ -596,6 +598,15 @@ html {
   top: 185px;
   left: 980.96px;
 }
+
+/* mobile svg */
+
+.mobile-home-arrow{
+  display: none;
+}
+
+
+
 
 .home-register-btn{
   margin: 46px 0 52px;
@@ -755,9 +766,11 @@ html {
   border: none;
   border: 1px solid #FFFFFF;
   display: inline;
+  text-align: center;
 }
 .arrow-btn svg{
   display: inline;
+  margin-top: 21px;
 }
 
 .arrow-btn:hover{
@@ -817,6 +830,14 @@ html {
   color: #000;
 }
 
+.language-tittle img{
+  width: 40px;
+  height: auto;
+  max-width: 40px;
+  min-width: 28px;
+  padding-right: 17px;
+}
+
 
 /* lesson card */
 
@@ -850,7 +871,6 @@ html {
 .lesson-date{
   display: flex;
   align-items: center;
-  margin: 10px 0px 15px 0px;
 }
 
 .live-btn{
@@ -864,6 +884,7 @@ html {
   border-radius: 30px;
   margin-right: 10px;
   column-gap: 6px;
+  margin: 10px 10px 15px 0px;
 }
 
 .lession-thoughts{
@@ -871,7 +892,7 @@ html {
 }
 
 .teacher-w-40{
-  width: 40px;
+  width: 100%;
   height: auto;
 }
 
@@ -882,10 +903,18 @@ html {
   color: #666666;
 }
 
+.date-m{
+  margin: 5px 0px 35px 0px;
+}
+
 .teacher-profile-card{
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.teacher-profile-card img{
+  padding: 8px 0px 0px;
 }
 
 .profile-name-card{
@@ -975,56 +1004,72 @@ html {
     /* content4 start  */
 
 .content4-container{
-    display: flex;
+    /* display: flex; */
     background-color: #FFD25D;
-    justify-content: space-between;
-    position: relative;
+    /* justify-content: space-between;
+    position: relative; */
     padding: 0px  80px  0px 140px;
+}
+
+.content4-flex{
+  display: flex;
+  background: url(image/content4-backgraound-design.svg);
+  background-repeat: no-repeat;
 }
 
 .content4-background{
   /* overflow: hidden; */
 }
 
+.content4-background-mobile{
+  display: none;
+}
 
-.score-card1{
+.score-card-row{
+  display: flex;
+  padding: 20px;
+}
+
+.score-card-group1{
+  margin-left: 100px;
+  padding: 80px 0px 20px 0px;
+}
+.score-card-group2{
+  margin-left: 235px;
+  padding: 0px 0px 80px 0px;
+}
+
+.score-card{
+  margin-right: 20px;
   text-align: center;
   background: linear-gradient(102.79deg, #FFFFFF 16.35%, rgba(255, 255, 255, 0.6) 118.55%);
   padding: 40px 70px;
   border-radius: 20px;
-  position: absolute;
-  top: 80px;
-  left: 240px;
+}
+
+.score-card1{
+  
+  /* position: absolute; */
+  /* top: 80px;
+  left: 240px; */
 }
 
 .score-card2{
-  text-align: center;
-  background: linear-gradient(102.79deg, #FFFFFF 16.35%, rgba(255, 255, 255, 0.6) 118.55%);
-  padding: 40px 70px;
-  border-radius: 20px;
-  position: absolute;
+  /* position: absolute;
     top: 80px;
-    left: 575px;
+    left: 575px; */
 }
 
 .score-card3{
-  text-align: center;
-  background: linear-gradient(102.79deg, #FFFFFF 16.35%, rgba(255, 255, 255, 0.6) 118.55%);
-  padding: 40px 70px;
-  border-radius: 20px;
-  position: absolute;
+  /* position: absolute;
     top: 261px;
-    left: 375px;
+    left: 375px; */
 }
 
 .score-card4{
-  text-align: center;
-  background: linear-gradient(102.79deg, #FFFFFF 16.35%, rgba(255, 255, 255, 0.6) 118.55%);
-  padding: 40px 70px;
-  border-radius: 20px;
-  position: absolute;
+  /* position: absolute;
   top: 261px;
-  left: 731px;
+  left: 731px; */
 }
 
 .score-card-tittle{
@@ -1043,9 +1088,7 @@ html {
 }
 
 .content4-img img{
-  position: absolute;
-  top: 45px;
-  left: 1146px;
+  padding: 45px 0px 0px 69px;
 }
 
       /* content 5 start */
@@ -1138,6 +1181,14 @@ html {
     .teacher-country img{
       position: absolute;
       right: 15px;
+    }
+
+    .floyd-miles-mobile{
+      display: none;
+    }
+
+    .Eleanor-Pena-mobile{
+      display: none;
     }
 
     .other-teacher-btn{
@@ -1242,6 +1293,7 @@ html {
     font-size: 1rem;
     line-height: 19px;
     color: #666666;
+    margin-top: 5px;
   }
 
   /* content 7 start */
@@ -1332,12 +1384,17 @@ html {
   }
 
   .footer-line{
+    padding-top: 9px;
     font-size: 1.125rem;
     font-family: 'Roboto' , sans-serif;
     color: #ECECEC;
     font-weight: 300;
     font-size: 1.125rem;
     line-height: 21px;
+  }
+
+  .mobile-footer-rights{
+    display: none;
   }
 
   .footer-media-icon{
@@ -1530,9 +1587,7 @@ html {
     }
 
   .content4-img img{
-    width: 18.22%;
-    left: 950px;
-    top: 81px;
+   
   }  
 
 
@@ -1561,7 +1616,7 @@ html {
   }
 
   .blog-img-div img{
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 
@@ -1653,9 +1708,7 @@ html {
       column-gap: 10px;
     }
   
-    .country-list{
-      
-    }
+   
 
     .home-circle{
       top: 166px;
@@ -1796,9 +1849,7 @@ html {
       }
   
     .content4-img img{
-      width: 21.22%;
-      left: 830px;
-      top: 52px;
+     
     }  
 
 
@@ -1869,7 +1920,7 @@ html {
     }
     
     .blog-img-div img{
-      width: 90%;
+      width: 100%;
       height: auto;
     }
   
@@ -1902,7 +1953,7 @@ html {
     }
   
     .header-container{
-     
+     padding-left: 30px;
     }
 
     .header-commpany-logo {
@@ -1931,7 +1982,7 @@ html {
     }
     
     .home-container{
-      /* padding: */
+       padding-left:80px; 
     }
   
     .home-tittle{
@@ -1976,21 +2027,31 @@ html {
       column-gap: 10px;
     }
   
-    .country-list{
-      
+  
+    
+
+    .home-img{
+      position: relative;
     }
 
     .home-circle{
-      top: 166px;
-      left: 690px;
+      top: 8px;
+      left: -41px;
+      width: 110px;
+      height: auto;
     }
   
     .home-arrow{
-  
+      top: 8px;
+      left: 93px;
+      width: 200px;
     }
   
     .home-main-img{
-  
+      position: relative;
+      top: 101px;
+      left: 105px;
+      width: 437px;
     }
   
   
@@ -2134,10 +2195,7 @@ html {
       }
   
       .content4-img img{
-      width: 21.22%;
-      top: 37px;
-      left: 710px;
-  
+    
     }  
   
   
@@ -2206,7 +2264,7 @@ html {
     }
     
     .blog-img-div img{
-      width: 90%;
+      width: 100%;
       height: auto;
     }
   
@@ -2267,7 +2325,7 @@ html {
     }
     
     .home-container{
-      /* padding: */
+      padding-left: 77px;
     }
   
     .home-tittle{
@@ -2313,30 +2371,32 @@ html {
       column-gap: 10px;
     }
   
-    .country-list{
-      
+  
+    
+    .home-img{
+      position: relative;
     }
 
     .home-circle{
-      top: 166px;
-      left: 690px;
-    }
-
-    .home-circle{
-      width: 90px;
+      top: 0;
+      left: -90px;
+      width: 100px;
       height: auto;
     }
   
     .home-arrow{
-      top: 185px;
-      left: 600.96px;
-      width: 120px;
-      height: auto;
+      top: 3px;
+      left: 30px;
+      width: 200px;
     }
   
     .home-main-img{
-  
+      position: relative;
+      top: 101px;
+      left: 23px;
+      width: 385px;
     }
+  
   
   
   
@@ -2429,11 +2489,6 @@ html {
       border-radius: 13px;
     }
 
-    .lesson-date{
-    margin: 5px 0px 10px 0px;
-    }
-
-
 
     
 
@@ -2442,7 +2497,7 @@ html {
     /* content4 container  */
   
     .content4-container{
-      padding: 0px 80px 0px ;
+      padding: 0px  80px 0px ;
     }
   
     .content4-background{
@@ -2455,36 +2510,33 @@ html {
     }
   
      .score-card1{
-         padding: 30px 35px;
-         top: 30px;
+         padding: 20px 25px;  
+         top: 25px;
          left: 140px;
      }
   
     .score-card2{
-          padding: 30px 35px;
-          top: 30px;
-          left: 350px;
+          padding: 20px 25px; 
+          top: 25px;
+          left: 306px;
       }
   
     .score-card3{
-          padding: 30px 35px;
-          top: 167px;
-          left: 210px;
+          padding: 20px 25px; 
+          top: 140px;
+          left: 188px;      
       
       }
   
     .score-card4{
-          padding: 30px 35px;
-          top: 167px;
-          left: 434px;
+          padding: 20px 25px; 
+          top: 140px;
+          left: 366px;
       
       }
   
-      .content4-img img{
-      width: 21.22%;
-      top: 37px;
-      left: 710px;
-  
+    .content4-img img{
+ 
     }  
   
   
@@ -2564,7 +2616,7 @@ html {
     }
     
     .blog-img-div img{
-      width: 90%;
+      width: 100%;
       height: auto;
     }
   
@@ -2587,18 +2639,39 @@ html {
    @media only screen and (max-width: 768px){
 
     html{
-      font-size: 7px;
+      font-size: 10px;
     }
 
-    
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .header-container{
+      padding: 0px;
+    }
+
     .header-container>div:not(:first-child){
       display: none;
     }
 
+    .mobile-menu-container.show-menu {
+      position: absolute;
+      top: 60px;
+      right: 0%;
+    }
+
+
+    .header-commpany-logo{
+      padding: 0%;
+    }
+
     .humburger-icon{
       display: flex !important;
-      width: 50px;
-      height: auto;
+      /* width: 50px;
+      height: auto; */
     }
 
     .header-commpany-logo {
@@ -2606,7 +2679,7 @@ html {
     }
 
     .mobile-nav-img img{
-      width: 50px;
+      width: 36px;
       height: auto;
     }
 
@@ -2624,7 +2697,10 @@ html {
     }
     
     .home-container{
-      /* padding: */
+      padding: 355px 0px 0px 50px;
+      margin-top: -320px;
+      width: calc(100% - 50px);
+      max-width: calc(100% - 50px) !important;
     }
   
     .home-tittle{
@@ -2668,31 +2744,36 @@ html {
   
     .country-list-container{
       column-gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 10px;
+      margin-bottom: 20px;
     }
   
-    .country-list{
-      
-    }
+   
+    
 
     .home-circle{
-      top: 166px;
-      left: 690px;
-    }
-
-    .home-circle{
-      width: 90px;
+      top: 100px;
+      left: -15px;
+      width: 80px;
       height: auto;
     }
   
     .home-arrow{
-      top: 185px;
-      left: 600.96px;
-      width: 120px;
-      height: auto;
+      top: 105px;
+    left: unset;
+    width: 136px;
+    height: auto;
+    right: 107px;
     }
   
     .home-main-img{
-  
+      left: unset;
+      top: 196px;
+      bottom: 0;
+      width: 320px;
+
     }
   
   
@@ -2718,7 +2799,7 @@ html {
     }
    
    .content2-p{
-      line-height: 21px;
+      line-height: 25px;
       margin: 10px 0px;
     }
    
@@ -2762,6 +2843,8 @@ html {
       line-height: 20px;
       color: #666666;
       padding: 8px 7px;
+      height: 40px;
+      white-space: nowrap;
     }
   
     .learn-more{
@@ -2782,7 +2865,8 @@ html {
     }
 
     .language-tittle img{
-      width: 57px;
+      width: 30px;
+      margin-right: 10px;
     }
   
     .onther-lesson-btn{
@@ -2796,15 +2880,19 @@ html {
     .arrow-btn{
       padding: 10px;
     }
+
+    .live-btn{
+      margin: 3px 5px 3px 0px ;
+    }
     
     .lesson-card {
-      padding: 15px;
+      padding: 10px;
       border: 1px solid #ECECEC;
       border-radius: 13px;
     }
 
-    .lesson-date{
-    margin: 5px 0px 10px 0px;
+    .lesson-date p{
+      font-size: 1.2rem;
     }
 
 
@@ -2816,10 +2904,17 @@ html {
     /* content4 container  */
   
     .content4-container{
-      padding: 0px 80px 0px ;
+      padding: 0;
+      position: relative;
+      display: block;
     }
   
     .content4-background{
+      display: none;
+    }
+    
+    .content4-background-mobile{
+      display: block;
       width: 100%;
       max-width: 100%;
     }
@@ -2829,37 +2924,49 @@ html {
     }
   
      .score-card1{
-         padding: 30px 35px;
+         padding: 15px 25px;
          top: 30px;
          left: 140px;
      }
   
     .score-card2{
-          padding: 30px 35px;
+          padding: 15px 25px;
           top: 30px;
           left: 350px;
       }
   
     .score-card3{
-          padding: 30px 35px;
+          padding: 15px 25px;
           top: 167px;
           left: 210px;
       
       }
   
     .score-card4{
-          padding: 30px 35px;
+          padding: 15px 25px;
           top: 167px;
           left: 434px;
       
       }
+
+    .content4-img{
+      text-align: center;
+    }
   
-      .content4-img img{
-      width: 21.22%;
-      top: 37px;
-      left: 710px;
-  
-    }  
+    .content4-img img{
+      padding: 45px 0px 0px ;
+      width: 260px;
+    }
+
+    .score-card-group1{
+      margin-left: 65px;
+      padding: 50px 0px 15px 0px;
+    }
+
+    .score-card-group2{
+      margin-left: 95px;
+      padding: 0px 0px 50px 0px;
+    }
   
   
   
@@ -2909,10 +3016,6 @@ html {
       margin-bottom: 0px;
     }
 
-    .opinion-content{
-      line-height: 7px;
-    }
-
     .opinion-profile{
       margin-bottom: 5px;
     }
@@ -2951,7 +3054,7 @@ html {
     }
     
     .blog-img-div img{
-      width: 90%;
+      width: 100%;
       height: auto;
     }
   
@@ -2974,7 +3077,7 @@ html {
    @media only screen and (max-width: 426px){
 
     html{
-      font-size: 6px;
+      font-size: 7.79px;
     }
 
     header{
@@ -2989,13 +3092,760 @@ html {
     
     .home-container{
       padding: 325px 20px 20px 20px;
-      width: 100%;
+      width: calc(100% - 40px);
       max-width: 100% !important;
       display: block;
+      background-position: left;
+      background-size: contain;
     }
 
-    .content4-container{
+    .home-register-btn {
+      margin: 25px 0 ;
+    }
+
+    .home-sub-tittle{
+      line-height: 17px;
+      font-size: 1.796rem;
+    }
+
+    .country-list p, .country-list a{
+      line-height: 19px;
+      font-size: 2.053rem;
+    }
+
+    .mobile-menu-container{
+      position: relative;
+      top: 80px;
+      left: 0;
+    }
+    
+    .header-container>div:not(:first-child){
       display: none;
+    }
+
+    .mobile-menu-container.show-menu {
+      position: absolute;
+      top: 65px;
+      right: 0px;
+    }
+
+
+    .humburger-icon{
+      display: flex !important;
+      width: auto;
+      height: auto;
+    }
+
+    .header-commpany-logo {
+      width: 135px;
+    }
+
+    .mobile-nav-img img{
+      width: 26px;
+      height: auto;
+    }
+
+    .contact p {
+      margin-right: 10px;
+    }
+
+    .login-btn{
+      padding: 8px 15px;
+    }
+
+    .register-btn-navbar{
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+  
+    .home-tittle{
+      line-height: 40px;
+    }
+  
+    .home-list-container{
+      margin-top: 15px;
+    }
+
+    .home-list p{
+      line-height: 30px;
+      font-size: 1.796rem;
+    }
+  
+    .register-btn{
+      margin: 10px 0px;
+    }
+  
+    .nav-bar-ul{
+      column-gap: 15px;
+    }
+  
+    .register-btn{
+      column-gap: 10px;
+    }
+
+    .home-register-btn img{
+      width: 11px;
+      height: auto;
+    }
+  
+    .home-register-btn a {
+      line-height: 23px;
+      padding: 13px 16px;
+      width: 17%;
+    }
+  
+    .contact p{
+      margin-right: 15px;
+    }
+  
+    .country-list-container{
+      column-gap: 5px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 15px;
+      align-items: center;
+    }
+  
+   
+    
+    .home-img{
+      position: relative;
+      height: 350px;
+    }
+
+
+    .home-circle{
+      top: 25px;
+      left: 35px;
+      width: 90px;
+      height: auto;
+    }
+  
+    .home-arrow{
+      display: none;
+    }
+
+    .mobile-home-arrow{
+      display: block;
+      position: absolute;
+      top: 44px;
+      left: 146px;
+    }
+  
+    .home-main-img{
+        position: relative;
+        top: 131px;
+        left: calc(100% - 280px);
+        width: 273px;
+    }
+  
+  
+  
+  
+  
+  
+      /* content 2 media 1681 */
+  
+    .content2-container{
+      padding:  20px;
+      column-gap: 25px;
+      display: grid;
+      width: calc(100% - 40px);
+    }
+  
+    .learn-online{
+      order: 1;
+    }
+
+    .content2-img{
+      text-align: center;
+      order: 2;
+    }
+
+    .content2-img img{
+      width: 90%;
+      height: auto;
+      text-align: center;
+    }
+   
+   .content2-tittle{
+    line-height: 29px;
+    font-size: 3.336rem;
+    }
+   
+   .content2-p{
+      line-height: 17px;
+      font-size: 1.796rem;
+    }
+   
+   .learn-more{
+       column-gap: 8px;
+       text-align: center;    
+       padding: 0%;   
+      }
+   
+   .learn-more a{
+     line-height: 19px;
+     font-size: 2.053rem;
+    }
+
+    .learn-more img{
+      width: 11px;
+      height: auto;
+    }
+   
+   .learn-more img{
+     padding-top: 0;
+    }
+   
+   
+  
+  
+  
+    /* content 3 media 1681 */
+  
+  
+    .content3-container {
+      padding: 20px;
+    }
+  
+    .content3-language{
+      padding: 10px;
+      overflow: hidden;
+      column-gap: 10px;
+      border-radius: 10px 0 0 10px;
+      width: calc(100%);
+    }
+
+    .content3-tittle{
+    line-height: 29px;
+    font-size: 3.336rem;
+    text-align: left;
+    }
+  
+    .language-btn{
+      padding: 10px 15px;
+      font-size: 2.054rem;
+      line-height: 19px;
+      white-space: nowrap;
+    }
+    
+    .lesson-card-container{
+      column-gap: 12px;;
+    }
+
+    .language-header {
+      justify-content: space-between;
+      padding: 5px 0px 10px;
+      display: block;
+      padding-top: 20px;
+      position: relative;
+    }
+
+    .language-tittle img{
+      width: 28px;
+      height: auto;
+      margin-right: 7px;
+    }
+
+    .language-tittle p{
+      line-height: 24px;
+      font-size: 2.556rem;
+    }
+
+    .language-tittle img{
+      margin-right: 10px;
+      padding-right: 0;
+    }
+  
+    .onther-lesson-btn{
+      margin:  15PX auto 0px;
+    }
+
+    .onther-lesson-btn a{
+      padding: 10px 20px;
+      line-height: 20px;
+      font-size: 2.053rem;
+      border-radius: 8px;
+    }
+  
+    .arrow-btn{
+      padding: 10px 0;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      height: 20px;
+    }
+
+    .arrow-btn:hover{
+      border: none;
+    }
+
+    .arrow-btn svg{
+      margin-top: 0;
+    }
+    .arrow-btn-right{
+      position: absolute;
+      right: 2px;
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 20px;
+      border-radius: 0;
+    }
+    .lesson-card {
+      padding: 13px;
+      border: 1px solid #ECECEC;
+      border-radius: 13px;
+      margin-top: 10px;
+    }
+
+    .lesson-card-tittle{
+      font-size: 2.309rem;
+      line-height: 22px;
+    }
+
+    .lesson-date{
+      margin: 0 0 5px 0;
+    }
+
+    .lesson-date p{
+      line-height: 14px;
+      font-size: 1.539rem;
+    }
+
+    .language-header svg{
+      width: 28px;
+      height: auto;
+    }
+
+    .lession-thoughts{
+      padding: 5px 0px 15px 38px;
+    }
+
+    .lession-thoughts a{
+      line-height: 16px;
+      font-size: 1.668rem;
+    }
+
+    .lesson-card-container{
+      grid-template-columns: auto;
+    }
+
+    .live-btn{
+      line-height: 15px;
+      padding: 6px 12px;
+      font-size: 1.539rem;
+      margin: 10px 10px 13px 0px;
+    }
+
+    .teacher-profile-card img {
+      padding: 0px;
+    }
+
+    .profile-name-card{
+      line-height: 15px;
+      font-size: 2rem;
+    }
+
+    .date-m{
+      margin: 10px 0px 25px 0px;
+    }
+
+    .card-gread-btn{
+      line-height: 10px;
+      font-size: 1.026rem;
+    }
+
+  
+  
+    /* content4 container  */
+  
+    .content4-container{
+      padding: 0px 0px 0px 20px;
+    }
+
+    .content4-flex{
+      display: block;
+      background: url(image/content-4-mobile-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .score-card-tittle{
+      font-size: 3.338rem;
+      line-height: 29px;
+    }
+
+    .score-sub-tittle{
+      font-size: 1.669rem;
+      line-height: 16px;
+    }
+
+    .score-card-group1{
+      margin: 0px;
+      padding: 20px 0px 10px;
+    }
+
+
+    .score-card-group2{
+      margin: 0;
+      padding: 0;
+    }
+
+    .score-card{
+      border-radius: 15px;
+    }
+
+    .score-card1{
+      margin-right: 10px;
+      padding: 10px 20px;
+    }
+
+    .score-card2{
+      margin: 0;
+      padding: 15px 20px;
+    }
+    
+    .score-card3{
+      margin-right: 15px;
+      padding: 10px 20px;
+    }
+
+    .score-card4{
+      margin: 0px 15px 0px 0px;
+      padding: 10px 20px;
+    }
+
+
+
+
+  
+    .content4-background{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .score-card-tittle{
+      line-height: 35px;
+    }
+  
+    .content4-img img{
+      padding: 10px 0px 0px;
+      width: 331px;
+      height: auto;
+    }  
+  
+  
+  
+  
+  
+   
+    .content5-container {
+        padding: 20px 20px;
+    }
+
+    .teacher-profile img {
+      width: 42px;
+      height: auto;
+      padding: 0;
+      padding-right: 5px;
+    }
+
+    .BGN{
+      padding: 2px 0px 5px 0px;
+    }
+
+    .video-score img{
+      width: 10px;
+      height: auto;
+    }
+
+    .teacher-sub-tittle , .teacher-hr {
+    line-height: 10px;
+    font-size: 1.226rem;
+    }
+
+    .meterial-score{
+      font-size: 1.026rem;
+      line-height: 10px;
+    }
+
+    .video-score{
+      column-gap: 4px;
+    }
+
+    .teacher-score{
+      column-gap: 8.42px;
+    }
+
+    .teacher-profile-grid{
+      column-gap: 10px;
+      row-gap: 10px;
+      padding: 20px 0px 25px;
+      grid-template-columns: auto auto;
+    }
+
+    .teacher-country img{
+      right: 10px;
+      top: 35px;
+      width: 15px;
+      height: auto;
+    }
+
+    .content5-tittle{
+     line-height: 29px;
+     font-size: 3.336rem;
+    }
+
+    .teacher-details-card{
+      padding: 10px;
+    }
+
+    .Guy-Hawkins{
+      display: none;
+    }
+    .Kristin-Watson{
+      display: none;
+    }
+    .Robert-Fox{
+      display: none;
+    }
+    .Ronald-Richards{
+      display: none;
+    }
+    .Bessie-Cooper{
+      display: none;
+    }
+    .floyd-Miles{
+      display: none;
+    }
+    
+
+
+
+
+    .floyd-miles-mobile{
+      display: flex;
+    }
+
+    .Eleanor-Pena-mobile{
+      display: flex;
+    }
+    
+
+    
+    .other-teacher-btn a {
+      padding: 10px 20px;
+      line-height: 20px;
+      font-size: 2.053rem;
+      border-radius: 8px;
+    }
+
+    .teacher-profile-tittle{
+      line-height: 14px;
+      font-size: 1.527rem;
+    }
+
+    
+    
+    
+    /* content 6 start  */
+    
+    .content6-container {
+      padding: 20px;
+    }
+
+    .content6-tittle{
+      line-height: 55px;
+      margin-bottom: 0px;
+    }
+
+    .opinion-content{
+      line-height: 16px;
+      font-size: 1.66rem;
+    }
+
+    .opinion-profile{
+      margin-bottom: 5px;
+    }
+
+    .opinion-sub-titlle p {
+      margin: 0 0 0 7px;
+    }
+
+    .opinion-profile img{
+      width: 30px;
+      height: auto;
+    }
+    
+    .teacher-opinion-grid{
+      
+      grid-template-columns: auto;
+      row-gap: 15px;
+      padding: 20px 0px 25px;
+      
+    }
+    
+    .opinion-card{
+      padding: 15px;
+      border-radius: 15px;
+    }
+
+    .opinion-sub-titlle{
+      font-size: 2.566rem;
+      line-height: 24px;
+      font-weight: 400;
+    }
+
+    .gergana{
+    line-height: 16px;
+    font-size: 1.66rem;
+    margin-top: 4px;
+    }
+
+    .see-all{
+      font-size: 1.411rem;
+      line-height: 13px;
+    }
+
+    .gergana{
+      line-height: 16px;
+    }
+
+    /* content 7 media 1681px */
+    
+    .content7-container{
+      padding: 10px 20px 20px;
+    }
+
+    .content7-tittle{
+      margin-bottom: 0;
+      line-height: 45px;
+      padding-bottom: 10px;
+    }
+
+    .blog-grid{
+      grid-template-columns: auto;
+      row-gap: 20px;
+    }
+    
+    .blog-img-div img{
+      width: 100%;
+      height: auto;
+    }
+  
+    .blog{
+      padding: 20px;
+    }
+
+    .blog3{
+      display: none;
+    }
+
+    .blog-date{
+      line-height: 16px;
+      font-size: 1.668rem;
+    }
+
+    .blog-sub-tittle{
+      line-height: 21px;
+      font-size: 2.181rem;
+    }
+
+
+
+
+    
+        /* footer media 426px */
+  
+        .footer-container{
+          padding: 20px ;
+          display: grid;
+        }
+
+        
+
+        .footer-nav-bar{
+          width: 100%;
+          margin: 10px 0;
+        }
+
+        .footer-nav-bar-ul{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin: 0px;
+        }
+
+        .footer-nav-bar-ul li{
+          padding-top: 10px;
+        }
+
+        .footer-media-icon{
+          column-gap: 10px;
+          justify-content: flex-end;
+        }
+
+        .footer-media-icon img{
+          width: 30px;
+          height: auto;
+        }
+
+        .footer-flex{
+          margin-top: 10px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          order: 1;
+        }
+
+        .footer-nav-bar{
+          order: 2;
+        }
+
+        .footer-line{
+          display: none;
+        }
+
+        .mobile-footer-rights{
+          display: block;
+          text-align: center;
+          order: 3;
+        }
+
+        .footer-nav-item a{
+          font-size: 1.669rem;
+        }
+
+      }
+
+
+  @media only screen and (max-width: 376px){
+
+    html{
+      font-size: 7.80px;
+    }
+
+    header{
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      padding: 0 20px;
+    }
+    .header-container{
+      padding: 0;
+    }
+    
+    .home-container{
+      padding: 325px 0px 20px 20px;
+      width: calc(100% - 20px);
+      max-width: 100% !important;
+      display: block;
+      background-position: left;
+      background-size: contain;
+    }
+
+    .mobile-menu-container{
+      position: relative;
+      top: 80px;
+      left: 0;
     }
     
     .header-container>div:not(:first-child){
@@ -3013,7 +3863,7 @@ html {
     }
 
     .mobile-nav-img img{
-      width: 50px;
+      width: 30px;
       height: auto;
     }
 
@@ -3070,37 +3920,40 @@ html {
     }
   
     .country-list-container{
-      column-gap: 10px;
+      column-gap: 5px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 15px;
+      align-items: center;
     }
   
-    .country-list{
-      
-    }
-
+   
+    
     .home-img{
       position: relative;
+      height: 300px;
     }
 
 
     .home-circle{
-      top: 115px;
-      left: 90px;
-    }
-
-    .home-circle{
+      top: 30px;
+      left: 30px;
       width: 90px;
       height: auto;
     }
   
-    .home-arrow{
-      top: 125px;
-      left: 190px;
-      width: 120px;
+    .mobile-home-arrow{
+      top: 45px;
+      top: 61px;
+      left: 107px;
       height: auto;
     }
   
     .home-main-img{
-
+        position: relative;
+        top: 105px;
+        left: 70px;
+        width: 245px;
     }
   
   
@@ -3111,9 +3964,7 @@ html {
       /* content 2 media 1681 */
   
     .content2-container{
-      padding: 30px 45px;
       column-gap: 25px;
-      display: block;
     }
   
     .content2-img{
@@ -3125,41 +3976,40 @@ html {
       height: auto;
       text-align: center;
     }
-   
-   .content2-tittle{
+    
+    .content2-tittle{
     line-height: 23px;
     margin: 10px 0px;
     }
-   
-   .content2-p{
+    
+    .content2-p{
       line-height: 21px;
       margin: 10px 0px;
     }
 
-    .learn-online{
-      text-align: center;
-    }
-   
-   .learn-more{
-       column-gap: 8px;
-       text-align: center;    
-       padding: 0%;   
+    div#learn-online {order: 1;}
+    div#learn-online-img {order: 2;}
+    
+    .learn-more{
+        column-gap: 8px;
+        text-align: center;    
+        padding: 0%;   
       }
-   
-   .learn-more a{
-     line-height: 20px;
+    
+    .learn-more a{
+      line-height: 20px;
     }
 
     .learn-more img{
       width: 11px;
       height: auto;
     }
-   
-   .learn-more img{
-     padding-top: 8px;
+    
+    .learn-more img{
+      padding-top: 8px;
     }
-   
-   
+    
+    
   
   
   
@@ -3167,23 +4017,18 @@ html {
   
   
     .content3-container {
-      padding: 25px 35px;
+      padding: 20px 20px;
     }
   
     .content3-language{
-      padding: 10px 15px;
+      padding: 5px 10px;
+      
     }
 
     .content3-tittle{
     line-height: 45px;
     }
-  
-    .language-btn{
-      line-height: 20px;
-      color: #666666;
-      padding: 8px 7px;
-    }
-  
+
     
 
     .arrow-btn{
@@ -3198,11 +4043,13 @@ html {
       justify-content: space-between;
       padding: 5px 0px 10px;
       display: block;
-      padding-top: 20px
+      padding-top: 20px;
+      position: relative;
     }
 
     .language-tittle img{
-      width: 57px;
+      width: 28px;
+      height: auto;
     }
 
     .language-tittle p{
@@ -3210,11 +4057,12 @@ html {
     }
   
     .onther-lesson-btn{
-      margin:  15PX auto 0px;
+      margin:  10PX auto 0px;
     }
 
     .onther-lesson-btn a{
-      padding: 15px 20px;
+      border-radius: 8px;
+      padding: 10px 20px;
     }
   
     .arrow-btn{
@@ -3232,95 +4080,33 @@ html {
       line-height: 25px;
     }
 
-    .lesson-date{
-      margin: 0 0 5px 0;
+    .language-tittle svg{
+      width: 40px;
+      height: 40px;
     }
 
     .lesson-date p{
       line-height: 15px;
     }
 
-    .lession-thoughts{
-      padding: 0 0 12px 10px;
-    }
 
     .lesson-card-container{
       grid-template-columns: auto;
     }
 
-    .live-btn{
-      padding: 1px 7px;
-    }
-    
 
   
   
     /* content4 container  */
   
-    .content4-container{
-      padding: 0px 80px 0px ;
-    }
-  
-    .content4-background{
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .score-card-tittle{
-      line-height: 35px;
-    }
-  
-     .score-card1{
-         padding: 30px 35px;
-         top: 30px;
-         left: 140px;
-     }
-  
-    .score-card2{
-          padding: 30px 35px;
-          top: 30px;
-          left: 350px;
-      }
-  
-    .score-card3{
-          padding: 30px 35px;
-          top: 167px;
-          left: 210px;
-      
-      }
-  
-    .score-card4{
-          padding: 30px 35px;
-          top: 167px;
-          left: 434px;
-      
-      }
-  
-      .content4-img img{
-      width: 21.22%;
-      top: 37px;
-      left: 710px;
-  
-    }  
+    
   
   
   
   
-  
-   
+    
     .content5-container {
-        padding: 20px 25px;
-    }
-
-    .teacher-profile img {
-      width: 45px;
-      height: auto;
-      padding: 4px 8px 0px 0px;
-    }
-
-    .BGN{
-      padding: 1px 0px 4px 0px;
-
+        padding: 30px 20px;
     }
 
     .teacher-profile-grid{
@@ -3331,18 +4117,32 @@ html {
     }
 
     .teacher-country img{
-      right: 7px;
-      top: 47px;
-      width: 17px;
+      right: 10px;
+      top: 35px;
+      width: 15px;
       height: auto;
     }
 
+    .teacher-sub-tittle , .teacher-hr {
+      line-height: 10px;
+      font-size: 1.326rem;
+      }
+
+
+    .teacher-score{
+      column-gap: 8px;
+    }
+
     .content5-tittle{
-      line-height: 12px;
+      line-height: 5px;
     }
 
     .teacher-details-card{
       padding: 10px;
+    }
+    .meterial-score{
+      font-size: 1.026rem;
+      line-height: 10px;
     }
 
     .Guy-Hawkins{
@@ -3371,11 +4171,19 @@ html {
     .floyd-miles-mobile{
       display: flex;
     }
+
+    .Eleanor-Pena-mobile{
+      display: flex;
+    }
     
 
+    .other-teacher-btn a{
+      border-radius: 8px;
+      padding: 10px 20px;
+    }
     
-    .other-teacher-btn a {
-      padding: 15px 20px;
+    .other-teacher-btn{
+      padding: 0;
     }
 
     
@@ -3384,20 +4192,30 @@ html {
     /* content 6 start  */
     
     .content6-container {
-      padding: 25px 35px;
+      padding: 20px;
     }
 
     .content6-tittle{
-      line-height: 55px;
-      margin-bottom: 0px;
+      line-height: 29px;
+      font-size: 3.336rem;
+      margin-bottom: 15px;
     }
 
-    .opinion-content{
-      line-height: 7px;
+    .gergana, .opinion-content{
+      line-height: 16px;
+      font-size: 1.66rem;
+    }
+  
+    .see-all{
+      font-size: 1.411rem;
+      line-height: 13px;
+    }
+    .gergana{
+      margin-top: 4px;
     }
 
     .opinion-profile{
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
     .opinion-sub-titlle p {
@@ -3411,9 +4229,9 @@ html {
     
     .teacher-opinion-grid{
       
-      grid-template-columns: auto;
-      row-gap: 15px;
-      padding: 20px 0px 25px;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 10px;
+      padding: 5px 0px 5px;
       
     }
     
@@ -3421,33 +4239,29 @@ html {
       padding: 12px;
     }
 
-    .gergana{
-      line-height: 16px;
-    }
-
     /* content 7 media 1681px */
     
     .content7-container{
-      padding: 30px 60px;
+      padding: 20px;
     }
 
     .content7-tittle{
       margin-bottom: 0;
-      line-height: 45px;
+      line-height: 30px;
     }
 
     .blog-grid{
       grid-template-columns: auto;
-      row-gap: 20px;
+      row-gap: 15px;
     }
     
     .blog-img-div img{
-      width: 90%;
+      width: 100%;
       height: auto;
     }
   
     .blog{
-      padding: 10px;
+      padding: 20px;
     }
 
     .blog3{
@@ -3455,31 +4269,336 @@ html {
     }
 
     .blog-date{
-      padding: 10px 0px 6px 0px;
+      line-height: 16px;
+      font-size: 1.668rem;
+    }
+
+    .blog-sub-tittle{
+      line-height: 21px;
+      font-size: 2.181rem;
+    }
+
+
+    }
+  @media only screen and (max-width: 321px){
+
+    html{
+      font-size: 6.5px;
+    }
+
+    header{
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      padding: 0 20px;
+    }
+    .header-container{
+      padding: 0;
+    }
+    
+    .home-container{
+      padding: 325px 20px 20px 20px;
+      width: calc(100% - 31px);
+      max-width: calc(100% - 31px) !important;
+      display: block;
+      background-position: left;
+    }
+
+
+
+    .mobile-menu-container{
+      position: relative;
+      top: 80px;
+      left: 0;
+    }
+    
+    .header-container>div:not(:first-child){
+      display: none;
+    }
+
+    .humburger-icon{
+      display: flex !important;
+      width: auto;
+      height: auto;
+    }
+
+    .header-commpany-logo {
+      width: 135px;
+    }
+
+    .mobile-nav-img img{
+      width: 30px;
+      height: auto;
+    }
+  
+    .home-tittle{
+      line-height: 40px;
+    }
+  
+    .home-list-container{
+      margin-top: 10px;
+    }
+
+    .home-list p{
+      line-height: 35px;
+    }
+  
+    .register-btn{
+      margin: 10px 0px;
+    }
+  
+    .nav-bar-ul{
+      column-gap: 15px;
+    }
+  
+    .register-btn{
+      column-gap: 10px;
+    }
+
+    .home-register-btn img{
+      width: 11px;
+      height: auto;
+    }
+  
+    .home-register-btn a {
+      line-height: 23px;
+      padding: 13px 16px;
+      width: 17%;
+    }
+  
+    .contact p{
+      margin-right: 15px;
+    }
+  
+    .country-list-container{
+      column-gap: 5px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 15px;
+      align-items: center;
+    }
+    
+    .home-register-btn{
+       margin: 15px 0;
+    }
+
+    .country-list img{
+      margin-right: 7px;
+    }
+
+    .home-img{
+      position: relative;
+      height: 300px;
+    }
+
+
+    .home-circle{
+      top: 60px;
+      left: 35px;
+      width: 70px;  
+      height: auto;
+    }
+  
+    .mobile-home-arrow{
+      top: 78px;
+      left: 93px;
+      width: 120px;
+      height: auto;
+    }
+  
+    .home-main-img{
+        position: relative;
+        top: 123px;
+        left: 50px;
+        width: 225px;
+    }
+  
+  
+  
+  
+  
+  
+      /* content 2 media 1681 */
+  
+    .content2-container{
+      padding: 25px 25px;
+      column-gap: 25px;
+      display: block;
+    }
+  
+    .content2-img{
+      text-align: center;
+    }
+
+    .content2-img img{
+      width: 230px;
+      height: auto;
+      text-align: center;
+    }
+    
+    .content2-tittle{
+    line-height: 23px;
+    margin: 10px 0px;
+    }
+    
+    .content2-p{
+      line-height: 21px;
+      margin: 10px 0px;
+    }
+
+    div#learn-online {order: 1;}
+    div#learn-online-img {order: 2;}
+    
+    .learn-more{
+        column-gap: 8px;
+        text-align: center;    
+        padding: 0%;   
+      }
+    
+    .learn-more a{
+      line-height: 20px;
+    }
+
+    .learn-more img{
+      width: 11px;
+      height: auto;
+    }
+    
+    .learn-more img{
+      padding-top: 8px;
+    }
+    
+    
+  
+  
+  
+    /* content 3 media 1681 */
+  
+  
+    .content3-container {
+      padding: 20px 20px;
+    }
+  
+    .content3-language{
+      padding: 5px 10px;
+      
+    }
+
+    .content3-tittle{
+      line-height: 25px;
+    }
+
+    .language-btn {
+      padding: 4px 5px;
+      font-size: 2.4rem;
+    }
+  
+    
+
+    .arrow-btn{
+      padding: 11px 14px ;
+    }
+  
+    .lesson-card-container{
+      column-gap: 12px;;
+    }
+
+    .language-header {
+      justify-content: space-between;
+      padding: 5px 0px 10px;
+      display: block;
+      padding-top: 20px;
+      position: relative;
+    }
+
+
+    .language-tittle img{
+      width: 28px;
+      height: auto;
+    }
+
+    .language-tittle p{
+      line-height: 0%;
+    }
+  
+    .onther-lesson-btn{
+      margin:  10PX auto 0px;
+    }
+
+    .onther-lesson-btn a{
+      border-radius: 8px;
+      padding: 10px 20px;
+    }
+  
+    .arrow-btn{
+      padding: 10px;
+    }
+    
+    .lesson-card {
+      padding: 13px;
+      border: 1px solid #ECECEC;
+      border-radius: 13px;
+      margin-top: 10px;
+    }
+
+    .lesson-card-tittle{
+      line-height: 25px;
+    }
+
+    .language-tittle svg{
+      width: 40px;
+      height: 40px;
+    }
+
+    .lesson-date{
+      margin: 0 0 5px 0;
+    }
+
+    .lesson-date p{
       line-height: 15px;
     }
 
-
-
-
-    
-        /* footer media 426px */
-  
-        .footer-container{
-          padding: 20px 30px;
-        }
-
-        .footer-nav-bar-ul{
-          display: grid;
-          grid-template-columns: auto auto;
-        }
-
-        .footer-flex{
-          margin-top: 10px;
-          display: grid;
-          grid-template-columns: auto auto;
-        }
-
-
+    .lession-thoughts{
+      line-height: 20px;
+      padding: 0px 0px 0px 38px;
     }
 
+    .lesson-card-container{
+      grid-template-columns: auto;
+    }
+
+    .live-btn{
+      padding: 1px 7px;
+    }
+
+    .teacher-profile img{
+      width: 30px;
+    }
+    
+    .content4-img img{
+      padding: 20px 0px 0px;
+      width: 249px;
+      height: auto;
+    }
+
+    .teacher-details-card{
+      padding: 5px;
+    }
+
+    .opinion-content{
+      line-height: 15px;
+    }
+
+    .score-card{
+      padding: 6px 10px;
+    }
+
+    .blog-date{
+      line-height: 5px;
+    }
+
+    .blog {
+      padding: 15px;
+    }
+  
+  }
