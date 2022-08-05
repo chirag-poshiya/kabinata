@@ -253,6 +253,10 @@ html {
     color: inherit;
     text-decoration: inherit
   }
+
+  img{
+    display: block;
+  }
   
   button,
   input,
@@ -503,14 +507,13 @@ html {
   }
 
 .mobile-menu-container{
+  z-index: 1;
   box-shadow: 4px 1px 9px rgb(21 20 57 / 30%);
   padding: 5px 0;
   background-color: #FFFFFF;
   display: none;
 }
-.mobile-menu-container.show-menu{
-  display: block;
-}
+
 /* .mobile-nav-bar{} */
 
 .mobile-nav-bar{
@@ -519,8 +522,9 @@ html {
 
 .mobile-nav-item{
   list-style: none;
-  padding: 10px 20px ;
+  padding: 10px 200px 10px 20px;
 }
+
 .mobile-nav-item:hover{
   background-color: #FFD25D;
 }
@@ -620,16 +624,15 @@ html {
   padding: 16px 25px;
   background-color: #000;
   border-radius: 10px;
-  /* width: 13%; */
+  width: fit-content;
 }
 
 .home-register-btn a img{
-  margin-left: 7px;
+  margin-left: 14px;
 }
 
 .register-btn{
-  /* display: flex; */
-  /* column-gap: 14px; */
+  display: flex;
   margin: 30px 0px;
 }
 
@@ -944,7 +947,6 @@ html {
 .card1-gread-btn1{
   background: #CAE6AB;
   border: 1px solid #8DC153;
-  
 }
 
 .card1-gread-btn2{
@@ -1413,7 +1415,11 @@ html {
   @media only screen and (max-width: 1681px){
   
   html{
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  header{
+    padding: 0px 150px;
   }
 
   .header-container{
@@ -1421,7 +1427,9 @@ html {
   }
   
   .home-container{
-    padding: 335px 200px 0px 200px;
+    padding: 295px 150px 0px 150px;
+    max-width: calc(100% - 300px);
+    width: calc(100% - 300px);
   }
 
   .home-tittle{
@@ -1437,7 +1445,7 @@ html {
   }
 
   .nav-bar-ul{
-    column-gap: 25px;
+    column-gap: 20px;
   }
   
 
@@ -1445,30 +1453,48 @@ html {
   .home-register-btn a {
     line-height: 25px;
     padding: 15px 20px;
-    width: 15%;
   }
 
   .contact p{
-    margin-right: 15px;
+    margin-right: 10px;
+  }
+
+  .login-btn{
+    padding: 10px 20px;
+    margin-right: 13px;
+  }
+
+  .register-btn-navbar{
+    padding: 10px 20px;
+    margin-right: 10px;
   }
 
   .country-list-container{
     column-gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .home-img{
+    position: relative;
   }
 
   
   .home-circle{
-    top: 166px;
-    left: 690px;
+    width: 120px;
+    top: 15px;
+    left: -90px;
   }
 
   .home-arrow{
-
+    top: 15px;
+    left: 90px;
   }
 
   .home-main-img{
-    width: calc(100% - 150px);
-
+    width: calc(100% - 30px);
+    position: relative;
+    top: 126px;
+    left: 109px;
   }
 
 
@@ -1554,7 +1580,11 @@ html {
   /* content4 container  */
 
   .content4-container{
-    padding: 0 200px 0px ;
+    padding: 0 150px 0px ;
+  }
+
+  .content4-flex{
+    background-size: contain;
   }
 
   .content4-background{
@@ -1586,8 +1616,19 @@ html {
         left: 640px;
     }
 
+  .score-card-group1{
+    margin-left: 90px;
+    padding: 50px 0px 20px 0px;
+  }
+
+  .score-card-group2{
+    margin-left: 190px;
+    padding: 0px 0px 50px 0px;
+  }
+
   .content4-img img{
-   
+   width: 330px;
+   padding: 45px 0px 0px 84px;
   }  
 
 
@@ -1648,6 +1689,10 @@ html {
     html{
       font-size: 12px;
     }
+
+    header{
+     padding: 0 130px;
+    }
   
     .header-container{
      
@@ -1671,33 +1716,39 @@ html {
     }
     
     .home-container{
-      padding: 285px 130px 0px;
+      padding: 285px 0px 0px 130px;
+      width: calc(100% - 130px);
+      max-width: calc(100% - 130px) !important;
     }
   
     .home-tittle{
       line-height: 55px;
+      width: 80%;
     }
   
     .home-list-container{
       margin-top: 15px;
     }
-  
-    .register-btn{
-      margin: 10px 0px;
+
+    .home-register-btn img{
+      margin-left: 2px;
     }
+
+    .register-btn{
+      margin: 0;
+    }
+
+    .home-register-btn {
+      margin: 15px 0 20px;
+    }  
   
     .nav-bar-ul{
       column-gap: 15px;
     }
   
-    .register-btn{
-      column-gap: 10px;
-    }
-  
     .home-register-btn a {
       line-height: 23px;
       padding: 13px 16px;
-      width: 17%;
     }
   
     .contact p{
@@ -1708,19 +1759,27 @@ html {
       column-gap: 10px;
     }
   
-   
+    .home-img{
+      position: relative;
+    }
 
     .home-circle{
-      top: 166px;
-      left: 690px;
+      top: 0;
+      left: -185px;
+      width: 120px;
     }
   
     .home-arrow{
-  
+      top: 6px;
+      left: -30px;
     }
   
     .home-main-img{
-  
+      position: relative;
+      top: 123px;
+      left: 0;
+      width: 463px;
+      height: auto;
     }
   
   
@@ -1728,7 +1787,7 @@ html {
   
   
   
-      /* content 2 media 1681 */
+      /* content 2 media 1450px */
   
     .content2-container{
       padding: 40px 100px;
@@ -1764,58 +1823,75 @@ html {
      padding-top: 8px;
     }
    
-   
   
-  
-  
+    
+    
     /* content 3 media 1681 */
-  
-  
+    
+    
     .content3-container{
-      padding: 50px 100px;
+      padding: 50px 80px;
     }
-  
+    
     .content3-language{
       padding: 15px 20px;
     }
-  
+    
     .language-btn{
       line-height: 30px;
       color: #666666;
       padding: 10px 15px;
     }
-  
+    
     .learn-more{
       padding: 0px;
     }
-  
+    
     .language-header {
       justify-content: space-between;
       padding: 20px 0px 25px;
     }
-  
+    
     .onther-lesson-btn{
       margin: 20px auto 0px;
       padding: 10px 20px;
     }
-  
+    
     .arrow-btn{
       padding: 15px 20px;
+      width: 30px;
+      height: 30px;
     } 
+    
+    .arrow-btn svg{
+      margin-top: 5px;
+    }
     
     .lesson-card {
       padding: 20px;
       border: 1px solid #ECECEC;
       border-radius: 15px;
     }
-
     
+    .live-btn{
+      margin: 8px 8px 8px 0px;
+    }
+    
+    .lesson-date p {
+      font-size: 1.2rem;
+    }
+    
+    .profile-name-card {
+      font-size: 1.5rem;
+    } 
+     .card-gread-btn {
+       font-size: 0.823rem;
+      }
 
-  
-  
-    /* content4 container  */
-  
-    .content4-container{
+
+      /* content4 container  */
+      
+      .content4-container{
       padding: 0 80px 0px ;
     }
   
@@ -1847,10 +1923,22 @@ html {
           top: 200px;
           left: 485px;
       }
+
+      .score-card-group1{
+        margin-left: 70px;
+        padding: 36px 0px 20px 0px;
+      }
+
+      .score-card-group2{
+        margin-left: 140px;
+        padding: 0px 0px 36px 0px;
+      }
   
-    .content4-img img{
-     
-    }  
+      .content4-img img{
+        width: 313px;
+        height: auto;
+        padding: 45px 0px 0px 142px;
+      }  
 
 
 
@@ -1889,7 +1977,23 @@ html {
       padding: 10px;
     }
     
+    .teacher-sub-tittle
+    ,.teacher-hr{
+      font-size: 0.95rem;
+      line-height: 17px;
+    }
     
+    .meterial-score{
+      font-size: 0.85rem;
+    }
+
+    .teacher-score{
+      column-gap: 8px;
+    }
+
+    .video-score{
+      column-gap: 5px;
+    }
     
     
     
@@ -1901,7 +2005,7 @@ html {
     }
 
     .content6-tittle{
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
     
     .teacher-opinion-grid{
@@ -1911,6 +2015,24 @@ html {
     
     .opinion-card{
       padding: 20px;
+    }
+
+    .opinion-sub-titlle p {
+      margin: 0 10px;
+      font-size: 1.6rem;
+    }
+
+    .see-all{
+      font-size: 1.1rem;
+    }
+
+    .opinion-content{
+      font-size: 1.2rem;
+      line-height: 24px;
+    }
+
+    .gergana{
+      font-size: 1.2rem;
     }
 
     /* content 7 media 1681px */
@@ -1925,11 +2047,13 @@ html {
     }
   
     .blog{
-      padding: 15px;
+      padding: 20px;
     }
+
     .blog-date{
       padding: 10px 0px 6px 0px;
       line-height: 15px;
+      font-size: 1.238rem;
     }
     
   
@@ -1964,21 +2088,19 @@ html {
       padding: 0px 50px;
     }
 
+   
+
     .contact p {
-      margin-right: 10px;
+      margin-right: 5px;
     }
 
     .login-btn{
-      padding: 8px 15px;
+      padding: 5px 15px;
     }
 
     .register-btn-navbar{
-      padding: 10px 20px;
+      padding: 5px 15px;
       margin-right: 10px;
-    }
-
-    .home-register-btn {
-      margin: 27px 0 22px;
     }
     
     .home-container{
@@ -1998,7 +2120,8 @@ html {
     }
 
     .home-list p{
-      line-height: 40px;
+      line-height: 35px;
+      font-size: 1.3rem;
     }
   
     .register-btn{
@@ -2009,14 +2132,14 @@ html {
       column-gap: 15px;
     }
   
-    .register-btn{
-      column-gap: 10px;
-    }
   
     .home-register-btn a {
       line-height: 23px;
       padding: 13px 16px;
-      width: 17%;
+    }
+
+    .home-register-btn a img {
+      margin-left: 10px;
     }
   
     .contact p{
@@ -2036,22 +2159,22 @@ html {
 
     .home-circle{
       top: 8px;
-      left: -41px;
-      width: 110px;
+      left: -122px;
+      width: 110px;  
       height: auto;
     }
   
     .home-arrow{
-      top: 8px;
-      left: 93px;
+      top: 12px;
+      left: 20px;
       width: 200px;
     }
   
     .home-main-img{
       position: relative;
-      top: 101px;
-      left: 105px;
-      width: 437px;
+      top: 106px;
+      left: 0;
+      width: 416px;
     }
   
   
@@ -2114,7 +2237,7 @@ html {
     }
   
     .language-btn{
-      line-height: 30px;
+      line-height: 38px;
       color: #666666;
       padding: 10px 15px;
     }
@@ -2129,8 +2252,9 @@ html {
     }
 
     .language-tittle img{
-      width: 60px;
+      width: 30PX;
       height: auto;
+      padding-right: 11px;
     }
   
     .onther-lesson-btn{
@@ -2149,7 +2273,13 @@ html {
       border-radius: 15px;
     }
 
+    .date-m{
+      margin: 5px 0px 29px 0px;
+    }
     
+    .lession-thoughts{
+      padding-top: 5px;
+    }
 
   
   
@@ -2166,6 +2296,10 @@ html {
 
     .score-card-tittle{
       line-height: 35px;
+    }
+
+    .content4-flex{
+      background-size: cover;
     }
   
      .score-card1{
@@ -2194,8 +2328,18 @@ html {
       
       }
   
-      .content4-img img{
-    
+      .score-card-group1{
+        margin-left: 70px;
+      }
+
+      .score-card-group2{
+        margin-left: 150px;
+      }
+
+
+    .content4-img img{
+        width: 266px;
+        padding: 45px 0px 0px 55px;
     }  
   
   
@@ -2203,7 +2347,7 @@ html {
   
   
     .content5-container{
-      padding: 30px 80px;
+      padding: 30px 50px;
     }
 
     .teacher-profile img {
@@ -2214,6 +2358,9 @@ html {
 
     .BGN{
       padding: 1px 0px 4px 0px;
+    }
+
+    .teacher-sub-tittle{
 
     }
 
@@ -2233,15 +2380,17 @@ html {
       padding: 10px 20px;
     }
     
-    
-    
+    .opinion-content{
+      font-size: 1.1rem;
+      line-height: 19px;
+    }
     
     
     
     /* content 6 start  */
     
     .content6-container{
-      padding: 50px 80px;
+      padding: 35px 80px;
     }
 
     .content6-tittle{
@@ -2251,6 +2400,14 @@ html {
     .teacher-opinion-grid{
       column-gap: 15px;
       padding: 20px 0px 25px;
+    }
+
+    .opinion-profile{
+      margin-bottom: 15px;
+    }
+
+    .opinion-content{
+      line-height: 20px;
     }
     
     .opinion-card{
@@ -2272,14 +2429,14 @@ html {
       padding: 15px;
     }
     .blog-date{
-      padding: 10px 0px 6px 0px;
+      padding: 10px 0px 1px 0px;
       line-height: 15px;
     }
     
     /* footer media 1681px */
 
     .footer-container{
-      padding: 45px 80px;
+      padding: 35px 60px;
     }
 
     .footer-flex{
@@ -2296,36 +2453,28 @@ html {
     }
 
     }
+
    @media only screen and (max-width: 1025px){
 
-
     html{
-      font-size: 9px;
+      font-size: 10px;
     }
   
+
     .header-container{
-     
+      padding-left: 0;
     }
+
+    
 
     .header-commpany-logo {
       width: 150px;
     }
 
-    .contact p {
-      margin-right: 10px;
-    }
-
-    .login-btn{
-      padding: 8px 15px;
-    }
-
-    .register-btn-navbar{
-      padding: 10px 20px;
-      margin-right: 10px;
-    }
+   
     
     .home-container{
-      padding-left: 77px;
+      padding-left: 50px;
     }
   
     .home-tittle{
@@ -2347,20 +2496,28 @@ html {
     .nav-bar-ul{
       column-gap: 15px;
     }
-  
-    .register-btn{
-      column-gap: 10px;
-    }
 
     .home-register-btn img{
-      width: 11px;
+      width: 12px;
       height: auto;
     }
   
     .home-register-btn a {
-      line-height: 23px;
-      padding: 13px 16px;
-      width: 17%;
+      line-height: 20px;
+      padding: 10px 12px;
+      margin: 0;
+    }
+    
+    .home-register-btn a img{
+      margin-left: 8px;
+    }
+
+    .home-sub-tittle{
+      font-size:  1.5rem;
+    }
+
+    .home-register-btn{
+      margin: 7px 0 7px;
     }
   
     .contact p{
@@ -2378,23 +2535,23 @@ html {
     }
 
     .home-circle{
-      top: 0;
+      top: 18px;
       left: -90px;
       width: 100px;
       height: auto;
     }
   
     .home-arrow{
-      top: 3px;
-      left: 30px;
-      width: 200px;
+      top: 35px;
+      left: 43px;
+      width: 166px;
     }
   
     .home-main-img{
       position: relative;
-      top: 101px;
-      left: 23px;
-      width: 385px;
+      top: 126px;
+      left: 0;
+      width: 369px;
     }
   
   
@@ -2405,10 +2562,10 @@ html {
   
       /* content 2 media 1681 */
   
-    .content2-container{
+  .content2-container{
       padding: 30px 45px;
       column-gap: 25px;
-    }
+  }
   
    
    .content2-tittle{
@@ -2417,12 +2574,12 @@ html {
     }
    
    .content2-p{
-     line-height: 30px;
+     line-height: 22px;
      margin: 15px 0px;
     }
    
    .learn-more{
-       column-gap: 10px;
+       column-gap: 7px;
     }
    
    .learn-more a{
@@ -2430,7 +2587,9 @@ html {
     }
    
    .learn-more img{
-     padding-top: 8px;
+     padding-top: 0;
+     width: 13px;
+     height: auto;
     }
    
    
@@ -2441,11 +2600,11 @@ html {
   
   
     .content3-container{
-      padding: 30px 65px;
+      padding: 30px 35px;
     }
   
     .content3-language{
-      padding: 15px 20px;
+      padding: 10px 15px;
     }
   
     .language-btn{
@@ -2467,9 +2626,7 @@ html {
       padding: 10px 0px 15px;
     }
 
-    .language-tittle img{
-      width: 57px;
-    }
+
   
     .onther-lesson-btn{
       margin:  15PX auto 0px;
@@ -2481,6 +2638,14 @@ html {
   
     .arrow-btn{
       padding: 15px;
+      width: 15px;
+      height: 15px;
+    }
+
+    .arrow-btn svg{
+      margin-top: 0;
+      width: 11px;
+      height: auto;
     }
     
     .lesson-card {
@@ -2488,6 +2653,28 @@ html {
       border: 1px solid #ECECEC;
       border-radius: 13px;
     }
+
+    .language-btn{
+      line-height: 27px;
+    }
+
+    .lesson-date p {
+      font-size: 1.3rem;
+    }
+
+    .profile-name-card {
+      margin: 5px 0 0 7px;
+      font-size: 1.7rem;
+    }
+
+    .gread-btn{
+      bottom: 14px;
+    }
+
+    .card-gread-btn {
+      font-size: 0.93rem;
+    }
+
 
 
     
@@ -2544,7 +2731,7 @@ html {
   
   
     .content5-container{
-      padding: 30px 80px;
+      padding: 25px 30px;
     }
 
     .teacher-profile img {
@@ -2561,8 +2748,8 @@ html {
     .teacher-profile-grid{
       column-gap: 10px;
       row-gap: 10px;
-      padding: 20px 0px 25px;
-      grid-template-columns: auto auto;
+      padding: 15px 0px 15px;
+      grid-template-columns: repeat(5, 1fr);
     }
 
     .teacher-details-card{
@@ -2571,15 +2758,25 @@ html {
     
     .other-teacher-btn a {
       padding: 15px 20px;
-    };
+    }
 
+    .teacher-country img{    
+      top: 13px;
+      right: 7px;
+      width: 15px;
+      height: auto;
+    }
+
+    .teacher-sub-tittle, .teacher-hr{
+      line-height: 13px;
+    }
     
     
     
     /* content 6 start  */
     
     .content6-container{
-      padding: 40px 60px;
+      padding: 20px 30px;
     }
 
     .content6-tittle{
@@ -2607,11 +2804,11 @@ html {
     /* content 7 media 1681px */
     
     .content7-container{
-      padding: 50px 100px;
+      padding: 50px 40px;
     }
 
     .content7-tittle{
-      margin-bottom: 25px;
+      padding-bottom: 25px;
       line-height: 45px;
     }
     
@@ -2633,7 +2830,8 @@ html {
         .footer-container{
           padding: 40px 50px;
         }
-    }
+   
+      }
 
 
    @media only screen and (max-width: 768px){
@@ -2657,10 +2855,14 @@ html {
       display: none;
     }
 
+    .mobile-menu-container.show-menu{
+      display: block;
+    }
+
     .mobile-menu-container.show-menu {
       position: absolute;
-      top: 60px;
-      right: 0%;
+      top: 55px;
+      right: 48px;
     }
 
 
@@ -2701,9 +2903,11 @@ html {
       margin-top: -320px;
       width: calc(100% - 50px);
       max-width: calc(100% - 50px) !important;
+      overflow: hidden;
     }
   
     .home-tittle{
+      width: 100%;
       line-height: 40px;
     }
   
@@ -2723,19 +2927,15 @@ html {
       column-gap: 15px;
     }
   
-    .register-btn{
-      column-gap: 10px;
-    }
 
     .home-register-btn img{
-      width: 11px;
+      width: 12px;
       height: auto;
     }
   
     .home-register-btn a {
       line-height: 23px;
       padding: 13px 16px;
-      width: 17%;
     }
   
     .contact p{
@@ -2750,7 +2950,10 @@ html {
       margin-bottom: 20px;
     }
   
-   
+  
+    .home-register-btn{
+      margin: 16px 0 22px;
+    }
     
 
     .home-circle{
@@ -2770,7 +2973,7 @@ html {
   
     .home-main-img{
       left: unset;
-      top: 196px;
+      top: 210px;
       bottom: 0;
       width: 320px;
 
@@ -2828,11 +3031,14 @@ html {
   
   
     .content3-container{
-      padding: 25px 50px;
+      padding: 25px 30px;
     }
   
     .content3-language{
-      padding: 10px 15px;
+      column-gap: 6px;
+      padding: 10px;
+      overflow: hidden;
+      width: 100%;
     }
 
     .content3-tittle{
@@ -2843,7 +3049,6 @@ html {
       line-height: 20px;
       color: #666666;
       padding: 8px 7px;
-      height: 40px;
       white-space: nowrap;
     }
   
@@ -2866,7 +3071,7 @@ html {
 
     .language-tittle img{
       width: 30px;
-      margin-right: 10px;
+      padding-right: 10px;
     }
   
     .onther-lesson-btn{
@@ -2878,11 +3083,21 @@ html {
     }
   
     .arrow-btn{
-      padding: 10px;
+      height: 35px;
+      width: 35px;
+      padding: 0;
+      background: linear-gradient(276.38deg, #FFF9EB 5.03%, rgba(255, 249, 235, 0) 103.97%);
+      border: none;
+    }
+
+    .arrow-btn:hover{
+      border: none;
     }
 
     .live-btn{
       margin: 3px 5px 3px 0px ;
+      padding: 4px 10px;
+      border-radius: 25px;
     }
     
     .lesson-card {
@@ -2895,7 +3110,33 @@ html {
       font-size: 1.2rem;
     }
 
+    .arrow-btn svg {
+      margin-top: 10px;
+      height: 20px;
+    }
 
+    .arrow-btn-right{
+      position:absolute;
+      right: 0px;
+      padding: 0;
+      border-radius: 0px;
+      background-color: rgba(255,255,255,0.6);
+      border: none;
+    }
+
+    .date-m {
+      margin: 5px 0px 25px 0px;
+    }
+
+    .lesson-card-tittle{
+      line-height: 25px;
+    }
+
+    .lesson-card{
+      display: -moz-inline-grid;
+      display: -ms-inline-grid;
+      display: inline-grid;
+    }
 
     
 
@@ -2907,6 +3148,10 @@ html {
       padding: 0;
       position: relative;
       display: block;
+    }
+
+    .content4-flex{
+      background-size: cover;
     }
   
     .content4-background{
@@ -2950,12 +3195,13 @@ html {
       }
 
     .content4-img{
+      
       text-align: center;
     }
   
     .content4-img img{
-      padding: 45px 0px 0px ;
-      width: 260px;
+      padding: 57px 0px 0px ;
+      width: 220px;
     }
 
     .score-card-group1{
@@ -2973,7 +3219,7 @@ html {
   
   
     .content5-container{
-      padding: 25px 60px;
+      padding: 25px 50px;
     }
 
     .teacher-profile img {
@@ -3002,13 +3248,34 @@ html {
       padding: 15px 20px;
     }
 
+    .teacher-profile-tittle{
+      font-size: 1.425rem;
+    }
+
+    .teacher-sub-tittle, .teacher-hr{
+      line-height: 10px;
+      font-size: 1.226rem;      
+    }
+
+    .meterial-score {
+      font-size: 1.026rem;
+      line-height: 10px;
+    }
+
+    .video-score {
+      column-gap: 5px;
+    }
+
+    .teacher-score {
+      column-gap: 10px;
+    }
     
     
     
     /* content 6 start  */
     
     .content6-container{
-      padding: 25px 50px;
+      padding: 25px 30px;
     }
 
     .content6-tittle{
@@ -3020,18 +3287,30 @@ html {
       margin-bottom: 5px;
     }
 
+    .opinion-content{
+      font-size: 1.1rem;
+      line-height: 16px;
+    }
+
+    .see-all{
+      font-size: 1.211rem;
+      line-height: 13px;
+    }
+
     .opinion-sub-titlle p {
       margin: 0 0 0 7px;
+      font-size: 1.6rem;
     }
 
     .opinion-profile img{
       width: 30px;
       height: auto;
+      margin-top: 5px;
     }
     
     .teacher-opinion-grid{
-      column-gap: 15px;
-      padding: 20px 0px 25px;
+      column-gap: 10px;
+      padding: 20px 0px 10px;
     }
     
     .opinion-card{
@@ -3045,7 +3324,7 @@ html {
     /* content 7 media 1681px */
     
     .content7-container{
-      padding: 30px 60px;
+      padding: 30px ;
     }
 
     .content7-tittle{
@@ -3063,13 +3342,22 @@ html {
     }
     .blog-date{
       padding: 10px 0px 6px 0px;
-      line-height: 15px;
+      font-size: 1.268rem;
     }
+
+    .blog-sub-tittle { 
+      line-height: 20px;
+    }
+
     
         /* footer media 1681px */
   
         .footer-container{
           padding: 40px 50px;
+        }
+
+        .footer-nav-bar-ul{
+          margin: 0;
         }
     }
 
@@ -3178,20 +3466,17 @@ html {
     .nav-bar-ul{
       column-gap: 15px;
     }
-  
-    .register-btn{
-      column-gap: 10px;
-    }
 
     .home-register-btn img{
-      width: 11px;
+      width: 12px;
+      margin-left: 8px;
       height: auto;
     }
   
     .home-register-btn a {
       line-height: 23px;
       padding: 13px 16px;
-      width: 17%;
+      font-size: 2.311rem;
     }
   
     .contact p{
@@ -3266,6 +3551,7 @@ html {
       width: 90%;
       height: auto;
       text-align: center;
+      margin: auto;
     }
    
    .content2-tittle{
@@ -3460,7 +3746,7 @@ html {
     /* content4 container  */
   
     .content4-container{
-      padding: 0px 0px 0px 20px;
+      padding: 0px;
     }
 
     .content4-flex{
@@ -3515,7 +3801,9 @@ html {
       padding: 10px 20px;
     }
 
-
+    .score-card-row{
+      padding-left: 20px;
+    }
 
 
   
@@ -3529,9 +3817,10 @@ html {
     }
   
     .content4-img img{
-      padding: 10px 0px 0px;
-      width: 331px;
+      padding: 18px 0px 0px;
+      width: 256px;
       height: auto;
+      margin: auto;
     }  
   
   
@@ -3899,20 +4188,15 @@ html {
     .nav-bar-ul{
       column-gap: 15px;
     }
-  
-    .register-btn{
-      column-gap: 10px;
-    }
 
     .home-register-btn img{
-      width: 11px;
+      width: 12px;
       height: auto;
     }
   
     .home-register-btn a {
       line-height: 23px;
       padding: 13px 16px;
-      width: 17%;
     }
   
     .contact p{
@@ -4356,14 +4640,13 @@ html {
     }
 
     .home-register-btn img{
-      width: 11px;
+      width: 12px;
       height: auto;
     }
   
     .home-register-btn a {
       line-height: 23px;
       padding: 13px 16px;
-      width: 17%;
     }
   
     .contact p{
@@ -4602,3 +4885,508 @@ html {
     }
   
   }
+
+
+
+
+        /* all about courses
+        page 2 start  */
+
+
+        /* courses home content */
+        
+.h-110px{
+  height: 110px;
+}
+ 
+
+    
+.courses-home-container{
+  background-color: #FFF9EB;
+  padding: 0px 200px;
+}
+
+.courses-home-flex{
+  display: flex;
+  justify-content: space-between;
+  background-image: url(image/courses/home-backgraund.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.courses-home-tittle-div{
+  padding: 70px 0px 66px 0px;
+}
+
+.courses-home-tittle{
+  font-size: 4.375rem;
+  line-height: 78px;
+  font-family: 'Crimson Pro' , sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+
+.courses-hom-sub-tittle{
+  display: flex;
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #666666;
+  align-items: center;
+ 
+}
+
+
+.courses-home-sub-tittle-div{
+ display: flex;
+ column-gap: 10px;
+}
+
+.courses-hom-sub-tittle svg{
+  margin-right: 10px;
+}
+
+
+.courses-home-img svg{
+  padding: 50px 0px 0px;
+}
+
+
+.courses-sub-header{
+  padding: 30px 200px;
+}
+
+.courses-menu-nav-bar{
+ 
+}
+
+.courses-menu-ul{
+  display: flex;
+  column-gap: 40px;
+}
+
+.courses-nav-item{
+  display: flex;
+  column-gap: 10px;
+}
+
+.courses-menu-text-highlight{
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 34px;
+  color: #000;
+}
+
+.courses-notification-highlight{
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 22px;
+  color: #000;
+  background: #FFD25D;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.courses-notification-text{
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 34px;
+  color: #666666;
+}
+
+.courses-notification{
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 22px;
+  color:#666666;
+  background: #EFEFEF;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.hr-courses-header{
+  border: 1px solid  #ECECEC;;
+}
+
+
+
+    /* home container end  */
+
+
+    /* content start */
+
+.course-content-main-div{
+
+  padding: 20px 200px 70px;
+}
+
+.courses-main-card{
+    padding: 25px;
+    border: 1px solid #ECECEC;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.courses-main-card:hover{
+  border: 1px solid #FFD25D;
+}
+
+.courses-card-tittle-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses-card-tittle{
+  display: flex;
+  align-items: center;
+}
+
+.courses-card-tittle svg{
+
+}
+
+.courses-card-tittle p{
+  font-size: 1.75rem;
+  color: #000;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.home-work-main-div{
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
+}
+
+.home-work-div{
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.courses-homework-svg svg{
+
+}
+
+
+.lession-thoughts-flex{
+  display: flex;
+  align-items: center;
+}
+
+.courses-lesson-thoghts{
+    font-size: 1rem;
+    color:#666666;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.courses-lesson-score{
+    font-size: 1rem;
+    color:#000;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+
+.courses-card-content p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #000;
+    margin: 10px 0px;
+
+}
+
+.courses-card-hr{
+  border: 1px solid #ECECEC;
+  border-radius: 15px;
+}
+
+
+.upcomeing-courses-div{
+
+}
+
+.ucomeing-courses{
+
+}
+
+
+.upcomeing-courses-tittle{
+   font-size: 1.125rem;
+   font-weight: 300;
+   color: #666666;
+   line-height: 22px;
+   padding: 15px 0px 10px 0px;
+}
+
+.upcomeing-card-grid{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ column-gap: 10px;
+}
+
+.upcomeing-card{
+  border: 1px solid #ECECEC;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.upcomeing-card:hover{
+  -webkit-box-shadow: 2px 27px 99px -29px rgba(0,0,0,0.08);
+  -moz-box-shadow: 2px 27px 99px -29px rgba(0,0,0,0.08);
+  box-shadow: 2px 27px 99px -29px rgba(0,0,0,0.08);
+  border: 1px solid #c7c7c7;
+}
+
+.upcomeing-card-tittle p{
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17px;
+  color: #000000;
+}
+
+.upcomeing-courses-date{
+
+}
+
+.courses-live-btn{
+ display: flex;
+ column-gap: 5px; 
+ background-color: #ECF3E5;
+ padding: 6px 15px;
+ color: #8CC051;
+ border-radius: 30px;
+ font-size: 0.625rem;
+ font-weight: 400;
+}
+
+.courses-live-btn img {
+  width: 8px;
+  height: auto;
+}
+
+.courses-live-btn-flex{
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.upcomeing-courses-date {
+  font-size: 0.625rem;
+  line-height: 12px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.upcomeing-teacher-profile-card{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.upcomeing-teacher-img{
+  margin-right: 7px;
+}
+
+.courses-profile-name-card{
+  font-size: 0.875rem;
+   font-weight: 400;
+   color: #000000;
+   line-height: 17px;
+}
+
+.courses-gread-btn{
+  position:absolute;
+  right: 0;
+}
+
+.courses-card-gread-btns{
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 9px;
+  padding: 6px 8px;
+}
+
+.courses-card1-gread-btn1{
+  background: #CAE6AB;
+  border: 1px solid #8DC153;
+  border-radius: 20px;
+}
+
+
+.courses-card1-gread-btn2{
+  background: #8CC051;
+  border: 1px solid #8DC153;
+  border-radius: 30px;
+}
+
+.courses-live-btn{
+  margin: 5px 0px 15px;
+}
+
+.courses-date-m{
+  margin: 10px 0px 20px 0px;
+}
+
+.courses-card2-gread-btn1{
+  background: #FFDE9C;
+  border: 1px solid #F6BB43;
+  border-radius: 20px;
+}
+
+
+.courses-card2-gread-btn2{
+  background: #FFD174;
+  border: 1px solid #F6BB43;
+  border-radius: 20px;
+}
+
+.courses-card2-gread-btn3{
+  background: #FFF9EB;
+  border-radius: 20px;
+}
+
+
+.courses-card3-gread-btn1{
+  background: #FFD174;
+  border: 1px solid #F6BB43;
+  border-radius: 20px;
+}
+
+.courses-card3-gread-btn2{
+  background: #F6BB43;
+  border: 1px solid #F6BB43;
+  border-radius: 20px;
+}
+
+.courses-card3-gread-btn3{
+  background: #FB6E52;
+  border: 1px solid #FB6E52;
+  border-radius: 20px;
+}
+
+.upcomeing-courses-div{
+  display: flex;
+}
+
+
+.active-teachers-tittle{
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #666666;
+  padding: 15px 0px 10px 0px;
+}
+
+.active-teachers-grid{
+  display: grid;
+  grid-template-columns:repeat(4, 1fr) ;
+  column-gap: 10px;
+
+}
+
+.active-teacher-profile{
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  border-radius: 10px;
+  padding: 14px 22px;
+}
+
+.active-teacher-profile:hover{
+  -webkit-box-shadow: 2px 27px 99px -29px rgba(0,0,0,0.08);
+  -moz-box-shadow: 2px 27px 99px -29px rgba(0,0,0,0.08);
+  box-shadow: 2px 27px 99px -29px rgba(0,0,0,0.08);
+  border: 1px solid #c7c7c7;
+}
+
+.active-teacher-profile svg{
+  margin: auto;
+}
+
+.avtive-teacher-name{
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17px;
+  text-align: center;
+  color: #000;
+  margin: 5px 0px;
+}
+
+.active-teacher-score-div{
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.active-teacher-lesson{
+  display: flex;
+  column-gap: 3.45px;
+}
+
+.active-teacher-lesson svg{
+
+}
+
+.active-teacher-lesson-score{
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 10px;
+}
+
+
+.more-active-teacher-div{
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 33px 20px;
+  text-align: center;
+}
+
+.more-teacher-score{
+  font-size: 1rem;
+  font-weight: 300;
+  color: #666666;
+  line-height: 19px;
+}
+
+.more-teacher-text{
+  font-size: 1rem;
+  font-weight: 300;
+  color: #818181;
+  line-height: 19px;
+}
+
+.active-hr{
+  height: 141px;
+  box-shadow: none;
+  border: 1px solid #ECECEC;
+  margin: 10px;
+}
+
+    /* media screen courses landing page */
+
+
+@media (max-width:1680px){
+
+  .courses-home-container{
+    padding: 0px 150px;
+  }
+
+  .courses-sub-header{
+    padding: 30px 150px; 
+  }
+
+  .course-content-main-div{
+    padding: 20px 150px 60px;
+  }
+
+  .courses-lesson-thoghts{
+    font-size: 1.2rem;;
+  }
+
+
+}
