@@ -421,7 +421,7 @@ html {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px 60px 0px;
+    /* padding: 20px 0px 60px 0px; */
   }  
 
   
@@ -552,7 +552,7 @@ html {
   width: calc(100% - 400px);
   max-width: calc(100% - 400px) !important;
   padding: 335px 200px 0px 200px;
-  margin-top: -320px;
+  margin-top: -260px;
 }
 
 
@@ -1164,6 +1164,7 @@ html {
       font-size: 0.75rem;
       line-height: 15px;
       color: #666666;
+      
     }
 
     .meterial-score{
@@ -2549,7 +2550,7 @@ html {
   
     .home-main-img{
       position: relative;
-      top: 126px;
+      top: 96px;
       left: 0;
       width: 369px;
     }
@@ -2900,7 +2901,7 @@ html {
     
     .home-container{
       padding: 355px 0px 0px 50px;
-      margin-top: -320px;
+      margin-top: -350px;
       width: calc(100% - 50px);
       max-width: calc(100% - 50px) !important;
       overflow: hidden;
@@ -4889,6 +4890,26 @@ html {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /* all about courses
         page 2 start  */
 
@@ -5005,7 +5026,8 @@ html {
 }
 
 .hr-courses-header{
-  border: 1px solid  #ECECEC;;
+  border: none;
+  border-top: 1px solid #ECECEC;
 }
 
 
@@ -5110,16 +5132,32 @@ html {
 }
 
 .ucomeing-courses{
-
+  border-right: 1px solid #ECECEC;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  width: 100%;
 }
 
+.upcomeing-1-more-courses{
+  display: none;
+}
+
+.upcomeing-2-more-courses{
+  display: none;
+}
+
+.upcomeing-3-more-courses{
+  display: none;
+}
 
 .upcomeing-courses-tittle{
-   font-size: 1.125rem;
+
+  font-size: 1.125rem;
    font-weight: 300;
    color: #666666;
    line-height: 22px;
-   padding: 15px 0px 10px 0px;
+   padding: 0px 0px 10px 0px;
 }
 
 .upcomeing-card-grid{
@@ -5131,7 +5169,7 @@ html {
 .upcomeing-card{
   border: 1px solid #ECECEC;
   border-radius: 10px;
-  padding: 15px;
+  padding: 13px 15px 12px 13px;
 }
 
 .upcomeing-card:hover{
@@ -5156,6 +5194,7 @@ html {
  display: flex;
  column-gap: 5px; 
  background-color: #ECF3E5;
+ margin: 5px 0px 13px;
  padding: 6px 15px;
  color: #8CC051;
  border-radius: 30px;
@@ -5189,6 +5228,8 @@ html {
 
 .upcomeing-teacher-img{
   margin-right: 7px;
+  width: 30px;
+  height: auto;
 }
 
 .courses-profile-name-card{
@@ -5222,10 +5263,6 @@ html {
   background: #8CC051;
   border: 1px solid #8DC153;
   border-radius: 30px;
-}
-
-.courses-live-btn{
-  margin: 5px 0px 15px;
 }
 
 .courses-date-m{
@@ -5303,7 +5340,7 @@ html {
   border: 1px solid #c7c7c7;
 }
 
-.active-teacher-profile svg{
+.active-teacher-profile img{
   margin: auto;
 }
 
@@ -5344,6 +5381,11 @@ html {
   border-radius: 10px;
   padding: 33px 20px;
   text-align: center;
+  border: 1px solid #fff;
+}
+
+.more-active-teacher-div:hover{
+  border: 1px solid #d9d9d9;
 }
 
 .more-teacher-score{
@@ -5367,10 +5409,15 @@ html {
   margin: 10px;
 }
 
+.courses-live-btn-flex-p{
+  margin-bottom: 10px;
+}
+
     /* media screen courses landing page */
 
 
 @media (max-width:1680px){
+
 
   .courses-home-container{
     padding: 0px 150px;
@@ -5381,12 +5428,268 @@ html {
   }
 
   .course-content-main-div{
-    padding: 20px 150px 60px;
+    padding: 20px 120px 60px;
   }
 
   .courses-lesson-thoghts{
     font-size: 1.2rem;;
   }
 
+  .courses-live-btn{
+    font-size: 0.725rem;
+  }
+
+
+
+  .upcomeing-courses-date{
+    font-size: 0.750rem;
+  }
+
+  .upcomeing-card-tittle p{
+    font-size: 0.9rem;
+  }
+
+  .active-hr{
+   height: 154px;
+  }
+
 
 }
+
+
+@media (max-width:1441px) {
+  
+
+  .courses-home-tittle-div{
+    padding: 50px 0px 45px;
+  }
+
+
+  .courses-home-img svg {
+    padding: 50px 0px 0px;
+    width: 500px;
+    height: 194px;
+  }
+
+  .courses-main-card{
+    padding: 20px;
+  }
+
+  .active-teachers-grid{
+    margin: 10px 0px 0px;
+  }
+
+  .beginners-courses{
+    display: none;
+  }
+
+  .upcomeing-card-grid{
+    display: flex;
+    align-items: center;
+  }
+
+  .upcomeing-card{
+    width: 100%;
+  }
+
+  .upcomeing-1-more-courses{
+    display: block;
+  }
+
+  .more-upcomingcourses-div{
+    padding: 20px 15px;
+    border-radius: 15px;
+    border: 1px solid #FFFFFF;
+  }
+
+  .more-upcomingcourses-div:hover{
+    border: 1px solid #ECECEC;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* allteacher  landding page :start */
+
+
+
+  .teacher-home-container{
+    background-color: #FFF9EB;
+    padding: 0px 200px;
+  }
+
+
+  .teacher-home-flex{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(image/courses/home-backgraund.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+
+  .teacher-home-tittle-div{
+    padding: 70px 0px 66px ;
+  }
+
+
+  .teacher-home-tittle{
+    font-family: 'Crimson Pro', sans-serif ;
+    font-weight: 600;
+    font-size: 4.375rem;
+    line-height: 78px;
+    color: #000
+  }
+
+
+  .teacher-home-sub-tittle-div{
+    display: flex;
+    column-gap: 10px;
+  }
+
+  .teacher-hom-sub-tittle{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+  }
+
+  .teacher-hom-sub-tittle a{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 24px; 
+    color: #666666;
+  }
+
+
+  /* .teacher-hom-sub-tittle svg{
+    margin-right: 10px;
+  } */
+
+
+  .teacher-home-img svg{
+    padding-top: 68px;
+  }
+
+
+     /* allteacher home container end here */
+
+     /* all teacher content start */
+
+
+  .teacher-content-main-div{
+    padding: 40px 190px;
+  }
+
+  .teacher-main-card{
+
+  }
+
+  .teacher-card-tittle-div{
+
+  }
+
+  .teacher-card-tittle{
+
+  }
+
+  .teacher-card-tittle svg{
+
+  }
+
+  .allteacher-right-tittle-div{
+
+  }
+
+  .allteacher-right-tittle{
+
+  }
+
+  .allteacher-right-tittle svg{
+
+  }
+
+  .allteacher-lesson-taught-flex{
+
+  }
+
+  .allteacher-lesson-text{
+
+  }
+
+  .allteacher-lesson-score{
+
+  }
+
+
+  .all-teacher-grid-div{
+    
+  }
