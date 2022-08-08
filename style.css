@@ -5506,6 +5506,19 @@ html {
     border: 1px solid #ECECEC;
   }
 
+}
+
+
+@media (max-width:1260px){
+
+  .courses-sub-header{
+    padding: 22px 120px;
+  }
+
+  .courses-home-sub-tittle-div{
+
+  }
+ 
 
 
 }
@@ -5575,11 +5588,12 @@ html {
 
 
 
-
-
    /* allteacher  landding page :start */
 
 
+@media screen {
+  
+ 
 
   .teacher-home-container{
     background-color: #FFF9EB;
@@ -5693,3 +5707,5 @@ html {
   .all-teacher-grid-div{
     
   }
+
+}
