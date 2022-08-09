@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>All_Teacher_BYSubject</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;800;900&family=Inter:wght@200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+           <!-- header-start -->
+
+           <header>
+            <div class="header-container h-110px">
+
+                <div>
+                    <a href="index.html">
+                        <img  class="header-commpany-logo" src="image/Frame.svg" alt="commpany-logo">
+                    </a>
+                </div>
+
+                <div class="nav-bar">
+                    <ul class="nav-bar-ul">
+                        <li class="nav-item"><a href="all_courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="highlight-teacher-nav" href="all_teacher.html">Teachers</a></li>
+                        <li class="nav-item"><a href="#">Items</a></li>
+                        <li class="nav-item"><a href="#">Certificates</a></li>
+                        <li class="nav-item"><a href="#">For companies</a></li>
+                        <li class="nav-item"><a href="#">Opinions</a></li>
+                    </ul>
+                </div>
+
+                <div class="login-container">
+
+                    <div class="contact">
+                        <p>Contact</p>
+                    </div>
+
+                    <div class="login-btn">
+                        <a href="#">Login</a>
+                    </div>
+
+                    <div class="register-btn-navbar">
+                        <a href="#">Register</a>
+                    </div>
+
+                    <div class="profile-img">
+                        <svg width="78" height="79" viewBox="0 0 78 79" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g filter="url(#filter0_d_2_6992)">
+                            <rect x="14" y="10.5" width="50" height="50" rx="25" fill="url(#pattern0)"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_2_6992" x="0" y="0.5" width="78" height="78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="7"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.483333 0 0 0 0 0.45816 0 0 0 0 0.392708 0 0 0 0.33 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_6992"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_6992" result="shape"/>
+                            </filter>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_2_6992" transform="scale(0.0119048)"/>
+                            </pattern>
+                            <image id="image0_2_6992" width="84" height="84" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                            </svg>                            
+                    </div>
+                </div>
+            </div>
+
+             <!-- mobile menu start here -->
+
+             <div class="humburger-icon" onclick="myFunction()">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H15M1 7H15M1 13H15" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                    
+            </div>
+            </div>
+        <div class="mobile-menu-container" id="mobile-menu-container">
+            <nav class="mobile-nav-bar">
+            <ul class="mobile-nav-bar-ul">
+                <li class="mobile-nav-item"><a href="all_courses.html">Courses</a></li>
+                <li class="mobile-nav-item"><a href="all_teacher.html">Teachers</a></li>
+                <li class="mobile-nav-item"><a href="#">Items</a></li>
+                <li class="mobile-nav-item"><a href="#">Certificates</a></li>
+                <li class="mobile-nav-item"><a href="#">For companies</a></li>
+                <li class="mobile-nav-item"><a href="#">Opinions</a></li>
+                <li class="mobile-nav-item"><a href="#">Contact</a></li>
+                <li class="mobile-nav-item"><a href="#">Login</a></li>
+                <li class="mobile-nav-item"><a href="#">Register</a></li>
+                <li class="mobile-nav-item mobile-nav-img"><img src="image/united-kingdom.png" alt="profile"></li>
+            </ul>
+        </nav>
+        </div>
+
+        </header>
+
+
+        <!-- main home container start -->
+
+        <div class="english-teacher-home-container">
+
+            <div class="english-teacher-home-flex">
+                <div class="english-teacher-home-tittle-div">
+                    <div class="english-teacher-home-tittle">
+                        <p>English Teachers</p>
+                    </div>
+
+                    <div class="english-teacher-home-sub-tittle-div">
+                            <a  class="english-teacher-hom-sub-tittle" href="#">Home</a>
+                            <a  class="english-teacher-hom-sub-tittle"href="#">
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4" fill="#666666"/>
+                                    </svg>                                    
+                                Teachers
+                            </a>
+                            <a  class="english-teacher-hom-sub-tittle"href="#">
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4" fill="#666666"/>
+                                    </svg>                                    
+                                    Foreign Language
+                            </a>
+                            <a  class="english-teacher-hom-sub-tittle"href="#">
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4" fill="#666666"/>
+                                    </svg>                                    
+                                    English
+                            </a>
+                    </div>
+
+                    <div class="english-teacher-home-line">
+                        <a href="#">Choose a teacher for private English lessons Degree : Adults</a>
+                    </div>
+
+                </div>
+
+                <div class="teacher-home-img">
+
+                    <svg width="691" height="202" viewBox="0 0 691 202" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="691" height="202" fill="url(#pattern1)"/>
+                        <defs>
+                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_100_6734" transform="scale(0.00144718 0.0049505)"/>
+                        </pattern>
+                        <image id="image0_100_6734" width="691" height="472" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <!-- sub header all teacher -->
+
+        <div class="english-teacher-sub-header">
+            <div class="english-teacher-menu-nav-bar">
+                <ul class="english-teacher-menu-ul">
+
+                    <li class="english-teacher-nav-item">
+                        <a class="english-teacher-menu-text-highlight"href="#">All</a>
+                        <p class="english-teacher-notification-highlight">10</p>
+                    </li>
+                    <li class="english-teacher-nav-item">
+                        <a class="english-teacher-notification-text" href="#">Adults</a>
+                        <p class="english-teacher-notification">50</p>
+                    </li>
+                    <li class="english-teacher-nav-item">
+                        <a class="english-teacher-notification-text" href="#">Students 1st-4th  grade</a>
+                        <p class="english-teacher-notification">16</p>
+                    </li>
+                    <li class="english-teacher-nav-item">
+                        <a class="english-teacher-notification-text" href="#">Students 5th - 8th grade</a>
+                        <p class="english-teacher-notification">16</p>
+                    </li>
+                    <li class="english-teacher-nav-item">
+                        <a class="english-teacher-notification-text" href="#">Students 9th - 12th grade</a>
+                        <p class="english-teacher-notification">18</p>
+                    </li>
+                    <div class="english-teacher-header-arrow">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L1 17" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>        
+                    
+                </ul>
+            </div>
+        </div><hr class="hr-courses-header">
+
+        
+        
+        <!-- content start  -->
+
+
+        <div class="english-teacher-main-container">
+            <div class="english-teacher-grid">
+
+                <!-- 20 card grid start  -->
+
+                 <!-- englios teacher profile 1  -->
+            
+
+                   <div class="all-teacher-profile-card">
+
+
+                                <div class="allteacher-profile-img">
+                                
+                                    <!-- teacher profile svg -->
+                                    <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                                
+                                </div>
+
+
+                                <div class="allteacher-profile-details">
+
+                                    <div class="allteacher-card-name">
+                                        <p>Wade Warren</p>
+                                    </div>
+
+
+                                    <div class="allteacher-bgn-flex">
+
+                                        <div class="allteacher-BGN">
+                                            <p>BGN 38/</p>
+                                        </div>
+
+                                        <div class="allteacher-bgn-hr">
+                                            <p>hr</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="allteacher-material-main">
+
+                                        <div class="allteacher-material">
+                                            <div>
+                                                
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                                    <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                                    </svg>
+                                                    
+                                           
+                                            </div>
+                                            <p>3564</p>
+                                        </div>
+
+                                        <div class="allteacher-material">
+                                            <div>
+                                                
+                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_192_4762)">
+                                                    <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_192_4762">
+                                                    <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                    </svg>
+                                                    
+
+                                            </div>
+                                            <p>65</p>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+                    </div>
+
+                    <!-- englios teacher profile 2  -->
+            
+
+                   <div class="all-teacher-profile-card">
+
+
+                    <div class="allteacher-profile-img">
+                    
+                        <!-- teacher profile svg -->
+                        <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                    
+                    </div>
+
+
+                    <div class="allteacher-profile-details">
+
+                        <div class="allteacher-card-name">
+                            <p>Wade Warren</p>
+                        </div>
+
+
+                        <div class="allteacher-bgn-flex">
+
+                            <div class="allteacher-BGN">
+                                <p>BGN 38/</p>
+                            </div>
+
+                            <div class="allteacher-bgn-hr">
+                                <p>hr</p>
+                            </div>
+
+                        </div>
+
+                        <div class="allteacher-material-main">
+
+                            <div class="allteacher-material">
+                                <div>
+                                    
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                        <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                        </svg>
+                                        
+                               
+                                </div>
+                                <p>3564</p>
+                            </div>
+
+                            <div class="allteacher-material">
+                                <div>
+                                    
+                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_192_4762)">
+                                        <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_192_4762">
+                                        <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+
+                                </div>
+                                <p>65</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+    
+                
+                    <!-- englios teacher profile 3  -->
+
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    <!-- englios teacher profile 4  -->
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    <!-- englios teacher profile 5  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    <!-- englios teacher profile 6  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 7  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 8  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 9  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 10  -->
+                    
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    <!-- englios teacher profile 11  -->
+                    
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    <!-- englios teacher profile 12  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 13  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 14  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 15  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 16  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 17  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 18  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 19  -->
+                    
+                    
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    
+                    
+                    <!-- englios teacher profile 20  -->
+                
+                    <div class="all-teacher-profile-card">
+
+
+                        <div class="allteacher-profile-img">
+                        
+                            <!-- teacher profile svg -->
+                            <img src="image/all_teachers-page/wade warren.png" alt="profile-img">
+                        
+                        </div>
+    
+    
+                        <div class="allteacher-profile-details">
+    
+                            <div class="allteacher-card-name">
+                                <p>Wade Warren</p>
+                            </div>
+    
+    
+                            <div class="allteacher-bgn-flex">
+    
+                                <div class="allteacher-BGN">
+                                    <p>BGN 38/</p>
+                                </div>
+    
+                                <div class="allteacher-bgn-hr">
+                                    <p>hr</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="allteacher-material-main">
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1109 6.09261C10.3313 6.09261 10.5452 6.11206 10.759 6.14446V1.55557C10.759 0.842611 10.1757 0.259277 9.46275 0.259277H1.68497C0.972005 0.259277 0.388672 0.842611 0.388672 1.55557V11.9259C0.388672 12.6389 0.972005 13.2222 1.68497 13.2222H6.39052C5.91576 12.5424 5.63653 11.7454 5.58322 10.9179C5.52991 10.0904 5.70457 9.26412 6.08817 8.52898C6.47178 7.79384 7.04966 7.17798 7.75893 6.74841C8.46819 6.31884 9.28168 6.09202 10.1109 6.09261ZM2.98126 6.09261V1.55557H6.22201V6.09261L4.60163 5.12039L2.98126 6.09261Z" fill="#FFD25D"/>
+                                            <path d="M10.1109 7.38867C8.32197 7.38867 6.87012 8.84052 6.87012 10.6294C6.87012 12.4183 8.32197 13.8702 10.1109 13.8702C11.8997 13.8702 13.3516 12.4183 13.3516 10.6294C13.3516 8.84052 11.8997 7.38867 10.1109 7.38867ZM9.30067 12.2498V9.00904L11.8933 10.6294L9.30067 12.2498Z" fill="#FFD25D"/>
+                                            </svg>
+                                            
+                                   
+                                    </div>
+                                    <p>3564</p>
+                                </div>
+    
+                                <div class="allteacher-material">
+                                    <div>
+                                        
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_192_4762)">
+                                            <path d="M8.16683 4.27516V3.2835C8.48766 3.14738 8.81588 3.0453 9.1515 2.97725C9.48672 2.90919 9.83905 2.87516 10.2085 2.87516C10.4613 2.87516 10.7092 2.89461 10.9522 2.9335C11.1953 2.97238 11.4335 3.021 11.6668 3.07933V4.01266C11.4335 3.92516 11.1978 3.85963 10.9598 3.81608C10.7214 3.77213 10.471 3.75016 10.2085 3.75016C9.83905 3.75016 9.48419 3.79644 9.14391 3.889C8.80363 3.98116 8.47794 4.10988 8.16683 4.27516ZM8.16683 7.4835V6.49183C8.48766 6.35572 8.81588 6.25363 9.1515 6.18558C9.48672 6.11752 9.83905 6.0835 10.2085 6.0835C10.4613 6.0835 10.7092 6.10294 10.9522 6.14183C11.1953 6.18072 11.4335 6.22933 11.6668 6.28766V7.221C11.4335 7.1335 11.1978 7.06797 10.9598 7.02441C10.7214 6.98047 10.471 6.9585 10.2085 6.9585C9.83905 6.9585 9.48419 7.00225 9.14391 7.08975C8.80363 7.17725 8.47794 7.3085 8.16683 7.4835ZM8.16683 5.87933V4.88766C8.48766 4.75155 8.81588 4.64947 9.1515 4.58141C9.48672 4.51336 9.83905 4.47933 10.2085 4.47933C10.4613 4.47933 10.7092 4.49877 10.9522 4.53766C11.1953 4.57655 11.4335 4.62516 11.6668 4.6835V5.61683C11.4335 5.52933 11.1978 5.4638 10.9598 5.42025C10.7214 5.3763 10.471 5.35433 10.2085 5.35433C9.83905 5.35433 9.48419 5.40061 9.14391 5.49316C8.80363 5.58533 8.47794 5.71405 8.16683 5.87933ZM7.5835 8.446C8.01127 8.24183 8.44158 8.08861 8.87441 7.98633C9.30686 7.88444 9.75155 7.8335 10.2085 7.8335C10.5585 7.8335 10.9013 7.86266 11.2369 7.921C11.5721 7.97933 11.9099 8.06683 12.2502 8.1835V2.4085C11.9293 2.27238 11.5964 2.1703 11.2515 2.10225C10.9062 2.03419 10.5585 2.00016 10.2085 2.00016C9.75155 2.00016 9.29947 2.0585 8.85225 2.17516C8.40502 2.29183 7.98211 2.46683 7.5835 2.70016V8.446ZM7.00016 10.1668C6.5335 9.79738 6.02794 9.51058 5.4835 9.30641C4.93905 9.10225 4.37516 9.00016 3.79183 9.00016C3.27655 9.00016 2.73697 9.09738 2.17308 9.29183C1.60919 9.48627 1.07933 9.78766 0.583496 10.196V1.73766C1.01127 1.446 1.5145 1.22239 2.09316 1.06683C2.67144 0.911274 3.23766 0.833496 3.79183 0.833496C4.35572 0.833496 4.90755 0.906413 5.44733 1.05225C5.98672 1.19808 6.50433 1.41683 7.00016 1.7085C7.496 1.41683 8.0138 1.19808 8.55358 1.05225C9.09297 0.906413 9.64461 0.833496 10.2085 0.833496C10.7627 0.833496 11.3291 0.911274 11.9077 1.06683C12.486 1.22239 12.9891 1.446 13.4168 1.73766V10.196C12.9307 9.78766 12.4034 9.48627 11.8348 9.29183C11.2659 9.09738 10.7238 9.00016 10.2085 9.00016C9.62516 9.00016 9.06127 9.10225 8.51683 9.30641C7.97238 9.51058 7.46683 9.79738 7.00016 10.1668Z" fill="#FFD25D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_192_4762">
+                                            <rect width="14" height="10" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+    
+                                    </div>
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                        
+                        
+                        
+                    <!-- 20 porfile grid end -->
+            
+                    <!-- English language training in the Cabin -->
+
+                    <div class="english-language-training-div">
+
+                        <div class="english-language-img">
+                            <img src="image/all_teachers-page/english-lng-img.png" alt="img-female">
+                        </div>
+
+                        <div class="english-language-training-content-div">
+
+                            <div class="english-language-training-tittle">
+                                <p>English language training in the Cabin</p>
+                            </div>
+                            
+
+                            <div class="english-language-traing-content">
+                                <p>Learning English online - remotely online with live teachers is easy and effective! 
+                                    You will improve your language skills in spoken and written English at a time convenient for you 
+                                    - with a teacher of your choice. The training is oriented towards active and motivated people to learn. 
+                                    We work with some of the best online teachers, selected from hundreds of candidates. 
+                                    Choose a course or individual training with reserved hours</p>
+                            </div>
+
+
+                            <div class="english-language-training-register-div">
+
+                                <div class="english-language-training-register">
+                                    Register and browse the platform for free!
+                                </div>
+
+                                <div class="english-language-training-register-btn">
+
+                                    <a class="eng-language-btn" href="#">Register</a>
+
+                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.5L17 8.5L10 15.5M1 8.5H17H1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            <footer>
+            
+                <div class="footer-container">
+                    
+                    <div class="footer-nav-bar" id="footermenu">
+                        <ul class="footer-nav-bar-ul">
+                            <li class="footer-nav-item"><a href="#">Courses</a></li>
+                            <li class="footer-nav-item"><a href="#">Teachers</a></li>
+                            <li class="footer-nav-item"><a href="#">Items</a></li>
+                            <li class="footer-nav-item"><a href="#">Certificates</a></li>
+                            <li class="footer-nav-item"><a href="#">For companies</a></li>
+                            <li class="footer-nav-item"><a href="#">Opinions</a></li>
+                            <li class="footer-nav-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-flex">
+                        <div class="footer-logo" id="footerlogo">    
+                            <img src="image/footer-logo.svg" alt="commpany-logo">
+                        </div>
+
+                        <div class="footer-media-icon" id="mediaicon">
+                            <img src="image/linkedin.svg" alt="media-icon">
+                            <img src="image/instagram.svg" alt="media-icon">
+                            <img src="image/facebook.svg" alt="media-icon">
+                        </div>
+
+                        <div class="footer-line web-footer-rights" id="footerline">
+                            <p>© 2000-2021, All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="footer-line mobile-footer-rights" id="footerline">
+                        <p>© 2000-2021, All Rights Reserved</p>
+                    </div>
+
+                </div>  
+            </footer>
+    
+    
+            <script>
+    
+                function myFunction() {
+                    var x = document.getElementById("mobile-menu-container");
+                    if (x.className === "mobile-menu-container") {
+                        x.className += " show-menu";
+                    } else {
+                        x.className = "mobile-menu-container";
+                    }
+                }
+    
+            </script>
+
+
+
+</body>
+</html>

@@ -5016,6 +5016,10 @@ html {
   color: #666666;
 }
 
+.courses-notification-text:hover{
+  color: #4d4d4d;
+}
+
 .courses-notification{
   font-size: 1.125rem;
   font-weight: 500;
@@ -5493,7 +5497,7 @@ html {
 
   .courses-home-tittle-div{
     align-self: center;
-    padding: 0;
+    padding: 50px 0px 45px;
   }
 
   .courses-main-card{
@@ -6026,14 +6030,13 @@ html {
     display: flex;
     column-gap: 10px;
     align-items: center;
-  }
-
-  .teacher-hom-sub-tittle a{
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 24px; 
     color: #666666;
   }
+
+  
 
 
   /* .teacher-hom-sub-tittle svg{
@@ -6041,9 +6044,11 @@ html {
   } */
 
 
-  .teacher-home-img svg{
-    padding-top: 68px;
+  .teacher-home-img{
+    align-self: flex-end;
   }
+
+  
 
 
      /* allteacher home container end here */
@@ -6051,40 +6056,60 @@ html {
      /* all teacher content start */
 
 
-  .teacher-content-main-div{
-    padding: 40px 190px;
+  .allteacher-content-main-div{
+    padding: 40px 190px 20px;
   }
 
-  .teacher-main-card{
-
+  .allteacher-main-card{
+    border: 1px solid #ECECEC;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
   }
 
-  .teacher-card-tittle-div{
+  .allteacher-main-card:hover{
+    border: 1px solid #FFD25D;;
+  }
+
+  .allteacher-card-tittle-div{
     display: flex;
     justify-content: space-between;
+    margin: 0px 0px 15px 0px;
   }
 
-  .teacher-card-tittle{
+  .allteacher-card-tittle{
     display: flex;
     column-gap: 10px;
     align-items: center;
   }
 
-  .teacher-card-tittle svg{
+  .allteacher-card-tittle p{
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 34px;
+    color: #000;
+  }
+
+  .allteacher-card-tittle svg{
 
   }
 
   .allteacher-right-tittle-div{
     display: flex;
+    align-items: center;
+    column-gap: 30px;
   }
 
   .allteacher-right-tittle{
     display: flex;
     column-gap: 5px;
+    align-items: center;
   }
 
   .allteacher-right-tittle svg{
-
+    display: flex;
+    column-gap: 30px;
   }
 
   .allteacher-lesson-taught-flex{
@@ -6092,11 +6117,17 @@ html {
   }
 
   .allteacher-lesson-text{
-
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 35px;
+    color: #000;
   }
 
   .allteacher-lesson-score{
-
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 35px;
+    color: #666666;
   }
 
 
@@ -6105,26 +6136,359 @@ html {
   }
 
   .all-teacher-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* display: flex; */
+    column-gap: 10px;
+  }
 
+
+  .allteacher-card-sub-tittle{
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 22px;
+    padding: 15px 0px 9px 0px;
+    color: #666666;
   }
 
   .all-teacher-profile-card{
     display: flex;
+    column-gap: 15px;
+    border: 1px solid #ECECEC;
+    border-radius: 10px;
+    padding: 15px;
+    /* width: 100%; */
+  }
+
+  .all-teacher-profile-card:hover{
+    border: 1px solid #d0d0d0;
+    -webkit-box-shadow: 2px 27px 99px -29px rgb(0 0 0 / 8%);
+    -moz-box-shadow: 2px 27px 99px -29px rgba(0,0,0,0.08);
+    box-shadow: 2px 27px 99px -29px rgb(0 0 0 / 8%);
   }
 
   .allteacher-profile-img img{
 
   }
 
+  .allteacher-card-name{
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 22px;
+    color: #000;
+  }
+
   .allteacher-bgn-flex{
     display: flex;
+    margin: 2px 0px 5px 0px;
+    align-items: center;
+  }
+
+  .allteacher-BGN{
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 15px;
+    color: #000;
+  }
+
+  .allteacher-bgn-hr{
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 15px;
+    color: #666666;
   }
 
   .allteacher-material-main{
     display: flex;
+    column-gap: 15px;
+    align-items: center;
   }
 
   .allteacher-material{
     display: flex;
+    column-gap: 6px;
+    align-items: center;
   }
 
+  .allteacher-material p{
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 15px;
+    color: #666666;
+  }
+
+
+  .more-allteacher-div{
+    background-color: #fff;
+    padding: 22px 0px;
+    text-align: center;
+  }
+
+  .more-allteacher-score{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #666666;
+    margin-bottom: 2px;
+  }
+
+  .more-allteacher-text{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #818181;
+  }
+
+  .highlight-teacher-nav{
+    color: #000;
+  }
+
+
+
+
+  @media (max-width: 1650px){
+
+    .allteacher-content-main-div{
+      padding:  30px 150px 10px;
+    }
+
+    .teacher-home-container{
+      padding: 0px 150px 0px;
+    }
+
+    .teacher-home-tittle-div{
+      align-self: center;
+    }
+
+    .teacher-home-img svg{
+      width: 591px;
+      height: auto;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* page 4 all englishsubject teachers */
+
+
+  .english-teacher-home-container{
+    background-color: #FFF9EB;
+    padding: 0px 200px;
+  }
+
+
+  .english-teacher-home-flex{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(image/courses/home-backgraund.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+
+  .english-teacher-home-tittle-div{
+    padding: 48px 0px 50px ;
+  }
+
+
+  .english-teacher-home-tittle{
+    font-family: 'Crimson Pro', sans-serif ;
+    font-weight: 600;
+    font-size: 4.375rem;
+    line-height: 78px;
+    color: #000
+  }
+
+
+  .english-teacher-home-sub-tittle-div{
+    display: flex;
+    column-gap: 10px;
+    padding: 12px 0px;
+  }
+
+  .english-teacher-hom-sub-tittle{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 24px; 
+    color: #666666;
+  }
+
+  .english-teacher-home-line{
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: #666666;
+
+  }
+
+
+
+  /* english  teacher sub header  */
+
+
+  .english-teacher-sub-header{
+    padding: 30px 200px;
+
+  }
+  
+  .english-teacher-menu-nav-bar{
+   
+  }
+  
+  .english-teacher-menu-ul{
+    display: flex;
+    column-gap: 40px;
+    position: relative;
+  }
+  
+  .english-teacher-nav-item{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+  }
+  
+  .english-teacher-menu-text-highlight{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 34px;
+    color: #000;
+  }
+  
+  .english-teacher-notification-highlight{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 22px;
+    color: #000;
+    background: #FFD25D;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
+  .english-teacher-notification-text{
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 34px;
+    color: #666666;
+    white-space: nowrap;
+  }
+  
+  .english-teacher-notification-text:hover{
+    color: #4d4d4d;
+  }
+  
+  .english-teacher-notification{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 22px;
+    color:#666666;
+    background: #EFEFEF;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
+  .english-teacher-header-arrow{
+    margin-top: 9px;
+  }
+
+
+
+  /* english teacher page sub header end */
+
+     /* english teacher  content start */
+
+.english-teacher-main-container{
+  padding: 40px 200px;
+}
+
+.english-teacher-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.english-language-training-div{
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+  background-color: #FFF9EB;
+  padding: 80px 92px 80px 78px;
+  border-radius: 40px;
+  margin-top: 70px;
+}
+
+
+.english-language-training-tittle{
+  font-family: 'Crimson Pro';
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 53px;
+  margin-bottom: 26px;
+}
+
+.english-language-traing-content{
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 35px;
+ color: #666666;
+}
+
+.english-language-training-register-div{
+  display: flex;
+  column-gap: 11px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+
+.english-language-training-register{
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 39px;
+  color: #000000;
+}
+
+.english-language-training-register-btn{
+  display: flex;
+  column-gap: 14px;
+  background-color: #000;
+  padding: 15px 24px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.eng-language-btn{
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 29px;
+}
+
+.english-language-training-register-btn:hover{
+  background-color: #FFD25D;
+  color: #000000;
+}
