@@ -6065,7 +6065,7 @@ html {
     border-radius: 15px;
     background-color: #fff;
     padding: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
   }
 
   .allteacher-main-card:hover{
@@ -6176,6 +6176,7 @@ html {
     font-size: 1.125rem;
     line-height: 22px;
     color: #000;
+    white-space: nowrap;
   }
 
   .allteacher-bgn-flex{
@@ -6261,6 +6262,12 @@ html {
       width: 591px;
       height: auto;
     }
+
+  }
+
+  @media (max-width: 1650px){
+
+
 
   }
 
@@ -6491,7 +6498,111 @@ html {
 }
 
 
-media screen for all english teacher 
+/* media screen for all english teacher  */
+
+ @media (max-width:1661px){
+
+  .english-teacher-home-container{
+    padding: 0 150px;
+  }
+
+  .english-teacher-main-container {
+    padding: 30px 150px;
+  }
+ 
+
+  .english-teacher-sub-header {
+    padding: 30px 150px;
+  }
+
+}
+
+ @media (max-width:1441px){
+
+  .english-teacher-home-container{
+    padding: 0 130px;
+  }
+
+  .english-teacher-main-container {
+    padding: 30px 130px;
+  }
+ 
+
+  .english-teacher-sub-header {
+    padding: 30px 130px;
+  }
+
+ .english-teacher-menu-ul{
+  column-gap: 24px;
+ }
+
+ .english-teacher-home-sub-tittle-div{
+  padding: 5px 0px;
+ }
+
+ .english-teacher-home-tittle-div{
+  
+  align-self: center;
+ }
+
+ .all-teacher-profile-card{
+  column-gap: 9px;
+  padding: 13px;
+  }
+
+  .allteacher-bgn-hr,
+  .allteacher-BGN{
+   font-size: 0.95rem;
+  }
+
+  .allteacher-material{
+    column-gap: 4px;
+  }
+
+  .allteacher-material-main{
+    column-gap: 10px;
+  }
+
+  .allteacher-material p{
+    font-size: 0.85rem;
+  }
+
+  .allteacher-profile-img img{
+    margin-top: 4px;
+    width: 50px;
+    height: auto;
+  }
+
+  .allteacher-bgn-flex{
+    margin: 1px 0px 3px 0px;
+  }
+
+  .english-language-training-div{
+    border-radius: 30px;
+    margin-top: 45px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
