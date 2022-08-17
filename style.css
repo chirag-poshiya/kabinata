@@ -384,7 +384,7 @@ html {
     display: block;
   }
   
-  @media (min-width:1280px) {
+  @media (max-width:1280px) {
     .sub-menu-links ul li {
         margin-left: 2rem;
     }
@@ -393,7 +393,7 @@ html {
     }
   }
   
-  @media (min-width:1399px) {
+  @media (max-width:1399px) {
     .nav-link {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -6486,6 +6486,14 @@ html {
   
   
   @media (max-width:768px){
+
+    .teacher-home-tittle-div {
+      padding: 30px 0px;
+    }
+    
+    .teacher-home-tittle{
+      line-height: 30px;
+    }
     
   }
 
@@ -6556,6 +6564,7 @@ html {
     .allteacher-card-sub-tittle {
       font-size: 1.521rem;
       line-height: 15px;
+      padding: 10px 0px 6px 0px;
     }
 
     .allteacher-card-name {
@@ -6594,13 +6603,28 @@ html {
       overflow: hidden;
     }
     
+    .allteacher-bgn-flex {
+      margin: 3px 0px 4px 0px;
+    }
 
     .allteacher-right-tittle-div{
       column-gap: 24px ;
     }
 
+    .allteacher-material-main {
+      column-gap: 15px;
+    }
+
     .allteacher-main-card {
       padding: 15px;
+    }
+
+    .allteacher-profile-img img {
+      margin-top: 3px;
+    }
+    
+    .all-teacher-profile-card{
+      padding: 10px;
     }
 
   }
@@ -6838,9 +6862,13 @@ html {
   color: #000000;
 }
 
+.allteacher-card-mobile-hide{
+  display: flex;
+}
+
 
 /* media screen for all english teacher  */
-@media (min-width:1681px) {
+@media (max-width:1681px){
 
   .english-teacher-home-container {
     padding: 0px 150px;
@@ -6856,29 +6884,34 @@ html {
 
 }
 
-@media (min-width:1440px) {
+@media (max-width:1440px) {
   
 }
 
 
-@media (min-width:1280px) {
+@media (max-width:1280px) {
   
 }
 
-@media (min-width:1024px) {
+@media (max-width:1024px) {
  
 }
 
 
-@media (min-width:768px) {
+@media (max-width:768px) {
   
 }
 
-@media (min-width:425px) {
+@media (max-width:425px) {
   
+
+  .allteacher-card-mobile-hide{
+    display: none;
+  }
+
 }
 
-@media (min-width:375px) {
+@media (max-width:375px) {
    
 }
 
