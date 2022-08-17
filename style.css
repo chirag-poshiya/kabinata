@@ -5572,10 +5572,7 @@ html {
     display: none;
   }
 
-  .allteacher-right-tittle-div{
-    column-gap: 15px !important;
-  }
-
+  
  
 
 
@@ -5935,9 +5932,7 @@ html {
 
 
 
-@media (max-width:px){
 
-}
 
 
 
@@ -6272,7 +6267,7 @@ html {
 
   /* all teacher page media screen :start */
 
-  @media (max-width: 1650px){
+  @media (max-width: 1681px){
 
     .allteacher-content-main-div{
       padding:  30px 150px 10px;
@@ -6465,6 +6460,11 @@ html {
       font-size: 0.95rem;
     }
 
+    .allteacher-right-tittle-div{
+      column-gap: 15px ;
+    }
+  
+
   
   }
   
@@ -6549,7 +6549,7 @@ html {
     
     .allteacher-lesson-text, 
     .allteacher-lesson-score{
-      font-size: 1.648rem;
+      font-size: 1.748rem;
       line-height: 15.73px;
     }
 
@@ -6578,6 +6578,7 @@ html {
 
     .courses-menu-ul{
       position: relative;
+      column-gap: 24px;
     }
 
     .mobile-right-arrow{
@@ -6589,9 +6590,27 @@ html {
       background: linear-gradient(276.38deg, #FFFFFF 5.03%, rgba(255, 255, 255, 0) 103.97%);
     }
 
+    .all-teacher-grid {
+      overflow: hidden;
+    }
+    
+
+    .allteacher-right-tittle-div{
+      column-gap: 24px ;
+    }
+
+    .allteacher-main-card {
+      padding: 15px;
+    }
+
   }
 
-  @media (max-width:111x){
+  @media (max-width:376px){
+
+  }
+
+
+  @media (max-width:326px){
 
   }
 
@@ -6821,11 +6840,47 @@ html {
 
 
 /* media screen for all english teacher  */
+@media (min-width:1681px) {
+
+  .english-teacher-home-container {
+    padding: 0px 150px;
+  }
+
+  .english-teacher-sub-header {
+    padding: 30px 150px;
+  }
+
+  .english-teacher-main-container {
+    padding: 40px 150px;
+  }
+
+}
+
+@media (min-width:1440px) {
+  
+}
 
 
+@media (min-width:1280px) {
+  
+}
+
+@media (min-width:1024px) {
+ 
+}
 
 
+@media (min-width:768px) {
+  
+}
 
+@media (min-width:425px) {
+  
+}
+
+@media (min-width:375px) {
+   
+}
 
 
 
