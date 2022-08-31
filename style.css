@@ -7568,6 +7568,9 @@ html {
     line-height: 22px;
     color: #666666;
     margin: 22px 0px 26px 0px;
+    column-gap: 11px;
+    align-items: center;
+    display: flex;
   }
 
   .terms-conditons{
@@ -7599,3 +7602,206 @@ html {
     background-color: #FFD25D;
     color: #000000;
   }
+
+  .teach-p-m{
+    margin-bottom: 15px;
+  }
+
+  
+
+  /* MEDIA SCRREN FOR TEACH IN KABINATA PAGE  */
+
+
+@media(max-width:1681px){
+  .teach-in-kabinata-main-div {
+    padding: 27px 150px 0px;
+  }
+
+}
+
+
+@media(max-width:1441px){
+  
+  .teach-in-kabinata-main-div {
+    padding: 27px 130px ;
+  }
+
+  .teach-img img{
+    width: 480px;
+    height: auto;
+  }
+
+  .teach-terms-line{
+    margin: 12px 0 20px 0;
+  }
+
+  .teach-content-main{
+    column-gap: 35px;
+  }
+
+  .message-svg, .message-svg2 {
+    margin-right: 26px;
+  }
+
+  .header-calendar {
+    margin-right: 30px;
+}
+
+}
+
+@media(max-width:1261px){
+  
+  .teach-in-kabinata-main-div {
+    padding: 27px 80px 0px;
+  }
+
+  .teach-img img{
+    width: 440px;
+    height: auto;
+  }
+
+  .teach-terms-line{
+    margin: 10px 0 16px 0;
+    column-gap: 6px;
+  }
+
+}
+
+@media(max-width:1025px){
+  
+  .teach-in-kabinata-main-div {
+    padding: 20px 50px 0px;
+  }
+
+  .teach-img img{
+    width: 340px;
+    height: auto;
+  }
+
+  .teach-content-main{
+    column-gap: 25px;
+  }
+
+  .teach-terms-line{
+    margin: 10px 0 16px 0;
+  }
+
+  .teach-conditon p{
+    line-height: 20px;
+  }
+
+  .teach-img{
+    padding: 39px 0 0;
+  }
+
+  .teach-proceed-btn {
+    padding: 10px 20px;
+    column-gap: 10px;
+  }
+
+
+  .teach-sub-line {
+    padding: 15px 0;
+  }
+
+}
+
+@media(max-width:769px){
+
+  .teach-sub-line {
+    padding: 10px 0;
+  }
+
+  .teach-content-main {
+    row-gap: 25px;
+    display: grid;
+  }
+
+  
+  .teach-img img{
+    width: 400px;
+    height: auto;
+  }
+
+  .teach-content-main{
+    column-gap: 25px;
+    margin-top: 20px;
+  }
+
+  .teach-terms-line{
+    margin: 10px 0 16px 0;
+  }
+
+  .teach-conditon p{
+    line-height: 20px;
+  }
+
+  .teach-condition-div{
+    order: 3;
+  }
+
+  .teach-img{
+    padding: 0;
+    order: 2;
+    margin: auto;
+  }
+
+  .teach-proceed-btn {
+    padding: 10px 20px;
+    column-gap: 10px;
+  }
+
+  .conditions-tittle{
+    margin-bottom: 5px;
+  }
+
+}
+
+@media(max-width:426px){
+
+  .teach-content-main {
+    row-gap: 25px;
+    display: grid;
+  }
+
+  .teach-in-kabinata-main-div{
+    padding: 20px;
+  }
+
+  .news-home-tittle{
+    padding: 20px 0;
+    line-height: 40px;
+    font-size: 4.555rem;
+  }
+  
+  .teach-img img{
+    width: 335px;
+    height: auto;
+  }
+
+  .teach-content-main{
+    column-gap: 25px;
+    margin-top: 20px;
+  }
+
+  .teach-terms-line{
+    margin: 10px 0 16px 0;
+  }
+
+  .teach-conditon p{
+    line-height: 20px;
+    font-size: 1.646rem;
+    line-height: 15px;
+  }
+
+  .conditions-tittle{
+    font-size: 2.279rem;
+    line-height: 22px;
+  }
+
+  .teach-terms-line{
+    font-size: 1.646rem;
+    line-height: 16px;
+  }
+
+}
