@@ -7307,6 +7307,8 @@ html {
     }
 
 
+
+
   }
 
   @media (max-width:426px){
@@ -7318,6 +7320,23 @@ html {
     .news-card-main-div{
       padding: 20px;
     }
+    
+    .news-card-tittle p {
+      font-size: 1.754rem;
+      line-height: 17PX;
+    }
+
+    .news-date{
+      font-size: 1.25rem;
+      line-height: 12px;
+    }
+
+    .news-card-content{
+      font-size: 1.25rem;
+      line-height: 12px;
+    }
+
+
   }
 
 
@@ -7453,6 +7472,27 @@ html {
       grid-template-columns: repeat(1, 1fr);
       row-gap: 20px;
     }    
+
+    .help-card-div svg{
+      width: 40px;
+      height: 40px;
+    }
+
+    .help-card-div{
+      padding: 15px;
+    }
+
+    .help-card-tittle{
+      padding: 10px 0px 5px 0px;
+      font-size: 2.255rem;
+      line-height: 22px;
+    }
+
+    .help-card-contain{
+      font-size: 1.50rem;
+      line-height: 15px;
+    }
+
 
   }
 
