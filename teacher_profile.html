@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kabinata</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;800;900&family=Inter:wght@200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- header-start -->
+
+        <header>
+            <div class="header-container">
+
+                <div>
+                    <a href="index.html">
+                        <img  class="header-commpany-logo" src="image/Frame.svg" alt="commpany-logo">
+                    </a>
+                </div>
+
+                <div class="nav-bar">
+                    <ul class="nav-bar-ul">
+                        <li class="nav-item"><a href="all_courses.html">Courses</a></li>
+                        <li class="nav-item"><a href="all_teacher.html">Teachers</a></li>
+                        <li class="nav-item"><a href="#">Items</a></li>
+                        <li class="nav-item"><a href="#">Certificates</a></li>
+                        <li class="nav-item"><a href="#">For companies</a></li>
+                        <li class="nav-item"><a href="#">Opinions</a></li>
+                    </ul>
+                </div>
+
+                <div class="login-container">
+
+                    <div class="contact">
+                        <p>Contact</p>
+                    </div>
+
+                    <div class="login-btn">
+                        <a href="#">Login</a>
+                    </div>
+
+                    <div class="register-btn-navbar">
+                        <a href="#">Register</a>
+                    </div>
+
+                    <div class="profile-img">
+                        <svg width="78" height="79" viewBox="0 0 78 79" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g filter="url(#filter0_d_2_6992)">
+                            <rect x="14" y="10.5" width="50" height="50" rx="25" fill="url(#pattern0)"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_2_6992" x="0" y="0.5" width="78" height="78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="7"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.483333 0 0 0 0 0.45816 0 0 0 0 0.392708 0 0 0 0.33 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_6992"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_6992" result="shape"/>
+                            </filter>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_2_6992" transform="scale(0.0119048)"/>
+                            </pattern>
+                            <image id="image0_2_6992" width="84" height="84" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                            </svg>                            
+                    </div>
+                </div>
+            </div>
+
+             <!-- mobile menu start here -->
+
+             <div class="humburger-icon" onclick="myFunction()">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H15M1 7H15M1 13H15" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                    
+            </div>
+            </div>
+        <div class="mobile-menu-container" id="mobile-menu-container">
+            <nav class="mobile-nav-bar">
+            <ul class="mobile-nav-bar-ul">
+                <li class="mobile-nav-item"><a href="all_courses.html">Courses</a></li>
+                <li class="mobile-nav-item"><a href="all_teacher.html">Teachers</a></li>
+                <li class="mobile-nav-item"><a href="#">Items</a></li>
+                <li class="mobile-nav-item"><a href="#">Certificates</a></li>
+                <li class="mobile-nav-item"><a href="#">For companies</a></li>
+                <li class="mobile-nav-item"><a href="#">Opinions</a></li>
+                <li class="mobile-nav-item"><a href="#">Contact</a></li>
+                <li class="mobile-nav-item"><a href="#">Login</a></li>
+                <li class="mobile-nav-item"><a href="#">Register</a></li>
+                <li class="mobile-nav-item mobile-nav-img"><img src="image/united-kingdom.png" alt="profile"></li>
+            </ul>
+        </nav>
+        </div>
+
+
+
+
+        </header>
+
+        <!-- header end -->
+
+        <!-- teacher profile content start  -->
+
+
+
+
+
+
+
+
+                   <!-- footer start -->
+
+                   <footer>
+                
+                    <div class="footer-container">
+                        
+                        <div class="footer-nav-bar" id="footermenu">
+                            <ul class="footer-nav-bar-ul">
+                                <li class="footer-nav-item"><a href="all_courses.html">Courses</a></li>
+                                <li class="footer-nav-item"><a href="all_teacher.html">Teachers</a></li>
+                                <li class="footer-nav-item"><a href="#">Items</a></li>
+                                <li class="footer-nav-item"><a href="#">Certificates</a></li>
+                                <li class="footer-nav-item"><a href="#">For companies</a></li>
+                                <li class="footer-nav-item"><a href="#">Opinions</a></li>
+                                <li class="footer-nav-item"><a href="Help.html">Contact</a></li>
+                            </ul>
+                        </div>
+    
+    
+                        <div class="footer-flex">
+                            <div class="footer-logo" id="footerlogo">    
+                                <img src="image/footer-logo.svg" alt="commpany-logo">
+                            </div>
+    
+                            <div class="footer-media-icon" id="mediaicon">
+                                <img src="image/linkedin.svg" alt="media-icon">
+                                <img src="image/instagram.svg" alt="media-icon">
+                                <img src="image/facebook.svg" alt="media-icon">
+                            </div>
+    
+                            <div class="footer-line web-footer-rights" id="footerline">
+                                <p>© 2000-2021, All Rights Reserved</p>
+                            </div>
+                        </div>
+                        <div class="footer-line mobile-footer-rights" id="footerline">
+                            <p>© 2000-2021, All Rights Reserved</p>
+                        </div>
+    
+                   </div>  
+                </footer>
+    
+                <script>
+    
+                    function myFunction() {
+                        var x = document.getElementById("mobile-menu-container");
+                        if (x.className === "mobile-menu-container") {
+                            x.className += " show-menu";
+                        } else {
+                            x.className = "mobile-menu-container";
+                        }
+                    }
+        
+                </script>
+    
+            </body>
+            </html>
+
+
+
+</body>
+</html>
