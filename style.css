@@ -6969,6 +6969,23 @@ html {
     display: block;
   }
 
+  .teacher-home-img svg {
+    width: 330px;
+    height: auto;
+  }
+
+  .english-teacher-home-line {
+    line-height: 14px;
+  }
+
+  .english-teacher-home-sub-tittle-div{
+    padding: 5px 0;
+  }
+
+  .english-teacher-home-tittle-div {
+    padding: 10px 0 12px;
+  }
+
   .english-language-img img{
     margin: auto;
   }
