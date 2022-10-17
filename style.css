@@ -133,7 +133,11 @@ html {
     outline: 1px dotted ButtonText;
   }
   
-  
+.cgap-10{
+ column-gap: 10px;
+}
+
+
   fieldset {
     padding: 0.35em 0.75em 0.625em;
   }
@@ -7872,4 +7876,23 @@ html {
     border-radius: 5px;
   }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* teacher profile page  start */
+
+
+.teacher-profile-box{
+  border: 1px solid #EBEBEB;
+  border-radius: 20px;
+  padding: 25px 50px;
 }
