@@ -7388,6 +7388,7 @@ html {
   .help-card-flex{
     display: flex;
     column-gap: 20px;
+    align-items: center;
   }
 
   .help-card-div{
@@ -7890,9 +7891,376 @@ html {
 
 /* teacher profile page  start */
 
+.teacher-profile-page{
+  padding: 0px 200px;
+}
 
 .teacher-profile-box{
   border: 1px solid #EBEBEB;
   border-radius: 20px;
   padding: 25px 50px;
+  width: fit-content;
+}
+
+.teacher-profile-box:hover{
+ border: 1px solid #F6BB43;
+}
+
+.sidebar2-main-div{
+  border: 1px solid #EBEBEB;
+  border-radius: 20px;
+  padding: 25px;
+  width: fit-content;
+}
+
+.teacher-profile-name{
+  line-height: 39px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+
+.teacher-profile-sub-name{
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #666666;
+}
+
+.tprofile-bgn-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tprofile-BGN{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #000;
+}
+
+.allteacher-bgn-hr{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #666666;
+}
+
+.teacher-lesson-flex{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.lesson-text{
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 19px;
+  padding-left: 5px;
+}
+
+.lesson-score{
+  position: absolute;
+  right: 0;
+}
+
+.lesson-score p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #000;
+}
+
+.teacher-profile-lesson-div{
+  padding: 10px 0 26px;
+}
+
+.teacher-profile-name-div{
+  padding: 20px 0 0 0;
+}
+
+.teacher-profile-sub-name{
+  padding: 3px 0 5px 0;
+  text-align: center;
+}
+
+
+
+.tprofile-main-img img{
+  margin: auto;
+}
+
+.teacher-language-div{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.language-box{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 9px  12px;
+  border-radius: 8px;
+  background-color: #FFD25D4D;
+}
+
+.tbox-language-text{
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #000;
+}
+
+.write-to-teacher-div{
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 23px;
+  color: #ffffff;
+  padding: 20px 40px;
+  background-color: #000;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #FFFFFF;
+}
+
+
+.sidebar-tittle{
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 29px;
+  color: #000;
+}
+
+.teacher-language-box-div{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ECECEC;
+  border-radius: 10px;
+}
+
+.tprofile-language-box{
+ padding-left: 10px;
+}
+
+.tprofile-language-tittle{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #000;
+}
+
+.tprofile-language-sub-tittle{
+  font-weight: 300;
+  font-size: 0.813rem;
+  line-height: 16px;
+  color: #666666;
+  padding-top: 3px;
+}
+
+.tprofile-language-tittle{
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #000;
+}
+
+.upcoming-tittle-tprofile{
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #666666;
+  padding: 10px 0 0;
+}
+
+.tprofile-upcomeing-box{
+  border: 1px solid #ECECEC;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0 0;
+}
+
+.tprofile-upcomeimg-tittle{
+
+
+
+}
+
+.live-btn-tprofile{
+  display: flex;
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 16px;
+  color: #8CC051;
+  background-color: #ECF3E5;
+  padding: 6px 12px;
+  border-radius: 30px;
+  column-gap: 3px;
+  margin: 5px 5px 10px 0px;
+  align-items: center;
+}
+
+.d-flex{
+  display: flex;
+  align-items: center;
+}
+
+.tprofile-upcomeing-date{
+  font-weight: 300;
+  font-size: 0.813rem;
+  line-height: 16px;
+  color: #666666;
+}
+
+.tprofile-upcomeing-name-div{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+
+.tprofile-card-gread-btn{
+  border-radius: 20px;
+  padding: 6px 8px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 9px;
+  font-family: 'Roboto', sans-serif;
+  min-width: 34px;
+}
+
+.tprofile-card1-gread-btn1{
+  background: #CAE6AB;
+  border: 1px solid #8DC153;
+}
+
+.tprofile-card1-gread-btn2{
+  background: #A7D473;
+  border: 1px solid #8DC153;
+ 
+}
+
+.tprofile-name-card{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #000;
+}
+
+
+.teacher-profile-page{
+  display: flex;
+  column-gap: 20px;
+}
+
+.tprofile-content1-div{
+  display: flex;
+  padding: 25px;
+  border: 1px solid #ECECEC;
+  border-radius: 20px;
+  column-gap: 25px;
+}
+
+.description-tittle{
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 29px;
+  color: #000;
+  margin-bottom: 17px;
+}
+
+.review-tittle{
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 29px;
+  color: #000;
+  padding-right: 6px;
+}
+
+.description-content{
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #666666;
+}
+
+.tprofile-content2-tittle-div{
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+}
+
+.tprofile-content2-div,
+.tprofile-content3-div{
+  padding: 25px;
+  border: 1px solid #ECECEC;
+  border-radius: 20px;
+}
+
+.description-div{
+  border-right: 1px solid #ECECEC;
+  border-radius: 20px;
+  padding-right: 25px;
+}
+
+.language-box:hover{
+  background-color: #f2bd394d;
+}
+
+
+.write-to-teacher-div:hover{
+  background-color: #FFFFFF;
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.review-score{
+  font-weight: 500;
+  font-size: 0.85rem;
+  line-height: 15px;
+  color: #000;
+  background-color: #FFD25D;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.review-tittle-div{
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.review-div{
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #ECECEC;
+  column-gap: 14px;
+}
+
+.review-sub-tittle{
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 24px;
+}
+
+.review-content{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #000;
+  padding: 3px 0 6px 0;
+}
+
+.review-time{
+  font-weight: 300;
+  font-size: 0.938rem;
+  line-height: 18px;
+  color: #666666;
 }

@@ -117,7 +117,7 @@
 
                     <div class="teacher-profile-box">
 
-                        <div>
+                        <div class="tprofile-main-img">
                         <img src="image/teacher-img.jpg" alt="teacher-img">
                         </div>
 
@@ -131,7 +131,7 @@
                                 <p>Kotse Tanev</p>
                             </div>
 
-                            <div class="teacher-profile-bgn-div">
+                            <div class="tprofile-bgn-div">
     
                                     <div class="allteacher-BGN">
                                         <p>BGN 38/</p>
@@ -203,45 +203,49 @@
                         </div>
 
                         <div class="teacher-language-div">
-                            <div class="language-box">
-                            
-                                <div class="teacher-language-svg">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <circle cx="15" cy="15" r="14" fill="url(#pattern0)" stroke="#F6F8FC" stroke-width="2"/>
-                                        <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0_2_16854" transform="scale(0.0119048)"/>
-                                        </pattern>
-                                        <image id="image0_2_16854" width="84" height="84" xlink:href="data:image/png;base64,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"/>
-                                        </defs>
-                                    </svg>     
-                                </div>
+                            <a href="">
+                                <div class="language-box">
                                 
-                                <div>
-                                    <p>English</p>
-                                </div>
-                            
-                            </div>
-                           
-                            <div class="language-box">
-                            
-                                <div class="teacher-language-svg">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <circle cx="15" cy="15" r="14" fill="url(#patterng)" stroke="#F6F8FC" stroke-width="2"/>
-                                        <defs>
-                                        <pattern id="patterng" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0_2_16860" transform="scale(0.0119048)"/>
-                                        </pattern>
-                                        <image id="image0_2_16860" width="84" height="84" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAIAAACTCYeWAAAAmklEQVR4nO3SsQ0CQRAEQe70DhJBXGIfLgkQCSYmYaxRXRFMS7POOQ/Vnh4wqXhV8ariVcWrilcVrypeVbyqeFXxquJVxauue3+nN4xZn+f0hDn07YtXFa8qXlW8qnhV8ariVcWrilcVrypeVbyqeNX6vacnzLn2a3rCHPr2xauKVxWvKl5VvKp4VfGq4lXFq4pXFa8qXlW86g+VOgT/F9wQqwAAAABJRU5ErkJggg=="/>
-                                        </defs>
-                                    </svg>    
-                                </div>
+                                    <div class="teacher-language-svg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <circle cx="15" cy="15" r="14" fill="url(#pattern0)" stroke="#F6F8FC" stroke-width="2"/>
+                                            <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_16854" transform="scale(0.0119048)"/>
+                                            </pattern>
+                                            <image id="image0_2_16854" width="84" height="84" xlink:href="data:image/png;base64,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"/>
+                                            </defs>
+                                        </svg>     
+                                    </div>
+                                    
+                                    <div class="tbox-language-text">
+                                        <p>English</p>
+                                    </div>
                                 
-                                <div>
-                                    <p>German</p>
                                 </div>
-                            
-                            </div>
+                            </a>
+
+                            <a href="">
+                                <div class="language-box">
+                                
+                                    <div class="teacher-language-svg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <circle cx="15" cy="15" r="14" fill="url(#patterng)" stroke="#F6F8FC" stroke-width="2"/>
+                                            <defs>
+                                            <pattern id="patterng" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_16860" transform="scale(0.0119048)"/>
+                                            </pattern>
+                                            <image id="image0_2_16860" width="84" height="84" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAIAAACTCYeWAAAAmklEQVR4nO3SsQ0CQRAEQe70DhJBXGIfLgkQCSYmYaxRXRFMS7POOQ/Vnh4wqXhV8ariVcWrilcVrypeVbyqeFXxquJVxauue3+nN4xZn+f0hDn07YtXFa8qXlW8qnhV8ariVcWrilcVrypeVbyqeNX6vacnzLn2a3rCHPr2xauKVxWvKl5VvKp4VfGq4lXFq4pXFa8qXlW86g+VOgT/F9wQqwAAAABJRU5ErkJggg=="/>
+                                            </defs>
+                                        </svg>    
+                                    </div>
+                                    
+                                    <div class="tbox-language-text">
+                                        <p>German</p>
+                                    </div>
+                                
+                                </div>
+                            </a>
                         </div>
 
                         <div class="write-to-teacher-div">
@@ -257,7 +261,7 @@
                             
                             <p class="sidebar-tittle">Teaches</p>
 
-                            <div class="teacher-language-box">
+                            <div class="teacher-language-box-div">
 
                                 <div class="teacher-language-svg">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -271,7 +275,7 @@
                                     </svg>     
                                 </div>
                                 
-                                <div class="">
+                                <div class="tprofile-language-box">
 
                                     <div class="tprofile-language-tittle">
                                     <p class="">English</p>
@@ -285,7 +289,7 @@
                                 
                                 </div>
 
-                            <div class="teacher-language-box">
+                            <div class="teacher-language-box-div">
 
                                 <div class="teacher-language-svg">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -299,7 +303,7 @@
                                     </svg>     
                                 </div>
                                 
-                                <div class="">
+                                <div class="tprofile-language-box">
 
                                     <div class="tprofile-language-tittle">
                                     <p class="">German</p>
@@ -318,17 +322,18 @@
                             </div>
 
 
-                        </div>
+                        
                         
                         <div class="sidebar2-div2">
 
                             <p class="sidebar-tittle">Teacher Jane also teaches</p>
                         
+                            <!-- english course upcoming box div  -->
                             <div class="tprofile-english-div">
 
                                 <div class="sidebar-sub-tittle-div">
 
-                                    <div class="d-flex cgap-10">
+                                    <div class="d-flex cgap-10 mt-10">
                                         <div class="teacher-language-svg">
                                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <circle cx="15" cy="15" r="14" fill="url(#pattern0)" stroke="#F6F8FC" stroke-width="2"/>
@@ -341,7 +346,7 @@
                                             </svg>     
                                         </div>
     
-                                        <p>English Language Course</p>    
+                                        <p class="tprofile-language-tittle">English Language Course</p>    
                                     </div>
 
                                     <div>
@@ -350,6 +355,7 @@
 
                                 </div>
 
+                                <!-- upcomeing box1 -->
                                 <div class="tprofile-upcomeing-box">
 
                                     <div class="tprofile-upcomeimg-tittle">
@@ -360,7 +366,9 @@
                                         
                                         <div class="live-btn-tprofile">
                                             <div class="live-svg">
-
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
+                                                </svg>                                                    
                                             </div>
 
                                             <p>Live</p>
@@ -379,12 +387,59 @@
                                         </div>
                 
                                         <div>
-                                            <p class="courses-profile-name-card">Koce</p>
+                                            <p class="tprofile-name-card">Koce</p>
                                         </div>
                 
-                                        <div class="courses-gread-btn">
-                                            <a class="courses-card1-gread-btn1 courses-card-gread-btns" href="">A1-1</a>
-                                            <a class="courses-card1-gread-btn2 courses-card-gread-btns" href="">A1-2</a>
+                                        <div class="gread-btn">
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A1-1</a>
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">A1-2</a>
+                                        </div>
+
+                                    </div>
+
+
+                                
+                                </div>
+
+                                <!-- upcoming box2 -->
+
+                                <div class="tprofile-upcomeing-box">
+
+                                    <div class="tprofile-upcomeimg-tittle">
+                                        <p>Speaking</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        
+                                        <div class="live-btn-tprofile">
+                                            <div class="live-svg">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
+                                                </svg>                                                    
+                                            </div>
+
+                                            <p>Live</p>
+                                        </div>
+
+                                        <div class="tprofile-upcomeing-date">
+                                            <p>Now 12:00 - 01:30</p>
+                                        </div>
+
+                                    </div>
+                                
+                                    <div class="tprofile-upcomeing-name-div">
+
+                                        <div>
+                                            <img class="upcomeing-teacher-img" src="" alt="profile-img">
+                                        </div>
+                
+                                        <div>
+                                            <p class="tprofile-name-card">Randall</p>
+                                        </div>
+                
+                                        <div class="gread-btn">
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A2-1</a>
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">A2-2</a>
                                         </div>
 
                                     </div>
@@ -394,13 +449,344 @@
                                 </div>
 
 
+                                <!-- upcoming box3 -->
+
+                                <div class="tprofile-upcomeing-box">
+
+                                    <div class="tprofile-upcomeimg-tittle">
+                                        <p>Grammer Practice</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        
+                                        <div class="live-btn-tprofile">
+                                            <div class="live-svg">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
+                                                </svg>                                                    
+                                            </div>
+
+                                            <p>Live</p>
+                                        </div>
+
+                                        <div class="tprofile-upcomeing-date">
+                                            <p>Now 01:00 - 02:30</p>
+                                        </div>
+
+                                    </div>
+                                
+                                    <div class="tprofile-upcomeing-name-div">
+
+                                        <div>
+                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
+                                        </div>
+                
+                                        <div>
+                                            <p class="tprofile-name-card">Gregory</p>
+                                        </div>
+                
+                                        <div class="gread-btn">
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A1-2</a>
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-1</a>
+                                        </div>
+
+                                    </div>
+
+
+                                
+                                </div>
+
+
+
+                                <!-- upcoming box4 -->
+
+                                <div class="tprofile-upcomeing-box">
+
+                                    <div class="tprofile-upcomeimg-tittle">
+                                        <p>Beginners</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        
+                                        <div class="live-btn-tprofile">
+                                            <div class="live-svg">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
+                                                </svg>                                                    
+                                            </div>
+
+                                            <p>Live</p>
+                                        </div>
+
+                                        <div class="tprofile-upcomeing-date">
+                                            <p>Now 02:00 - 03:30</p>
+                                        </div>
+
+                                    </div>
+                                
+                                    <div class="tprofile-upcomeing-name-div">
+
+                                        <div>
+                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
+                                        </div>
+                
+                                        <div>
+                                            <p class="tprofile-name-card">Philip</p>
+                                        </div>
+                
+                                        <div class="gread-btn">
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">B2</a>
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-2</a>
+                                        </div>
+
+                                    </div>
+
+
+                                
+                                </div>
+
+
+
+
+
+
+
+
+
                             </div>
-                        
-                        
+
+                            <!-- german courses upcoming box div  -->
+
+                            <div class="tprofile-english-div">
+
+                                <div class="sidebar-sub-tittle-div">
+
+                                    <div class="d-flex cgap-10 mt-10">
+                                        <div class="teacher-language-svg">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <circle cx="15" cy="15" r="14" fill="url(#patterng)" stroke="#F6F8FC" stroke-width="2"/>
+                                                <defs>
+                                                <pattern id="patterng" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0_2_16854" transform="scale(0.0119048)"/>
+                                                </pattern>
+                                                <image id="image0_2_16854" width="84" height="84" xlink:href="data:image/png;base64,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"/>
+                                                </defs>
+                                            </svg>     
+                                        </div>
+    
+                                        <p class="tprofile-language-tittle">German Language Course</p>    
+                                    </div>
+
+                                    <div>
+                                        <p class="upcoming-tittle-tprofile">Upcoming Lessons in the course</p>
+                                    </div>
+
+                                </div>
+
+                                <!-- upcomeing box1 -->
+                                <div class="tprofile-upcomeing-box">
+
+                                    <div class="tprofile-upcomeimg-tittle">
+                                        <p>Dialogues & Conversation Skills</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        
+                                        <div class="live-btn-tprofile">
+                                            <div class="live-svg">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
+                                                </svg>                                                    
+                                            </div>
+
+                                            <p>Live</p>
+                                        </div>
+
+                                        <div class="tprofile-upcomeing-date">
+                                            <p>Now 11:00 - 12:30   </p>
+                                        </div>
+
+                                    </div>
+                                
+                                    <div class="tprofile-upcomeing-name-div">
+
+                                        <div>
+                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
+                                        </div>
+                
+                                        <div>
+                                            <p class="tprofile-name-card">Shane</p>
+                                        </div>
+                
+                                        <div class="gread-btn">
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A2-2</a>
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-1</a>
+                                        </div>
+
+                                    </div>
+
+
+                                
+                                </div>
+
+                                <!-- upcoming box2 -->
+
+                                <div class="tprofile-upcomeing-box">
+
+                                    <div class="tprofile-upcomeimg-tittle">
+                                        <p>Dialogues & Conversation Skills</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        
+                                        <div class="live-btn-tprofile">
+                                            <div class="live-svg">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
+                                                </svg>                                                    
+                                            </div>
+
+                                            <p>Live</p>
+                                        </div>
+
+                                        <div class="tprofile-upcomeing-date">
+                                            <p>Now 11:00 - 12:30</p>
+                                        </div>
+
+                                    </div>
+                                
+                                    <div class="tprofile-upcomeing-name-div">
+
+                                        <div>
+                                            <img class="upcomeing-teacher-img" src="" alt="profile-img">
+                                        </div>
+                
+                                        <div>
+                                            <p class="tprofile-name-card">Marvin</p>
+                                        </div>
+                
+                                        <div class="gread-btn">
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">B1-1</a>
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B2</a>
+                                        </div>
+
+                                    </div>
+
+
+                                
+                                </div>
+
+
+                                <!-- upcoming box3 -->
+
+                                <div class="tprofile-upcomeing-box">
+
+                                    <div class="tprofile-upcomeimg-tittle">
+                                        <p>Grammer Practice</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        
+                                        <div class="live-btn-tprofile">
+                                            <div class="live-svg">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
+                                                </svg>                                                    
+                                            </div>
+
+                                            <p>Live</p>
+                                        </div>
+
+                                        <div class="tprofile-upcomeing-date">
+                                            <p>Now 01:00 - 02:30</p>
+                                        </div>
+
+                                    </div>
+                                
+                                    <div class="tprofile-upcomeing-name-div">
+
+                                        <div>
+                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
+                                        </div>
+                
+                                        <div>
+                                            <p class="tprofile-name-card">Gregory</p>
+                                        </div>
+                
+                                        <div class="gread-btn">
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A1-2</a>
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-1</a>
+                                        </div>
+
+                                    </div>
+
+
+                                
+                                </div>
+
+
+
+                                <!-- upcoming box4 -->
+
+                                <div class="tprofile-upcomeing-box">
+
+                                    <div class="tprofile-upcomeimg-tittle">
+                                        <p>Beginners</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        
+                                        <div class="live-btn-tprofile">
+                                            <div class="live-svg">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
+                                                </svg>                                                    
+                                            </div>
+
+                                            <p>Live</p>
+                                        </div>
+
+                                        <div class="tprofile-upcomeing-date">
+                                            <p>Now 02:00 - 03:30</p>
+                                        </div>
+
+                                    </div>
+                                
+                                    <div class="tprofile-upcomeing-name-div">
+
+                                        <div>
+                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
+                                        </div>
+                
+                                        <div>
+                                            <p class="tprofile-name-card">Dustin</p>
+                                        </div>
+                
+                                        <div class="gread-btn">
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">B2</a>
+                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-2</a>
+                                        </div>
+
+                                    </div>
+
+
+                                
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
                         </div>
-
-
-
                     </div>
 
 
@@ -408,11 +794,323 @@
 
                 </div>
                 <!-- side bar main -->
+
+
+
+                <!-- main content start  -->
+                <div class="tprofile-main-div">
+
+                    <!-- content box 1  -->
+                    <div class="tprofile-content1-div">
+
+                        <div class="description-div">
+
+                            <div class="description-tittle">
+                                <p>Description</p>
+                            </div>
+
+                            <div class="description-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra malesuada gravida rutrum vulputate ultricies ullamcorper in sapien, sed. Adipiscing id adipiscing amet in. Duis scelerisque tortor, pellentesque metus rhoncus. At dolor eu risus posuere tincidunt lorem pharetra convallis. In tempor, eget non ullamcorper consectetur pretium velit etiam. Duis urna, bibendum in vitae lorem aenean id ipsum tristique. Gravida nunc commodo at ac eu quis enim vitae. Rhoncus aliquam odio arcu at feugiat sapien elementum ut tortor. Nulla nec tellus lectus sit aenean quis in nibh. Tortor sapien elit interdum imperdiet vel laoreet augue. Nibh egestas in nisl amet nisi.</p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="quote-div">
+
+                            <div class="description-tittle">
+                                <p>Quote</p>
+                            </div>
+
+                            <div class="description-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra malesuada gravida rutrum vulputate ultricies ullamcorper in sapien, sed. Adipiscing id adipiscing amet in. Duis scelerisque tortor, pellentesque metus rhoncus. At dolor eu risus posuere tincidunt lorem pharetra convallis. In tempor, eget non ullamcorper consectetur pretium velit etiam. Duis urna, bibendum in vitae lorem aenean id ipsum tristique. Gravida nunc commodo at ac eu quis enim vitae. Rhoncus aliquam odio arcu at feugiat sapien elementum ut tortor. Nulla nec tellus lectus sit aenean quis in nibh. Tortor sapien elit interdum imperdiet vel laoreet augue. Nibh egestas in nisl amet nisi.</p>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <!-- content box 2  -->
+                    <div class="tprofile-content2-div">
+
+                        <div class="tprofile-content2-tittle-div description-tittle">
+
+                            <div class="">
+                                <p>Save Time</p>
+                            </div>
+
+                            <div class="infom-svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C10.0222 2 8.0888 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.34591 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7414 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.76121C14.6136 2.25866 13.3132 2 12 2ZM12 20C10.4178 20 8.87104 19.5308 7.55544 18.6518C6.23985 17.7727 5.21447 16.5233 4.60897 15.0615C4.00347 13.5997 3.84504 11.9911 4.15372 10.4393C4.4624 8.88743 5.22433 7.46197 6.34315 6.34315C7.46197 5.22433 8.88744 4.4624 10.4393 4.15372C11.9911 3.84504 13.5997 4.00346 15.0615 4.60896C16.5233 5.21447 17.7727 6.23985 18.6518 7.55544C19.5308 8.87103 20 10.4178 20 12C20 14.1217 19.1572 16.1566 17.6569 17.6569C16.1566 19.1572 14.1217 20 12 20Z" fill="#666666"/>
+                                    <path d="M12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9Z" fill="#666666"/>
+                                    <path d="M12 10C11.7348 10 11.4804 10.1054 11.2929 10.2929C11.1054 10.4804 11 10.7348 11 11V16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16V11C13 10.7348 12.8946 10.4804 12.7071 10.2929C12.5196 10.1054 12.2652 10 12 10Z" fill="#666666"/>
+                                </svg>  
+                            </div>
+
+                        </div>
+
+                        <div class="tprofile-save-content">
+                            <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada eu neque condimentum nulla dictum ac nisl, enim. Enim enim, elementum aliquam mattis consectetur dolor, in faucibus aenean. Purus tristique nulla scelerisque sollicitudin faucibus quam sit elementum. </p>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <!-- content box 3  -->
+                    <div class="tprofile-content3-div">
+
+                        <div class="d-flex review-tittle-div"> 
+
+                            <div>
+                                <p class="review-tittle">Reviews</p>
+                            </div>
+
+                            <div class="review-score">
+                                <p>76</p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- review 1  -->
+                        <div class="review-div">
+
+                            <div class="review-img">
+                                <img src="image/gergana.jpg" alt="profile-img">
+                            </div>
+
+                            <div class="review-content-div">
+
+                                <div class="review-sub-tittle">
+                                    <p>Gergana</p>
+                                </div>
+
+                                <div class="review-content">
+                                    <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you, Teacher Koce!</p>
+                                </div>
+
+                                <div>
+                                    <p class="review-time">1 month ago</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        
+                        <!-- review 2 -->
+
+                        <div class="review-div">
+
+                            <div class="review-img">
+                                <img src="image/gergana.jpg" alt="profile-img">
+                            </div>
+
+                            <div class="review-content-div">
+
+                                <div class="review-sub-tittle">
+                                    <p>Gergana</p>
+                                </div>
+
+                                <div class="review-content">
+                                    <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you, Teacher Koce!</p>
+                                </div>
+
+                                <div>
+                                    <p class="review-time">1 month ago</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- review 3 -->
+                        
+                        <div class="review-div">
+
+                            <div class="review-img">
+                                <img src="image/gergana.jpg" alt="profile-img">
+                            </div>
+
+                            <div class="review-content-div">
+
+                                <div class="review-sub-tittle">
+                                    <p>Gergana</p>
+                                </div>
+
+                                <div class="review-content">
+                                    <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you, Teacher Koce!</p>
+                                </div>
+
+                                <div>
+                                    <p class="review-time">1 month ago</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        
+                        
+                        <!-- review 4 -->
+                        
+                        <div class="review-div">
+
+                            <div class="review-img">
+                                <img src="image/gergana.jpg" alt="profile-img">
+                            </div>
+
+                            <div class="review-content-div">
+
+                                <div class="review-sub-tittle">
+                                    <p>Gergana</p>
+                                </div>
+
+                                <div class="review-content">
+                                    <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you, Teacher Koce!</p>
+                                </div>
+
+                                <div>
+                                    <p class="review-time">1 month ago</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        
+                        
+                        <!-- review 5 -->
+                        
+                        <div class="review-div">
+
+                            <div class="review-img">
+                                <img src="image/gergana.jpg" alt="profile-img">
+                            </div>
+
+                            <div class="review-content-div">
+
+                                <div class="review-sub-tittle">
+                                    <p>Gergana</p>
+                                </div>
+
+                                <div class="review-content">
+                                    <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you, Teacher Koce!</p>
+                                </div>
+
+                                <div>
+                                    <p class="review-time">1 month ago</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        
+                        
+                        <!-- review 6 -->
+                        
+                        <div class="review-div">
+
+                            <div class="review-img">
+                                <img src="image/gergana.jpg" alt="profile-img">
+                            </div>
+
+                            <div class="review-content-div">
+
+                                <div class="review-sub-tittle">
+                                    <p>Gergana</p>
+                                </div>
+
+                                <div class="review-content">
+                                    <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you, Teacher Koce!</p>
+                                </div>
+
+                                <div>
+                                    <p class="review-time">1 month ago</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        
+                        
+                        <!-- review 7 -->
+                        
+                        <div class="review-div">
+
+                            <div class="review-img">
+                                <img src="image/gergana.jpg" alt="profile-img">
+                            </div>
+
+                            <div class="review-content-div">
+
+                                <div class="review-sub-tittle">
+                                    <p>Gergana</p>
+                                </div>
+
+                                <div class="review-content">
+                                    <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you, Teacher Koce!</p>
+                                </div>
+
+                                <div>
+                                    <p class="review-time">1 month ago</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        
+                        
+                        <!-- review 8 -->
+                        
+                        <div class="review-div">
+
+                            <div class="review-img">
+                                <img src="image/gergana.jpg" alt="profile-img">
+                            </div>
+
+                            <div class="review-content-div">
+
+                                <div class="review-sub-tittle">
+                                    <p>Gergana</p>
+                                </div>
+
+                                <div class="review-content">
+                                    <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you, Teacher Koce!</p>
+                                </div>
+
+                                <div>
+                                    <p class="review-time">1 month ago</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        
+                        <!-- review end  -->
+                        
+                        
+                    </div>
+                        
+                </div>
     
     
     
-    
-    
+                
             </div>
         </body>
 
