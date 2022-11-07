@@ -10,11 +10,9 @@ html {
     line-height: 1.5
   }
   
-  
   body {
     margin: 0;
   }
-  
   
   main {
     display: block;
@@ -23,8 +21,6 @@ html {
   .container {
     width: 100%
   }
-
-  
   
   h1 {
     font-size: 2em;
@@ -46,8 +42,6 @@ html {
     background-color: transparent;
   }
   
-  
-  
   abbr[title] {
     border-bottom: none; 
     text-decoration: underline;
@@ -59,9 +53,7 @@ html {
     font-weight: bolder;
   }
   
-  code,
-  kbd,
-  samp {
+  code, kbd, samp {
     font-family: monospace, monospace; 
     font-size: 1em; 
   }
@@ -70,8 +62,7 @@ html {
     font-size: 80%;
   }
   
-  sub,
-  sup {
+  sub,sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -452,7 +443,7 @@ html {
     font-size: 1.25rem;
     line-height: 24px;
     color: #666666;
-
+    white-space: nowrap;
 }
 
 .login-container{
@@ -1022,10 +1013,6 @@ html {
   background-repeat: no-repeat;
 }
 
-.content4-background{
-  /* overflow: hidden; */
-}
-
 .content4-background-mobile{
   display: none;
 }
@@ -1052,30 +1039,30 @@ html {
   border-radius: 20px;
 }
 
-.score-card1{
+/* .score-card1{
   
   /* position: absolute; */
   /* top: 80px;
   left: 240px; */
-}
+/* } */
 
-.score-card2{
+/* .score-card2{ */
   /* position: absolute;
     top: 80px;
     left: 575px; */
-}
+/* } */
 
-.score-card3{
+/* .score-card3{ */
   /* position: absolute;
     top: 261px;
     left: 375px; */
-}
+/* } */
 
-.score-card4{
+/* .score-card4{ */
   /* position: absolute;
   top: 261px;
   left: 731px; */
-}
+/* } */
 
 .score-card-tittle{
   font-family: 'Crimson Pro';
@@ -1425,10 +1412,6 @@ html {
   header{
     padding: 0px 150px;
   }
-
-  .header-container{
-   
-  }
   
   .home-container{
     padding: 295px 150px 0px 150px;
@@ -1696,10 +1679,6 @@ html {
 
     header{
      padding: 0 130px;
-    }
-  
-    .header-container{
-     
     }
 
     .header-commpany-logo {
@@ -2364,10 +2343,6 @@ html {
       padding: 1px 0px 4px 0px;
     }
 
-    .teacher-sub-tittle{
-
-    }
-
     .teacher-profile-grid{
       column-gap: 10px;
       row-gap: 10px;
@@ -2566,10 +2541,10 @@ html {
   
       /* content 2 media 1681 */
   
-  .content2-container{
-      padding: 30px 45px;
-      column-gap: 25px;
-  }
+    .content2-container{
+        padding: 30px 45px;
+        column-gap: 25px;
+    }
   
    
    .content2-tittle{
@@ -2723,17 +2698,9 @@ html {
           padding: 20px 25px; 
           top: 140px;
           left: 366px;
+    }
       
-      }
-  
-    .content4-img img{
- 
-    }  
-  
-  
-  
-  
-  
+
     .content5-container{
       padding: 25px 30px;
     }
@@ -2829,13 +2796,13 @@ html {
       line-height: 15px;
     }
     
-        /* footer media 1681px */
-  
-        .footer-container{
-          padding: 40px 50px;
-        }
-   
-      }
+      /* footer media 1681px */
+
+    .footer-container{
+      padding: 40px 50px;
+    }
+
+  }
 
 
    @media only screen and (max-width: 768px){
@@ -3347,6 +3314,7 @@ html {
     .blog{
       padding: 10px;
     }
+
     .blog-date{
       padding: 10px 0px 6px 0px;
       font-size: 1.268rem;
@@ -4899,28 +4867,6 @@ html {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         /* all about courses
         page 2 start  */
 
@@ -4986,10 +4932,6 @@ html {
 
 .courses-sub-header{
   padding: 30px 200px;
-}
-
-.courses-menu-nav-bar{
- 
 }
 
 .courses-menu-ul{
@@ -5084,9 +5026,6 @@ html {
   align-items: center;
 }
 
-.courses-card-tittle svg{
-
-}
 
 .courses-card-tittle p{
   font-size: 1.75rem;
@@ -5105,10 +5044,6 @@ html {
   display: flex;
   column-gap: 10px;
   align-items: center;
-}
-
-.courses-homework-svg svg{
-
 }
 
 
@@ -5146,10 +5081,6 @@ html {
   border-radius: 15px;
 }
 
-
-.upcomeing-courses-div{
-
-}
 
 .upcomeing-courses{
   border-right: 1px solid #ECECEC;
@@ -5204,10 +5135,6 @@ html {
   font-size: 0.875rem;
   line-height: 17px;
   color: #000000;
-}
-
-.upcomeing-courses-date{
-
 }
 
 .courses-live-btn{
@@ -5385,9 +5312,6 @@ html {
   column-gap: 3.45px;
 }
 
-.active-teacher-lesson svg{
-
-}
 
 .active-teacher-lesson-score{
   font-size: 0.5rem;
@@ -5588,10 +5512,6 @@ html {
 
   .courses-home-tittle{
     line-height: 48px;
-  }
-
-  .courses-home-sub-tittle-div{
-
   }
 
   .grammer-practice{
@@ -5927,8 +5847,6 @@ html {
     font-size: 1.54rem;
     line-height:15px
   }
-
-  .courses-live-btn-flex-p{}
   
   .upcomeing-courses-date{
     font-size: 1.284rem;
@@ -6150,10 +6068,6 @@ html {
     color: #000;
   }
 
-  .allteacher-card-tittle svg{
-
-  }
-
   .allteacher-right-tittle-div{
     display: flex;
     align-items: center;
@@ -6190,10 +6104,6 @@ html {
   }
 
 
-  .all-teacher-grid-div{
-    
-  }
-
   .all-teacher-grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -6224,10 +6134,6 @@ html {
     -webkit-box-shadow: 2px 27px 99px -29px rgb(0 0 0 / 8%);
     -moz-box-shadow: 2px 27px 99px -29px rgba(0,0,0,0.08);
     box-shadow: 2px 27px 99px -29px rgb(0 0 0 / 8%);
-  }
-
-  .allteacher-profile-img img{
-
   }
 
   .allteacher-card-name{
@@ -6651,13 +6557,8 @@ html {
 
   .english-teacher-sub-header{
     padding: 30px 200px;
+  }
 
-  }
-  
-  .english-teacher-menu-nav-bar{
-   
-  }
-  
   .english-teacher-menu-ul{
     display: flex;
     column-gap: 40px;
@@ -7032,6 +6933,10 @@ html {
     display: none;
   }
 
+  .teacher-home-img svg {
+    width: 201px;
+    height: auto;
+  }
 
   .english-teacher-home-tittle{
     line-height: 40px;
@@ -7194,7 +7099,7 @@ html {
 
 
    .news-card-main-div{
-    padding: 50px 200px 7px 200px;
+    padding: 50px 200px;
     display: grid;
     row-gap: 12px;
    }
@@ -7590,10 +7495,6 @@ html {
     column-gap: 45px;
   }
 
-  .teach-condition-div{
-
-  }
-
   .conditions-tittle{
     font-weight: 500;
     font-size: 1.375rem;
@@ -7608,21 +7509,6 @@ html {
     line-height: 24px;
     color: #000000;
   }
-
-  .teach-p1-m{
-    
-  }
-  .teach-p2-m{
-
-  }
-  .teach-p3-m{
-
-  }
-  .teach-p4-m{
-
-  }
-
-
 
   .teach-terms-line{
     font-weight: 400;
@@ -7899,7 +7785,6 @@ html {
   border: 1px solid #EBEBEB;
   border-radius: 20px;
   padding: 25px 50px;
-  width: fit-content;
 }
 
 .teacher-profile-box:hover{
@@ -7910,8 +7795,16 @@ html {
   border: 1px solid #EBEBEB;
   border-radius: 20px;
   padding: 25px;
-  width: fit-content;
 }
+
+.sidebar2-main-div:hover{
+  border: 1px solid #d0d0d0;
+}
+
+.tprofile-upcomeing-box:hover{
+  border: 1px solid #d0d0d0;
+}
+
 
 .teacher-profile-name{
   line-height: 39px;
@@ -8033,6 +7926,7 @@ html {
   font-size: 1.5rem;
   line-height: 29px;
   color: #000;
+  margin-top: 20px;
 }
 
 .teacher-language-box-div{
@@ -8084,11 +7978,7 @@ html {
   margin: 15px 0 0;
 }
 
-.tprofile-upcomeimg-tittle{
 
-
-
-}
 
 .live-btn-tprofile{
   display: flex;
@@ -8100,7 +7990,7 @@ html {
   padding: 6px 12px;
   border-radius: 30px;
   column-gap: 3px;
-  margin: 5px 5px 10px 0px;
+  margin: 10px 5px 10px 0px;
   align-items: center;
 }
 
@@ -8123,6 +8013,10 @@ html {
 }
 
 .mt-10{
+  margin-top: 10px;
+}
+
+.mt-20{
   margin-top: 10px;
 }
 
@@ -8160,12 +8054,16 @@ html {
   column-gap: 20px;
 }
 
-.tprofile-content1-div{
-  display: flex;
+.tprofile-content{
   padding: 25px;
   border: 1px solid #ECECEC;
   border-radius: 20px;
+}
+
+.tprofile-content1-div{
+  display: grid;
   column-gap: 25px;
+  grid-template-columns: auto auto;
 }
 
 .description-tittle{
@@ -8197,16 +8095,8 @@ html {
   column-gap: 17px;
 }
 
-.tprofile-content2-div,
-.tprofile-content3-div{
-  padding: 25px;
-  border: 1px solid #ECECEC;
-  border-radius: 20px;
-}
-
 .description-div{
   border-right: 1px solid #ECECEC;
-  border-radius: 20px;
   padding-right: 25px;
 }
 
@@ -8264,3 +8154,216 @@ html {
   line-height: 18px;
   color: #666666;
 }
+
+.tprofile-book-class-btn{
+  padding: 15px 76px;
+  background-color: rgba(255, 210, 93, 0.5);;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 210, 93, 0.5);
+}
+
+.tprofile-book-class-btn:hover{
+  background-color: #f2bd394d;
+  border: 1px solid #f2bd394d;
+  cursor: pointer;
+}
+
+.tprofile-Suggest-btn{
+  padding: 15px 55px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ECECEC;
+  color: #666666;
+}
+
+.tprofile-Suggest-btn:hover{
+  background-color: #000;
+  border: 1px solid #000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+
+.tprofile-book-class-btn-text{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 21px;
+}
+
+.tprofile-Suggest-btn-text{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 21px;  
+}
+
+.tprofile-save-time-btn{
+  column-gap: 15px;
+}
+
+.tprofile-content:hover{
+  border: 1px solid #d0d0d0;
+}
+
+.teacher-language-box-div:hover{
+  border: 1px solid #d0d0d0;
+}
+
+ td {
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 5px;
+  padding: 10px 13px;
+  color: #666666;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.tprofile-table-div{
+  padding: 20px 0 30px;
+}
+
+.tprofile-table-div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tprofile-table p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  padding-bottom: 5px;
+}
+
+
+.table-active{
+  background-color: #fff2cf;
+  border: 1px solid #FFD25D;
+  color: #000;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+  /* teacher profile media screen */
+
+
+  @media only screen and (max-width: 1681px){
+
+    .teacher-profile-page{
+      padding: 0 150px;
+    }
+
+    .teacher-profile-box{
+      padding: 20px 40px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1450px){
+
+    .tprofile-table-div{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teacher-profile-page{
+      padding: 0 130px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1260px){
+    .teacher-profile-page {
+      padding: 20px 75px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1025px){
+
+    .teacher-profile-page {
+      padding: 20px 55px;
+    }
+
+    .description-div{
+      border:none
+    }
+
+    .tprofile-content1-div{
+      display: block;
+    }
+
+    .tprofile-content{
+      padding: 20px;
+    }
+
+    .tprofile-book-class-btn{
+      padding: 13px 55px;
+    }
+
+    .tprofile-Suggest-btn{
+      padding: 13px 35px;
+    }
+
+    .sidebar2-main-div {
+      padding: 20px;
+    }
+
+
+    .teacher-profile-sub-name {
+      font-size: 1.2rem;
+      line-height: 12px;
+    }
+
+    .teacher-profile-name{
+      line-height: 25px;
+    }
+
+    .teacher-profile-name-div{
+      padding: 10px 0 0 0;
+    }
+
+    .tprofile-main-img img{
+      width: 80px;
+    }
+
+    .lesson-score p,
+    .lesson-text{
+      font-size: 1.2rem;
+    }
+
+    .language-box{
+
+    }
+
+    .teacher-profile-lesson-div {
+      padding: 5px 0 16px;
+    }
+
+    .sidebar-tittle{
+      margin: 0;
+    }
+
+    .tprofile-language-sub-tittle{
+      font-size: 1rem;
+      padding: 0;
+    }
+
+    .upcoming-tittle-tprofile {
+      padding: 5px 0;
+    }
+
+    .tprofile-upcomeing-box {
+      padding: 15px ;
+    }
+
+    .tprofile-upcomeing-box{
+      margin: 10px 0 0;
+      line-height: 15px;
+    }
+
+  }
