@@ -1,6 +1,6 @@
 <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d_2_692)">
-<circle cx="28.5" cy="24.5" r="14.5" fill="url(#pattern0)" shape-rendering="crispEdges"/>
+<circle cx="28.5" cy="24.5" r="14.5" fill="url(#patternfrench)" shape-rendering="crispEdges"/>
 <circle cx="28.5" cy="24.5" r="13.5" stroke="#F6F8FC" stroke-width="2" shape-rendering="crispEdges"/>
 </g>
 <defs>
@@ -14,7 +14,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_692"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_692" result="shape"/>
 </filter>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<pattern id="patternfrench" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_2_692" transform="scale(0.0119048)"/>
 </pattern>
 <image id="image0_2_692" width="84" height="84" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAIAAACTCYeWAAAAsklEQVR4nO3PsQ2DQBQE0Q8SBESkF9CEExd05RDSBhXRCTp8dgmWgATNvAJWO02aU1xT9lI/dRqn/M75lYduuDj4x3HUdf0uS7NtERF9f3qpve3TAxlPZTyV8VTGUxlPZTyV8VTGUxlPZTyV8VTGUxlPZTyV8VTGUxlPZTyV8VTGUxlPZTyV8VTGUxlPZTyV8VTGUxlPZTyV8VTGUxlPZTyV8VTGUxlPZTyV8VTGUxlP9QPYSxHZA8uqWwAAAABJRU5ErkJggg=="/>

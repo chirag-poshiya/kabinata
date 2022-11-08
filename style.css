@@ -126,7 +126,7 @@ html {
   
 .cgap-10{
  column-gap: 10px;
-}
+  }
 
 
   fieldset {
@@ -2068,7 +2068,7 @@ html {
     }
 
     header{
-      padding: 0px 50px;
+      padding: 5px 50px 0;
     }
 
    
@@ -7908,6 +7908,12 @@ html {
 }
 
 .write-to-teacher-div{
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+
+.write-to-teacher-div a{
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 23px;
@@ -7915,8 +7921,6 @@ html {
   padding: 20px 40px;
   background-color: #000;
   border-radius: 10px;
-  text-align: center;
-  margin-top: 20px;
   border: 1px solid #FFFFFF;
 }
 
@@ -7926,7 +7930,6 @@ html {
   font-size: 1.5rem;
   line-height: 29px;
   color: #000;
-  margin-top: 20px;
 }
 
 .teacher-language-box-div{
@@ -8087,6 +8090,7 @@ html {
   font-size: 1.25rem;
   line-height: 24px;
   color: #666666;
+  text-align: justify;
 }
 
 .tprofile-content2-tittle-div{
@@ -8105,7 +8109,7 @@ html {
 }
 
 
-.write-to-teacher-div:hover{
+.write-to-teacher-div a:hover{
   background-color: #FFFFFF;
   color: #000;
   border: 1px solid #000;
@@ -8233,7 +8237,7 @@ html {
 
 .tprofile-table p{
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   color: #000;
   padding-bottom: 5px;
@@ -8246,6 +8250,27 @@ html {
   color: #000;
   border-radius: 4px;
   padding: 5px;
+}
+
+.tprofile-upcomeimg-tittle{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;  
+}
+
+.tprofile-gread-btn{
+  position: absolute;
+  right: 0;
+}
+
+.tprofile-content3-div{
+ 
+}
+
+.tprofile-BGN,
+.tprofile-bgn-hr{
+  line-height: 19px;
+  font-size: 1.188rem;
 }
 
   /* teacher profile media screen */
@@ -8290,7 +8315,8 @@ html {
     }
 
     .description-div{
-      border:none
+      border:none;
+      padding-right: 0;
     }
 
     .tprofile-content1-div{
@@ -8341,7 +8367,7 @@ html {
     }
 
     .teacher-profile-lesson-div {
-      padding: 5px 0 16px;
+      padding: 5px 0 10px;
     }
 
     .sidebar-tittle{
@@ -8352,6 +8378,7 @@ html {
       font-size: 1rem;
       padding: 0;
     }
+    
 
     .upcoming-tittle-tprofile {
       padding: 5px 0;
@@ -8366,4 +8393,410 @@ html {
       line-height: 15px;
     }
 
+    .write-to-teacher-div{
+      margin: 27px auto 17px;
+    }
+
+    .write-to-teacher-div a{
+      line-height: 12px;
+      padding: 15px 40px;
+    }
+
+    .language-box{
+      column-gap: 6px;
+      padding: 5px 6px;
+      font-size: 1.23rem;
+    }
+
+    .tprofile-language-box{
+      padding-left: 7px;
+    }
+
+    .tprofile-language-tittle{
+      font-size: 1.27rem;
+      line-height: 15px;
+    }
+
+    .tprofile-upcomeimg-tittle{
+      line-height: 10px;
+      font-size: 1.3rem;
+    }
+
+    .sidebar2-main-div{
+      padding: 15px;
+    }
+
+    .sidebar1-main-div{
+      padding: 15px 30px;
+    }
+
+    .live-btn-tprofile,
+    .tprofile-upcomeing-date{
+      line-height: 12px;
+      font-size: 1rem;
+    }
+
+    .tprofile-name-card {
+      font-size: 1.12rem;
+    }
+
+    .tprofile-card-gread-btn {
+      padding: 5px 6px;
+      font-size: 0.8rem;
+    }
+
+    .description-tittle{
+      line-height: 25px;
+      margin-bottom: 5px;
+    }
+
+    .tprofile-content2-tittle-div{
+      column-gap: 7px;
+    }
+
+    .infom-svg svg {
+      width: 20px;
+      height: auto;
+    }
+
+    .description-content{
+      line-height: 23.5px;
+    }
+
+    .tprofile-table-div{
+      padding: 12px 0 15px;
+    }
+   
+    td{
+      padding: 6px 10px;
+      line-height: 13px;
+      font-size: 1rem;
+    }
+
+    .tprofile-book-class-btn-text,
+    .tprofile-Suggest-btn-text {
+      line-height: 10px;
+      font-size: 1.35rem;
+    }
+
+    .tprofile-book-class-btn {
+      padding: 10px 30px;
+      border-radius: 5px;
+    }
+
+    .tprofile-Suggest-btn{
+      padding: 10px 25px;
+      border-radius: 5px;
+    }
+
+    .tprofile-save-time-btn{
+      column-gap: 10px;
+    }
+
+    .review-score{
+      line-height: 8px;
+    }
+
+    .review-div{
+      padding: 10px 0;
+    }
+
+    .review-sub-tittle {
+      line-height: 13px;
+    }
+
+    .review-content,
+    .review-time{
+      line-height: 10px;
+    }
+
+    .review-tittle {
+    line-height: 20px;
+    }
+
+    .review-tittle-div{
+      padding-bottom: 10px;
+    }
+
+    .sidebar2-main-div,
+    .teacher-profile-box,
+    .tprofile-content{
+      border-radius: 10px;
+    }
+
   }
+
+  @media only screen and (max-width:768px){
+
+    .teacher-profile-page{
+      padding: 0 50px;
+      column-gap: 10px;
+    }
+
+    .tprofile-table-div{
+      grid-template-columns: auto;
+      row-gap: 10px;
+      justify-content: center;
+      overflow: auto;
+    }
+
+    .description-content{
+      line-height: 20px;
+    }
+
+    .description-tittle {
+      line-height: 15px;
+    }
+
+    .sidebar2-main-div,
+    .teacher-profile-box,
+    .tprofile-content {
+      padding: 15px;
+    }
+
+    .tprofile-upcomeimg-tittle{
+      white-space: nowrap;
+    }
+
+    .teacher-language-div,
+    .tprofile-save-time-btn{
+      justify-content: center;
+    }
+
+    .tprofile-content2-div{
+      height: 524px;
+      overflow: auto;
+    }
+
+    .teacher-language-box-div {
+      padding: 10px;
+    }
+
+    .mt-10 {
+      margin-top: 6px;
+    }
+
+    .upcoming-tittle-tprofile {
+      line-height: 15px;
+      padding: 3px 0;
+    }
+
+    .live-btn-tprofile{
+      padding: 6px 10px;
+      border-radius: 15px;
+      column-gap: 3px;
+      margin: 8px 5px 7px 0px;
+    }
+
+    .review-tittle{
+      line-height: 16px;
+      padding-right: 4px;
+    }
+
+    .sidebar2-main-div{
+      margin-bottom: 20px;
+    }
+
+    .tprofile-main-img img {
+      width: 65px;
+      height: auto;
+    }
+
+    .review-div {
+     column-gap: 10px;
+    }
+
+  }
+
+  @media only screen and (max-width:426px){
+
+    .teacher-profile-page{
+      display: block;
+      padding:  20px;
+    }
+
+    .tprofile-main-img img{
+      width: 90px;
+      height: auto;
+    }
+
+    .teacher-profile-lesson-div{
+      padding: 15px 0;
+    }
+    
+    .language-box {
+    column-gap: 10px;
+    padding: 11px 12px;
+    font-size: 1.23rem;
+    }
+
+    .teacher-profile-name{
+      font-size: 3.24rem;
+      line-height: 29px;
+    }
+
+
+    .write-to-teacher-div{
+      width: fit-content;
+    }
+
+    .d-flex-mobile{
+      display: flex;
+      column-gap: 15px;
+      align-items: center;
+    }
+
+    .teacher-profile-sub-name{
+      font-size: 1.901rem;
+      line-height: 19px;
+    }
+
+    .tprofile-BGN,
+    .tprofile-bgn-hr{
+      line-height: 17px;
+      font-size: 1.778rem;
+    }
+
+    .lesson-score p, .lesson-text,
+    .tbox-language-text,
+    .tprofile-language-sub-tittle {
+      font-size: 1.770rem;
+      line-height: 16px;
+    }
+
+    .write-to-teacher-div a,
+    .tprofile-language-tittle{
+      font-size: 2.028rem;
+      line-height: 19px;
+    }
+
+    .sidebar-tittle{
+      line-height: 27px;
+      font-size: 2.788rem;
+    }
+
+    .tprofile-language-tittle{
+      line-height: 26px;
+      font-size: 2.535rem;
+    }
+
+    .upcoming-tittle-tprofile{
+      display: none;
+    }
+
+    .tprofile-upcomeimg-tittle{
+      font-size: 2.281rem;
+      line-height: 22px;
+      font-weight: 500;
+    }
+
+    .live-btn-tprofile ,
+    .tprofile-upcomeing-date{
+      line-height: 15px;
+      font-size: 1.521rem;
+    }
+    
+    .tprofile-name-card{
+      font-size: 2.028rem;
+      line-height: 16px;
+    }
+
+    .tprofile-card-gread-btn{
+      font-size: 1.014rem;
+      line-height: 9px;
+    }
+
+    .description-tittle{
+      font-size: 2.788rem;
+      line-height: 27px;
+    }
+
+    .description-content{
+      font-size: 2.028rem;
+      line-height: 19px;
+    }
+
+    .tprofile-table p {
+      font-size: 1.901rem;
+      line-height: 18px;
+    }
+
+    .tprofile-table-div{
+      width: fit-content;
+    }
+
+    td{
+      font-size: 1.774rem;
+      line-height: 16px;
+    }
+
+    .tprofile-book-class-btn,
+    .tprofile-Suggest-btn{
+      padding: 13px 26px;
+      border-radius: 8px;
+    }
+    
+    .tprofile-book-class-btn-text, .tprofile-Suggest-btn-text {
+    line-height: 18px;
+    font-size: 1.901rem;
+    }
+
+    .sidebar2-main-div, .teacher-profile-box, .tprofile-content {
+      padding: 20px;
+    }
+
+    .review-tittle{
+      font-size:  2.788;
+      line-height: 26px;
+    }
+
+    .review-score{
+      font-size: 1.521rem;
+      line-height: 15px;
+    }
+
+    .review-sub-tittle{
+      font-size: 2.535rem;
+      line-height: 24px;
+    }
+
+    .review-content, .review-time{
+      font-size: 1.774rem;
+      line-height: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+  @media only screen and (max-width:321px){
+
+    .sidebar2-main-div, .teacher-profile-box, .tprofile-content {
+    padding: 15px;
+    }
+
+
+    .teacher-profile-page{
+      padding: 15px;
+    }
+
+    td {
+      font-size: 1.6rem;
+      line-height: 16px;
+    }
+
+    .tprofile-book-class-btn, .tprofile-Suggest-btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+  } 
