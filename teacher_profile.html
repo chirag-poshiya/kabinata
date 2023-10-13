@@ -1,1351 +1,1446 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <title>Teacher Profile</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;800;900&family=Inter:wght@200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    </head>
-    <body>
 
-        <!-- header-start -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Teacher Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;800;900&family=Inter:wght@200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
 
-        <header>
-            <div class="header-container">
+<body>
 
-                <div>
-                    <a href="index.html">
-                        <img  class="header-commpany-logo" src="image/Frame.svg" alt="commpany-logo">
-                    </a>
+    <!-- header-start -->
+
+    <header>
+        <div class="header-container">
+
+            <div>
+                <a href="index.html">
+                    <img class="header-commpany-logo" src="image/Frame.svg" alt="commpany-logo">
+                </a>
+            </div>
+
+            <div class="nav-bar">
+                <ul class="nav-bar-ul">
+                    <li class="nav-item"><a href="all_courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="active" href="all_teacher.html">Teachers</a></li>
+                    <li class="nav-item"><a href="#">Items</a></li>
+                    <li class="nav-item"><a href="#">Certificates</a></li>
+
+                    <li class="nav-item"><a href="#">Opinions</a></li>
+                </ul>
+            </div>
+
+            <div class="login-container">
+
+                <div class="contact">
+                    <p>Contact</p>
                 </div>
 
-                <div class="nav-bar">
-                    <ul class="nav-bar-ul">
-                        <li class="nav-item"><a href="all_courses.html">Courses</a></li>
-                        <li class="nav-item"><a class="active" href="all_teacher.html">Teachers</a></li>
-                        <li class="nav-item"><a href="#">Items</a></li>
-                        <li class="nav-item"><a href="#">Certificates</a></li>
-                        <li class="nav-item"><a href="#">For companies</a></li>
-                        <li class="nav-item"><a href="#">Opinions</a></li>
-                    </ul>
+                <div class="login-btn">
+                    <a href="#">Login</a>
                 </div>
 
-                <div class="login-container">
+                <div class="register-btn-navbar">
+                    <a href="#">Register</a>
+                </div>
 
-                    <div class="contact">
-                        <p>Contact</p>
-                    </div>
-
-                    <div class="login-btn">
-                        <a href="#">Login</a>
-                    </div>
-
-                    <div class="register-btn-navbar">
-                        <a href="#">Register</a>
-                    </div>
-
-                    <div class="profile-img">
-                        <svg width="78" height="79" viewBox="0 0 78 79" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g filter="url(#filter0_d_2_6992)">
-                            <rect x="14" y="10.5" width="50" height="50" rx="25" fill="url(#pattern0)"/>
-                            </g>
-                            <defs>
-                            <filter id="filter0_d_2_6992" x="0" y="0.5" width="78" height="78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset dy="4"/>
-                            <feGaussianBlur stdDeviation="7"/>
-                            <feComposite in2="hardAlpha" operator="out"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0.483333 0 0 0 0 0.45816 0 0 0 0 0.392708 0 0 0 0.33 0"/>
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_6992"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_6992" result="shape"/>
+                <div class="profile-img">
+                    <svg width="78" height="79" viewBox="0 0 78 79" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g filter="url(#filter0_d_2_6992)">
+                            <rect x="14" y="10.5" width="50" height="50" rx="25" fill="url(#pattern0)" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_2_6992" x="0" y="0.5" width="78" height="78"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="7" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.483333 0 0 0 0 0.45816 0 0 0 0 0.392708 0 0 0 0.33 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_6992" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_6992"
+                                    result="shape" />
                             </filter>
                             <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                            <use xlink:href="#image0_2_6992" transform="scale(0.0119048)"/>
+                                <use xlink:href="#image0_2_6992" transform="scale(0.0119048)" />
                             </pattern>
-                            <image id="image0_2_6992" width="84" height="84" xlink:href="data:image/png;base64,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"/>
-                            </defs>
-                            </svg>                            
-                    </div>
+                            <image id="image0_2_6992" width="84" height="84"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
                 </div>
             </div>
+        </div>
 
-             <!-- mobile menu start here -->
+        <!-- mobile menu start here -->
 
-             <div class="humburger-icon" onclick="myFunction()">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1H15M1 7H15M1 13H15" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-                    
-            </div>
-            </div>
+        <div class="humburger-icon" onclick="myFunction()">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H15M1 7H15M1 13H15" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+        </div>
+        </div>
         <div class="mobile-menu-container" id="mobile-menu-container">
             <nav class="mobile-nav-bar">
-            <ul class="mobile-nav-bar-ul">
-                <li class="mobile-nav-item"><a href="all_courses.html">Courses</a></li>
-                <li class="mobile-nav-item"><a class="active" href="all_teacher.html">Teachers</a></li>
-                <li class="mobile-nav-item"><a href="#">Items</a></li>
-                <li class="mobile-nav-item"><a href="#">Certificates</a></li>
-                <li class="mobile-nav-item"><a href="#">For companies</a></li>
-                <li class="mobile-nav-item"><a href="#">Opinions</a></li>
-                <li class="mobile-nav-item"><a href="#">Contact</a></li>
-                <li class="mobile-nav-item"><a href="#">Login</a></li>
-                <li class="mobile-nav-item"><a href="#">Register</a></li>
-                <li class="mobile-nav-item mobile-nav-img"><img src="image/united-kingdom.png" alt="profile"></li>
-            </ul>
-        </nav>
+                <ul class="mobile-nav-bar-ul">
+                    <li class="mobile-nav-item"><a href="all_courses.html">Courses</a></li>
+                    <li class="mobile-nav-item"><a class="active" href="all_teacher.html">Teachers</a></li>
+                    <li class="mobile-nav-item"><a href="#">Items</a></li>
+                    <li class="mobile-nav-item"><a href="#">Certificates</a></li>
+                    <li class="mobile-nav-item"><a href="#">For companies</a></li>
+                    <li class="mobile-nav-item"><a href="#">Opinions</a></li>
+                    <li class="mobile-nav-item"><a href="#">Contact</a></li>
+                    <li class="mobile-nav-item"><a href="#">Login</a></li>
+                    <li class="mobile-nav-item"><a href="#">Register</a></li>
+                    <li class="mobile-nav-item mobile-nav-img"><img src="image/united-kingdom.png" alt="profile"></li>
+                </ul>
+            </nav>
         </div>
 
 
 
 
-        </header>
+    </header>
 
-        <!-- header end -->
+    <!-- header end -->
 
-        <!-- teacher profile content start  -->
-        <body>
-            <div class="teacher-profile-page">
-    
-    
-                <div class="sidebar-maim">
+    <!-- teacher profile content start  -->
 
-                    <div class="teacher-profile-box">
-
-                        <div class="d-flex-mobile">
-
-                            <div class="tprofile-main-img">
-                                <img src="image/teacher-img.jpg" alt="teacher-img">
-                            </div>
-
-                            <div class="teacher-profile-name-div">
-
-                                <div class="teacher-profile-name">
-                                    <p>Jane Cooper</p>
-                                </div>
-
-                                <div class="teacher-profile-sub-name">
-                                    <p>Kotse Tanev</p>
-                                </div>
-
-                                    <div class="tprofile-bgn-div">
-            
-                                        <div class="tprofile-BGN">
-                                            <p>BGN 38/</p>
-                                        </div>
-            
-                                        <div class="tprofile-bgn-hr">
-                                            <p>hr</p>
-                                        </div>
-        
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="teacher-profile-lesson-div">
-
-                                <div class="teacher-lesson-flex">
-                                    <div class="lesson-svg">
-                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="26" height="26" rx="5" fill="#FFF9EB"/>
-                                            <g clip-path="url(#clip0_2_16864)">
-                                            <path d="M16.1476 11.9088C16.3614 11.9088 16.5688 11.9276 16.7762 11.9591V7.50865C16.7762 6.8172 16.2105 6.25146 15.519 6.25146H7.97593C7.28448 6.25146 6.71875 6.8172 6.71875 7.50865V17.5661C6.71875 18.2576 7.28448 18.8233 7.97593 18.8233H12.5395C12.0791 18.164 11.8083 17.391 11.7566 16.5885C11.7049 15.7859 11.8742 14.9846 12.2463 14.2716C12.6183 13.5587 13.1788 12.9614 13.8666 12.5448C14.5545 12.1282 15.3434 11.9082 16.1476 11.9088ZM9.23312 11.9088V7.50865H12.3761V11.9088L10.8046 10.9659L9.23312 11.9088Z" fill="#FFD25D"/>
-                                            <path d="M16.1478 13.166C14.4129 13.166 13.0049 14.5741 13.0049 16.309C13.0049 18.0439 14.4129 19.4519 16.1478 19.4519C17.8828 19.4519 19.2908 18.0439 19.2908 16.309C19.2908 14.5741 17.8828 13.166 16.1478 13.166ZM15.3621 17.8805V14.7375L17.8765 16.309L15.3621 17.8805Z" fill="#FFD25D"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_2_16864">
-                                            <rect width="14" height="14" fill="white" transform="translate(6 6)"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>     
-                                    </div>
-
-                                    <div class="lesson-text">
-                                        <p>Lessons taught</p>
-                                    </div>
-
-                                    <div class="lesson-score">
-                                        <p>2378</p>
-                                    </div>
-                                </div>
-
-                                
-                                <div class="teacher-lesson-flex">
-                                    <div class="lesson-svg">
-                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="26" height="26" rx="5" fill="#FFF9EB"/>
-                                            <g clip-path="url(#clip0_2_16864)">
-                                            <path d="M16.1476 11.9088C16.3614 11.9088 16.5688 11.9276 16.7762 11.9591V7.50865C16.7762 6.8172 16.2105 6.25146 15.519 6.25146H7.97593C7.28448 6.25146 6.71875 6.8172 6.71875 7.50865V17.5661C6.71875 18.2576 7.28448 18.8233 7.97593 18.8233H12.5395C12.0791 18.164 11.8083 17.391 11.7566 16.5885C11.7049 15.7859 11.8742 14.9846 12.2463 14.2716C12.6183 13.5587 13.1788 12.9614 13.8666 12.5448C14.5545 12.1282 15.3434 11.9082 16.1476 11.9088ZM9.23312 11.9088V7.50865H12.3761V11.9088L10.8046 10.9659L9.23312 11.9088Z" fill="#FFD25D"/>
-                                            <path d="M16.1478 13.166C14.4129 13.166 13.0049 14.5741 13.0049 16.309C13.0049 18.0439 14.4129 19.4519 16.1478 19.4519C17.8828 19.4519 19.2908 18.0439 19.2908 16.309C19.2908 14.5741 17.8828 13.166 16.1478 13.166ZM15.3621 17.8805V14.7375L17.8765 16.309L15.3621 17.8805Z" fill="#FFD25D"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_2_16864">
-                                            <rect width="14" height="14" fill="white" transform="translate(6 6)"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>     
-                                    </div>
-
-                                    <div class="lesson-text">
-                                        <p>Reviews</p>
-                                    </div>
-
-                                    <div class="lesson-score">
-                                        <p>76</p>
-                                    </div>
-                                </div>
-                            </div>
+    <body>
+        <div class="teacher-profile-page">
 
 
+            <div class="sidebar-maim">
 
+                <div class="teacher-profile-box">
 
-                        
+                    <div class="d-flex-mobile">
 
-                        <div class="teacher-language-div">
-                            <a href="">
-                                <div class="language-box">
-                                
-                                    <div class="teacher-language-svg">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <circle cx="15" cy="15" r="14" fill="url(#pattern0)" stroke="#F6F8FC" stroke-width="2"/>
-                                            <defs>
-                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                            <use xlink:href="#image0_2_16854" transform="scale(0.0119048)"/>
-                                            </pattern>
-                                            <image id="image0_2_16854" width="84" height="84" xlink:href="data:image/png;base64,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"/>
-                                            </defs>
-                                        </svg>     
-                                    </div>
-                                    
-                                    <div class="tbox-language-text">
-                                        <p>English</p>
-                                    </div>
-                                
-                                </div>
-                            </a>
-
-                            <a href="">
-                                <div class="language-box">
-                                
-                                    <div class="teacher-language-svg">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <circle cx="15" cy="15" r="14" fill="url(#patterng)" stroke="#F6F8FC" stroke-width="2"/>
-                                            <defs>
-                                            <pattern id="patterng" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                            <use xlink:href="#image0_2_16860" transform="scale(0.0119048)"/>
-                                            </pattern>
-                                            <image id="image0_2_16860" width="84" height="84" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAIAAACTCYeWAAAAmklEQVR4nO3SsQ0CQRAEQe70DhJBXGIfLgkQCSYmYaxRXRFMS7POOQ/Vnh4wqXhV8ariVcWrilcVrypeVbyqeFXxquJVxauue3+nN4xZn+f0hDn07YtXFa8qXlW8qnhV8ariVcWrilcVrypeVbyqeNX6vacnzLn2a3rCHPr2xauKVxWvKl5VvKp4VfGq4lXFq4pXFa8qXlW86g+VOgT/F9wQqwAAAABJRU5ErkJggg=="/>
-                                            </defs>
-                                        </svg>    
-                                    </div>
-                                    
-                                    <div class="tbox-language-text">
-                                        <p>German</p>
-                                    </div>
-                                
-                                </div>
-                            </a>
+                        <div class="tprofile-main-img">
+                            <img src="image/teacher-img.jpg" alt="teacher-img">
                         </div>
 
-                        <div class="write-to-teacher-div">
-                            <a href="#">Write to teacher</a>
-                        </div>
+                        <div class="teacher-profile-name-div">
 
-                      </div>
-                    
-                    <!-- teacher profile box end -->
-
-                    <div class="sidebar2-main-div mt-20">
-
-                        <div class="sidebar2-div1">
-                            
-                            <p class="sidebar-tittle">Teaches</p>
-
-                            <div class="teacher-language-box-div">
-
-                                <div class="teacher-language-svg">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <circle cx="15" cy="15" r="14" fill="url(#pattern0)" stroke="#F6F8FC" stroke-width="2"/>
-                                        <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0_2_16854" transform="scale(0.0119048)"/>
-                                        </pattern>
-                                        <image id="image0_2_16854" width="84" height="84" xlink:href="data:image/png;base64,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"/>
-                                        </defs>
-                                    </svg>     
-                                </div>
-                                
-                                <div class="tprofile-language-box">
-
-                                    <div class="tprofile-language-tittle">
-                                    <p class="">English</p>
-                                    </div>
-                                    
-                                    <div class="tprofile-language-sub-tittle">
-                                    <p class="">Kids, Students, Speaking</p>
-                                    </div>
-                                
-                                </div>
-                                
-                                </div>
-
-                            <div class="teacher-language-box-div mt-10">
-
-                                <div class="teacher-language-svg">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <circle cx="15" cy="15" r="14" fill="url(#patterng)" stroke="#F6F8FC" stroke-width="2"/>
-                                        <defs>
-                                        <pattern id="patterng" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0_2_16854" transform="scale(0.0119048)"/>
-                                        </pattern>
-                                        <image id="image0_2_16854" width="84" height="84" xlink:href="data:image/png;base64,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"/>
-                                        </defs>
-                                    </svg>     
-                                </div>
-                                
-                                <div class="tprofile-language-box">
-
-                                    <div class="tprofile-language-tittle">
-                                    <p class="">German</p>
-                                    </div>
-                                    
-                                    <div class="tprofile-language-sub-tittle">
-                                    <p class="">Adults, Speaking</p>
-                                    </div>
-                                
-                                </div>
-                                
-                                </div>
-
-
-
+                            <div class="teacher-profile-name">
+                                <p>Jane Cooper</p>
                             </div>
 
+                            <div class="teacher-profile-sub-name">
+                                <p>Kotse Tanev</p>
+                            </div>
 
-                        
-                        
-                        <div class="sidebar2-div2">
+                            <div class="tprofile-bgn-div">
 
-                            <p class="sidebar-tittle mt-20">Teacher Jane also teaches</p>
-                        
-                            <!-- english course upcoming box div  -->
-                            <div class="tprofile-english-div">
-
-                                <div class="sidebar-sub-tittle-div">
-
-                                    <div class="d-flex cgap-10 mt-10">
-                                        <div class="teacher-language-svg">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <circle cx="15" cy="15" r="14" fill="url(#pattern0)" stroke="#F6F8FC" stroke-width="2"/>
-                                                <defs>
-                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                <use xlink:href="#image0_2_16854" transform="scale(0.0119048)"/>
-                                                </pattern>
-                                                <image id="image0_2_16854" width="84" height="84" xlink:href="data:image/png;base64,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"/>
-                                                </defs>
-                                            </svg>     
-                                        </div>
-    
-                                        <p class="tprofile-language-tittle">English Language Course</p>    
-                                    </div>
-
-                                    <div>
-                                        <p class="upcoming-tittle-tprofile">Upcoming Lessons in the course</p>
-                                    </div>
-
+                                <div class="tprofile-BGN">
+                                    <p>BGN 38/</p>
                                 </div>
 
-                                <!-- upcomeing box1 -->
-                                <div class="tprofile-upcomeing-box">
-
-                                    <div class="tprofile-upcomeimg-tittle">
-                                        <p>Dialogues & Conversation Skills</p>
-                                    </div>
-
-                                    <div class="d-flex">
-                                        
-                                        <div class="live-btn-tprofile">
-                                            <div class="live-svg">
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
-                                                </svg>                                                    
-                                            </div>
-
-                                            <p>Live</p>
-                                        </div>
-
-                                        <div class="tprofile-upcomeing-date">
-                                            <p>Now 11:00 - 12:30</p>
-                                        </div>
-
-                                    </div>
-                                
-                                    <div class="tprofile-upcomeing-name-div">
-
-                                        <div>
-                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
-                                        </div>
-                
-                                        <div>
-                                            <p class="tprofile-name-card">Koce</p>
-                                        </div>
-                
-                                        <div class="tprofile-gread-btn">
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A1-1</a>
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">A1-2</a>
-                                        </div>
-
-                                    </div>
-
-
-                                
+                                <div class="tprofile-bgn-hr">
+                                    <p>hr</p>
                                 </div>
 
-                                <!-- upcoming box2 -->
-
-                                <div class="tprofile-upcomeing-box">
-
-                                    <div class="tprofile-upcomeimg-tittle">
-                                        <p>Speaking</p>
-                                    </div>
-
-                                    <div class="d-flex">
-                                        
-                                        <div class="live-btn-tprofile">
-                                            <div class="live-svg">
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
-                                                </svg>                                                    
-                                            </div>
-
-                                            <p>Live</p>
-                                        </div>
-
-                                        <div class="tprofile-upcomeing-date">
-                                            <p>Now 12:00 - 01:30</p>
-                                        </div>
-
-                                    </div>
-                                
-                                    <div class="tprofile-upcomeing-name-div">
-
-                                        <div>
-                                            <img class="upcomeing-teacher-img" src="image/Randall.jpg" alt="profile-img">
-                                        </div>
-                
-                                        <div>
-                                            <p class="tprofile-name-card">Randall</p>
-                                        </div>
-                
-                                        <div class="tprofile-gread-btn">
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A2-1</a>
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">A2-2</a>
-                                        </div>
-
-                                    </div>
-
-
-                                
-                                </div>
-
-
-                                <!-- upcoming box3 -->
-
-                                <div class="tprofile-upcomeing-box">
-
-                                    <div class="tprofile-upcomeimg-tittle">
-                                        <p>Grammer Practice</p>
-                                    </div>
-
-                                    <div class="d-flex">
-                                        
-                                        <div class="live-btn-tprofile">
-                                            <div class="live-svg">
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
-                                                </svg>                                                    
-                                            </div>
-
-                                            <p>Live</p>
-                                        </div>
-
-                                        <div class="tprofile-upcomeing-date">
-                                            <p>Now 01:00 - 02:30</p>
-                                        </div>
-
-                                    </div>
-                                
-                                    <div class="tprofile-upcomeing-name-div">
-
-                                        <div>
-                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
-                                        </div>
-                
-                                        <div>
-                                            <p class="tprofile-name-card">Gregory</p>
-                                        </div>
-                
-                                        <div class="tprofile-gread-btn">
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A1-2</a>
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-1</a>
-                                        </div>
-
-                                    </div>
-
-
-                                
-                                </div>
-
-
-
-                                <!-- upcoming box4 -->
-
-                                <div class="tprofile-upcomeing-box">
-
-                                    <div class="tprofile-upcomeimg-tittle">
-                                        <p>Beginners</p>
-                                    </div>
-
-                                    <div class="d-flex">
-                                        
-                                        <div class="live-btn-tprofile">
-                                            <div class="live-svg">
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
-                                                </svg>                                                    
-                                            </div>
-
-                                            <p>Live</p>
-                                        </div>
-
-                                        <div class="tprofile-upcomeing-date">
-                                            <p>Now 02:00 - 03:30</p>
-                                        </div>
-
-                                    </div>
-                                
-                                    <div class="tprofile-upcomeing-name-div">
-
-                                        <div>
-                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
-                                        </div>
-                
-                                        <div>
-                                            <p class="tprofile-name-card">Philip</p>
-                                        </div>
-                
-                                        <div class="tprofile-gread-btn">
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">B2</a>
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-2</a>
-                                        </div>
-
-                                    </div>
-
-
-                                
-                                </div>
-
-
-
-
-
-
-
-
-
                             </div>
-
-                            <!-- german courses upcoming box div  -->
-
-                            <div class="tprofile-english-div">
-
-                                <div class="sidebar-sub-tittle-div">
-
-                                    <div class="d-flex cgap-10 mt-10">
-                                        <div class="teacher-language-svg">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <circle cx="15" cy="15" r="14" fill="url(#patterng)" stroke="#F6F8FC" stroke-width="2"/>
-                                                <defs>
-                                                <pattern id="patterng" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                <use xlink:href="#image0_2_16854" transform="scale(0.0119048)"/>
-                                                </pattern>
-                                                <image id="image0_2_16854" width="84" height="84" xlink:href="data:image/png;base64,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"/>
-                                                </defs>
-                                            </svg>     
-                                        </div>
-    
-                                        <p class="tprofile-language-tittle">German Language Course</p>    
-                                    </div>
-
-                                    <div>
-                                        <p class="upcoming-tittle-tprofile">Upcoming Lessons in the course</p>
-                                    </div>
-
-                                </div>
-
-                                <!-- upcomeing box1 -->
-                                <div class="tprofile-upcomeing-box">
-
-                                    <div class="tprofile-upcomeimg-tittle">
-                                        <p>Dialogues & Conversation Skills</p>
-                                    </div>
-
-                                    <div class="d-flex">
-                                        
-                                        <div class="live-btn-tprofile">
-                                            <div class="live-svg">
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
-                                                </svg>                                                    
-                                            </div>
-
-                                            <p>Live</p>
-                                        </div>
-
-                                        <div class="tprofile-upcomeing-date">
-                                            <p>Now 11:00 - 12:30   </p>
-                                        </div>
-
-                                    </div>
-                                
-                                    <div class="tprofile-upcomeing-name-div">
-
-                                        <div>
-                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
-                                        </div>
-                
-                                        <div>
-                                            <p class="tprofile-name-card">Shane</p>
-                                        </div>
-                
-                                        <div class="tprofile-gread-btn">
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A2-2</a>
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-1</a>
-                                        </div>
-
-                                    </div>
-
-
-                                
-                                </div>
-
-                                <!-- upcoming box2 -->
-
-                                <div class="tprofile-upcomeing-box">
-
-                                    <div class="tprofile-upcomeimg-tittle">
-                                        <p>Dialogues & Conversation Skills</p>
-                                    </div>
-
-                                    <div class="d-flex">
-                                        
-                                        <div class="live-btn-tprofile">
-                                            <div class="live-svg">
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
-                                                </svg>                                                    
-                                            </div>
-
-                                            <p>Live</p>
-                                        </div>
-
-                                        <div class="tprofile-upcomeing-date">
-                                            <p>Now 11:00 - 12:30</p>
-                                        </div>
-
-                                    </div>
-                                
-                                    <div class="tprofile-upcomeing-name-div">
-
-                                        <div>
-                                            <img class="upcomeing-teacher-img" src="image/gergana.jpg" alt="profile-img">
-                                        </div>
-                
-                                        <div>
-                                            <p class="tprofile-name-card">Marvin</p>
-                                        </div>
-                
-                                        <div class="tprofile-gread-btn">
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">B1-1</a>
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B2</a>
-                                        </div>
-
-                                    </div>
-
-
-                                
-                                </div>
-
-
-                                <!-- upcoming box3 -->
-
-                                <div class="tprofile-upcomeing-box">
-
-                                    <div class="tprofile-upcomeimg-tittle">
-                                        <p>Grammer Practice</p>
-                                    </div>
-
-                                    <div class="d-flex">
-                                        
-                                        <div class="live-btn-tprofile">
-                                            <div class="live-svg">
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
-                                                </svg>                                                    
-                                            </div>
-
-                                            <p>Live</p>
-                                        </div>
-
-                                        <div class="tprofile-upcomeing-date">
-                                            <p>Now 01:00 - 02:30</p>
-                                        </div>
-
-                                    </div>
-                                
-                                    <div class="tprofile-upcomeing-name-div">
-
-                                        <div>
-                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
-                                        </div>
-                
-                                        <div>
-                                            <p class="tprofile-name-card">Gregory</p>
-                                        </div>
-                
-                                        <div class="tprofile-gread-btn">
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A1-2</a>
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-1</a>
-                                        </div>
-
-                                    </div>
-
-
-                                
-                                </div>
-
-
-
-                                <!-- upcoming box4 -->
-
-                                <div class="tprofile-upcomeing-box">
-
-                                    <div class="tprofile-upcomeimg-tittle">
-                                        <p>Beginners</p>
-                                    </div>
-
-                                    <div class="d-flex">
-                                        
-                                        <div class="live-btn-tprofile">
-                                            <div class="live-svg">
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051"/>
-                                                </svg>                                                    
-                                            </div>
-
-                                            <p>Live</p>
-                                        </div>
-
-                                        <div class="tprofile-upcomeing-date">
-                                            <p>Now 02:00 - 03:30</p>
-                                        </div>
-
-                                    </div>
-                                
-                                    <div class="tprofile-upcomeing-name-div">
-
-                                        <div>
-                                            <img class="upcomeing-teacher-img" src="image/courses/Koce.svg" alt="profile-img">
-                                        </div>
-                
-                                        <div>
-                                            <p class="tprofile-name-card">Dustin</p>
-                                        </div>
-                
-                                        <div class="tprofile-gread-btn">
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">B2</a>
-                                            <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-2</a>
-                                        </div>
-
-                                    </div>
-
-
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-                
-                <!-- side bar end -->
-
-
-
-                <!-- main content start  -->
-                <div class="tprofile-main-div">
-
-                    <!-- content box 1  -->
-                    <div class="tprofile-content tprofile-content1-div">
-
-                        <div class="description-div">
-
-                            <div class="description-tittle">
-                                <p>Description</p>
-                            </div>
-
-                            <div class="description-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra malesuada gravida rutrum vulputate ultricies ullamcorper in sapien, sed. Adipiscing id adipiscing amet in. Duis scelerisque tortor, pellentesque metus rhoncus. At dolor eu risus posuere tincidunt lorem pharetra convallis. In tempor, eget non ullamcorper consectetur pretium velit etiam. Duis urna, bibendum in vitae lorem aenean id ipsum tristique. Gravida nunc commodo at ac eu quis enim vitae. Rhoncus aliquam odio arcu at feugiat sapien elementum ut tortor. Nulla nec tellus lectus sit aenean quis in nibh. Tortor sapien elit interdum imperdiet vel laoreet augue. Nibh egestas in nisl amet nisi.</p>
-                            </div>
-
-
-                        </div>
-
-
-                        <div class="quote-div">
-
-                            <div class="description-tittle">
-                                <p>Quote</p>
-                            </div>
-
-                            <div class="description-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada eu neque condimentum nulla dictum ac nisl, enim. Enim enim, elementum aliquam mattis consectetur dolor, in faucibus aenean. Purus tristique nulla scelerisque sollicitudin faucibus quam sit elementum. Felis eget augue malesuada sit auctor ut facilisis.</p>
-                            </div>
-
-
-                        </div>
-
-
-
-
-
-                    </div>
-
-                    <!-- content box 2  -->
-                    <div class="tprofile-content tprofile-content2-div mt-20">
-
-                        <div class="tprofile-content2-tittle-div description-tittle">
-
-                            <div class="">
-                                <p>Save Time</p>
-                            </div>
-
-                            <div class="infom-svg">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2C10.0222 2 8.0888 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.34591 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7414 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.76121C14.6136 2.25866 13.3132 2 12 2ZM12 20C10.4178 20 8.87104 19.5308 7.55544 18.6518C6.23985 17.7727 5.21447 16.5233 4.60897 15.0615C4.00347 13.5997 3.84504 11.9911 4.15372 10.4393C4.4624 8.88743 5.22433 7.46197 6.34315 6.34315C7.46197 5.22433 8.88744 4.4624 10.4393 4.15372C11.9911 3.84504 13.5997 4.00346 15.0615 4.60896C16.5233 5.21447 17.7727 6.23985 18.6518 7.55544C19.5308 8.87103 20 10.4178 20 12C20 14.1217 19.1572 16.1566 17.6569 17.6569C16.1566 19.1572 14.1217 20 12 20Z" fill="#666666"/>
-                                    <path d="M12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9Z" fill="#666666"/>
-                                    <path d="M12 10C11.7348 10 11.4804 10.1054 11.2929 10.2929C11.1054 10.4804 11 10.7348 11 11V16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16V11C13 10.7348 12.8946 10.4804 12.7071 10.2929C12.5196 10.1054 12.2652 10 12 10Z" fill="#666666"/>
-                                </svg>  
-                            </div>
-
-                        </div>
-
-                        <div class="tprofile-save-content">
-                            <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada eu neque condimentum nulla dictum ac nisl,
-                                 enim. Enim enim, elementum aliquam mattis consectetur dolor, in faucibus aenean. Purus tristique nulla scelerisque sollicitudin faucibus quam sit elementum. </p>
-                        </div>
-
-
-                        <div class="tprofile-table-div">
-
-                            <!-- table 1 -->
-                            <div class="tprofile-table">
-                                <p>13-05-2022</p>
-
-                                <table>
-                                    <tr>
-                                        <td>10:00</td>
-                                        <td>10:30</td>
-                                        <td>12:00</td>
-                                        <td>12:30</td>
-                                        <td>13:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15:00</td>
-                                        <td>15:30</td>
-                                        <td>16:00</td>
-                                        <td>16:30</td>
-                                        <td>17:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18:00</td>
-                                        <td>18:30</td>
-                                        <td><div class="table-active">19:00</div></td>
-                                        <td>19:30</td>
-                                        <td>20:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21:00</td>
-                                        <td>21:30</td>
-                                        <td>22:00</td>
-                                        <td>22:30</td>
-                                        <td>23:30</td>
-                                    </tr>
-                                </table>
-
-                            </div>
-
-                            <!-- table 2-->
-                            <div class="tprofile-table">
-                                <p>14-05-2022</p>
-
-                                <table>
-                                    <tr>
-                                        <td>10:00</td>
-                                        <td>10:30</td>
-                                        <td>12:00</td>
-                                        <td>12:30</td>
-                                        <td>13:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15:00</td>
-                                        <td> <div class="table-active">15:30</div></td>
-                                        <td>16:00</td>
-                                        <td>16:30</td>
-                                        <td>17:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18:00</td>
-                                        <td>18:30</td>
-                                        <td>19:00</td>
-                                        <td>19:30</td>
-                                        <td>20:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21:00</td>
-                                        <td>21:30</td>
-                                        <td>22:00</td>
-                                        <td>22:30</td>
-                                        <td>23:30</td>
-                                    </tr>
-                                </table>
-
-                            </div>
-
-                            <!-- table 3-->
-                            <div class="tprofile-table">
-                                <p>15-05-2022</p>
-
-                                <table>
-                                    <tr>
-                                        <td>10:00</td>
-                                        <td>10:30</td>
-                                        <td>12:00</td>
-                                        <td>12:30</td>
-                                        <td>13:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15:00</td>
-                                        <td>15:30</td>
-                                        <td>16:00</td>
-                                        <td>16:30</td>
-                                        <td>17:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18:00</td>
-                                        <td>18:30</td>
-                                        <td>19:00</td>
-                                        <td> <div class="table-active">19:30</div></td>
-                                        <td>20:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21:00</td>
-                                        <td>21:30</td>
-                                        <td>22:00</td>
-                                        <td>22:30</td>
-                                        <td>23:30</td>
-                                    </tr>
-                                </table>
-
-                            </div>
-
-                            <!-- table 4-->
-                            <div class="tprofile-table">
-                                <p>16-05-2022</p>
-
-                                <table>
-                                    <tr>
-                                        <td>10:00</td>
-                                        <td>10:30</td>
-                                        <td>12:00</td>
-                                        <td>12:30</td>
-                                        <td>13:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15:00</td>
-                                        <td>15:30</td>
-                                        <td>16:00</td>
-                                        <td>16:30</td>
-                                        <td>17:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18:00</td>
-                                        <td>18:30</td>
-                                        <td>19:00</td>
-                                        <td>19:30</td>
-                                        <td><div class="table-active">20:00</div></td>
-                                    </tr>
-                                    <tr>
-                                        <td>21:00</td>
-                                        <td>21:30</td>
-                                        <td>22:00</td>
-                                        <td>22:30</td>
-                                        <td>23:30</td>
-                                    </tr>
-                                </table>
-
-                            </div>
-                            
-                            <!-- table 5-->
-                            <div class="tprofile-table">
-                                <p>17-05-2022</p>
-
-                                <table>
-                                    <tr>
-                                        <td>10:00</td>
-                                        <td>10:30</td>
-                                        <td>12:00</td>
-                                        <td><div class="table-active">12:30</div></td>
-                                        <td>13:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15:00</td>
-                                        <td>15:30</td>
-                                        <td>16:00</td>
-                                        <td>16:30</td>
-                                        <td>17:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18:00</td>
-                                        <td>18:30</td>
-                                        <td>19:00</td>
-                                        <td>19:30</td>
-                                        <td>20:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21:00</td>
-                                        <td>21:30</td>
-                                        <td>22:00</td>
-                                        <td>22:30</td>
-                                        <td>23:30</td>
-                                    </tr>
-                                </table>
-
-                            </div>
-
-                            <!-- table 6-->
-                            <div class="tprofile-table">
-                                <p>18-05-2022</p>
-
-                                <table>
-                                    <tr>
-                                        <td>10:00</td>
-                                        <td>10:30</td>
-                                        <td>12:00</td>
-                                        <td>12:30</td>
-                                        <td>13:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15:00</td>
-                                        <td><div class="table-active">15:30</div></td>
-                                        <td>16:00</td>
-                                        <td>16:30</td>
-                                        <td>17:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18:00</td>
-                                        <td>18:30</td>
-                                        <td>19:00</td>
-                                        <td>19:30</td>
-                                        <td>20:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21:00</td>
-                                        <td>21:30</td>
-                                        <td>22:00</td>
-                                        <td>22:30</td>
-                                        <td>23:30</td>
-                                    </tr>
-                                </table>
-
-                            </div>
-
-
-                        </div>
-
-
-                        <div class="tprofile-save-time-btn d-flex">
-
-                                <div class="tprofile-book-class-btn">
-                                    <a class="tprofile-book-class-btn-text" href="">Book Class</a>
-                                </div>
-
-                                <div class="tprofile-Suggest-btn">
-                                    <a class="tprofile-Suggest-btn-text" href="">Suggest an hour</a>
-                                </div>
-
                         </div>
 
                     </div>
 
-                    <!-- content box 3  -->
-                    <div class="tprofile-content tprofile-content3-div mt-20">
+                    <div class="teacher-profile-lesson-div">
 
-                        <div class="d-flex review-tittle-div"> 
-
-                            <div>
-                                <p class="review-tittle">Reviews</p>
+                        <div class="teacher-lesson-flex">
+                            <div class="lesson-svg">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="26" height="26" rx="5" fill="#FFF9EB" />
+                                    <g clip-path="url(#clip0_2_16864)">
+                                        <path
+                                            d="M16.1476 11.9088C16.3614 11.9088 16.5688 11.9276 16.7762 11.9591V7.50865C16.7762 6.8172 16.2105 6.25146 15.519 6.25146H7.97593C7.28448 6.25146 6.71875 6.8172 6.71875 7.50865V17.5661C6.71875 18.2576 7.28448 18.8233 7.97593 18.8233H12.5395C12.0791 18.164 11.8083 17.391 11.7566 16.5885C11.7049 15.7859 11.8742 14.9846 12.2463 14.2716C12.6183 13.5587 13.1788 12.9614 13.8666 12.5448C14.5545 12.1282 15.3434 11.9082 16.1476 11.9088ZM9.23312 11.9088V7.50865H12.3761V11.9088L10.8046 10.9659L9.23312 11.9088Z"
+                                            fill="#FFD25D" />
+                                        <path
+                                            d="M16.1478 13.166C14.4129 13.166 13.0049 14.5741 13.0049 16.309C13.0049 18.0439 14.4129 19.4519 16.1478 19.4519C17.8828 19.4519 19.2908 18.0439 19.2908 16.309C19.2908 14.5741 17.8828 13.166 16.1478 13.166ZM15.3621 17.8805V14.7375L17.8765 16.309L15.3621 17.8805Z"
+                                            fill="#FFD25D" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_16864">
+                                            <rect width="14" height="14" fill="white" transform="translate(6 6)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
                             </div>
 
-                            <div class="review-score">
+                            <div class="lesson-text">
+                                <p>Lessons taught</p>
+                            </div>
+
+                            <div class="lesson-score">
+                                <p>2378</p>
+                            </div>
+                        </div>
+
+
+                        <div class="teacher-lesson-flex">
+                            <div class="lesson-svg">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="26" height="26" rx="5" fill="#FFF9EB" />
+                                    <g clip-path="url(#clip0_2_16864)">
+                                        <path
+                                            d="M16.1476 11.9088C16.3614 11.9088 16.5688 11.9276 16.7762 11.9591V7.50865C16.7762 6.8172 16.2105 6.25146 15.519 6.25146H7.97593C7.28448 6.25146 6.71875 6.8172 6.71875 7.50865V17.5661C6.71875 18.2576 7.28448 18.8233 7.97593 18.8233H12.5395C12.0791 18.164 11.8083 17.391 11.7566 16.5885C11.7049 15.7859 11.8742 14.9846 12.2463 14.2716C12.6183 13.5587 13.1788 12.9614 13.8666 12.5448C14.5545 12.1282 15.3434 11.9082 16.1476 11.9088ZM9.23312 11.9088V7.50865H12.3761V11.9088L10.8046 10.9659L9.23312 11.9088Z"
+                                            fill="#FFD25D" />
+                                        <path
+                                            d="M16.1478 13.166C14.4129 13.166 13.0049 14.5741 13.0049 16.309C13.0049 18.0439 14.4129 19.4519 16.1478 19.4519C17.8828 19.4519 19.2908 18.0439 19.2908 16.309C19.2908 14.5741 17.8828 13.166 16.1478 13.166ZM15.3621 17.8805V14.7375L17.8765 16.309L15.3621 17.8805Z"
+                                            fill="#FFD25D" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_16864">
+                                            <rect width="14" height="14" fill="white" transform="translate(6 6)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <div class="lesson-text">
+                                <p>Reviews</p>
+                            </div>
+
+                            <div class="lesson-score">
                                 <p>76</p>
                             </div>
-
                         </div>
-
-
-                        <!-- review 1  -->
-                        <div class="review-div">
-
-                            <div class="review-img">
-                                <img src="image/gergana.jpg" alt="profile-img">
-                            </div>
-
-                            <div class="review-content-div">
-
-                                <div class="review-sub-tittle">
-                                    <p>Gergana</p>
-                                </div>
-
-                                <div class="review-content">
-                                    <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you, Teacher Koce!</p>
-                                </div>
-
-                                <div>
-                                    <p class="review-time">1 month ago</p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        
-                        <!-- review 2 -->
-
-                        <div class="review-div">
-
-                            <div class="review-img">
-                                <img src="image/Alexander.jpg" alt="profile-img">
-                            </div>
-
-                            <div class="review-content-div">
-
-                                <div class="review-sub-tittle">
-                                    <p>Alexander</p>
-                                </div>
-
-                                <div class="review-content">
-                                    <p>A good teacher and very good mentor</p>
-                                </div>
-
-                                <div>
-                                    <p class="review-time">1 month ago</p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-
-                        <!-- review 3 -->
-                        
-                        <div class="review-div">
-
-                            <div class="review-img">
-                                <img src="image/Angel.jpg" alt="profile-img">
-                            </div>
-
-                            <div class="review-content-div">
-
-                                <div class="review-sub-tittle">
-                                    <p>Angel</p>
-                                </div>
-
-                                <div class="review-content">
-                                    <p>Amazing teacher, turns boring lessons into a real adventure, thank you!</p>
-                                </div>
-
-                                <div>
-                                    <p class="review-time">1 month ago</p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        
-                        
-                        <!-- review 4 -->
-                        
-                        <div class="review-div">
-
-                            <div class="review-img">
-                                <img src="image/Kristin.jpg" alt="profile-img">
-                            </div>
-
-                            <div class="review-content-div">
-
-                                <div class="review-sub-tittle">
-                                    <p>Kristin </p>
-                                </div>
-
-                                <div class="review-content">
-                                    <p>A variety of exercises that help training to be easy and highly effective.</p>
-                                </div>
-
-                                <div>
-                                    <p class="review-time">1 month ago</p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        
-                        
-                        <!-- review 5 -->
-                        
-                        <div class="review-div">
-
-                            <div class="review-img">
-                                <img src="image/Victoria.jpg" alt="profile-img">
-                            </div>
-
-                            <div class="review-content-div">
-
-                                <div class="review-sub-tittle">
-                                    <p>Victoria</p>
-                                </div>
-
-                                <div class="review-content">
-                                    <p>Very good and very diligent teacher! A true professional! Thanks to her!</p>
-                                </div>
-
-                                <div>
-                                    <p class="review-time">1 month ago</p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        
-                        
-                        <!-- review 6 -->
-                        
-                        <div class="review-div">
-
-                            <div class="review-img">
-                                <img src="image/Ann.jpg" alt="profile-img">
-                            </div>
-
-                            <div class="review-content-div">
-
-                                <div class="review-sub-tittle">
-                                    <p>Ann</p>
-                                </div>
-
-                                <div class="review-content">
-                                    <p>Extremely useful lesson! Many thanks to Falk for his hard work and help!</p>
-                                </div>
-
-                                <div>
-                                    <p class="review-time">1 month ago</p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        
-                        
-                        <!-- review 7 -->
-                        
-                        <div class="review-div">
-
-                            <div class="review-img">
-                                <img src="image/Cody.jpg" alt="profile-img">
-                            </div>
-
-                            <div class="review-content-div">
-
-                                <div class="review-sub-tittle">
-                                    <p>Gergana</p>
-                                </div>
-
-                                <div class="review-content">
-                                    <p>Alina is extremely tactful, lets us speak and then tells us our mistakes. I really like this approach.</p>
-                                </div>
-
-                                <div>
-                                    <p class="review-time">1 month ago</p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        
-                        
-                        <!-- review 8 -->
-                        
-                        <div class="review-div">
-
-                            <div class="review-img">
-                                <img src="image/Shane.jpg" alt="profile-img">
-                            </div>
-
-                            <div class="review-content-div">
-
-                                <div class="review-sub-tittle">
-                                    <p>Shane</p>
-                                </div>
-
-                                <div class="review-content">
-                                   <p>Great teacher! She explains so well and is so patient! I am very grateful for all her lessons.</p>
-                                </div>
-
-                                <div>
-                                    <p class="review-time">1 month ago</p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        
-                        <!-- review end  -->
-                        
-                        
                     </div>
-                        
+
+
+
+
+
+
+                    <div class="teacher-language-div">
+                        <a href="">
+                            <div class="language-box">
+
+                                <div class="teacher-language-svg">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <circle cx="15" cy="15" r="14" fill="url(#pattern0)" stroke="#F6F8FC"
+                                            stroke-width="2" />
+                                        <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                                height="1">
+                                                <use xlink:href="#image0_2_16854" transform="scale(0.0119048)" />
+                                            </pattern>
+                                            <image id="image0_2_16854" width="84" height="84"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAIAAACTCYeWAAAIyUlEQVR4nO2ce1QTVx7H7yRDSORAMASyC+Gxh8fiUohtjVLWrShdRLq6imxBPYiVoFDLUURQKKsr5ZRtI1UPlUcJVWtbjCK4sFuUFgTKWh5bIaBnEcsuTy0khRCEBEjI/jGcOZFMkkGSgJt8/hru3Dv3901y73fuzO8Cgd+kAgPw+qvOtwsikeOpju6+9fELau7SkGfp644cbz54tf6Hfj3HBwAAgGCIi74omMWbKmbxpopZvKlCuPLBVibDeqnDMDZMhvWVD7YSwoO920s5qZzXyCR4qUMyBmQSnMp5rb2UEx7sTQAAUCzhk3Hr20r2b9/ktdSxGZZtGz3bSvafjFtPsYSB6ph3daQWf/THyrwIH3f60oVnKHzc6ZV5EXzudldHKlIyWdU8/6ceyHZpufp2/rV7GQX/FEtkRg9S/9jakE8e/G3cW69A0FzJ9KMBUfqnE7caMWZ7CALxEa88KONwwlhGDdMAcMJYD8o48RFzypUTUlH6p33+sRO3GoEWq6NRKTlpwU1fRb/+qrPRYtUjAauZTV9F56QF06gUAIBSCSRf3P7vS1GjOSVKuQKpo2OG9/NyuF0QWVLVmXq+dmBo3OAh6wMmwzrrcGB4sDdaImv5tzApRyb4cV5NXPYWHuz95gYP7sXGs5+3yKbl+oxUr5BJcOJe9rF961aQLZAShVAs+nOhpPgbzPoEaV0rnuuidrhto6fegtUrqI3NKZ9RjJ7j9/ju1aSczPKAB7Ydtwrxd+Aegl0YOjtwdaTyudtrW/qOnal+0C3Sb/TPjY87/cyxoEC2C1oyWdUsPJE33T2IWZ9Is7F7L5oaHQoDACZuNfbWtdm+u5OW+BZkRdHZ2YY1y8UOtdiYxiYxW2mpUUR7W4DO9rNS2Qj3yx42Z/z6HZ1dQtCysEPtNqYOJcDXpSHP/uMERDmYZ3XyQeFPnKyBLUlTHd14ukftMGA1c1E6FggeG1MFdrL/5aV0ZmU2+lB0rly9qvRuR9/6eOq+ULv0feiHpAU/L4dq3i7j2CF+G0MgUMhahjOB5O6E2Wzs0te9azni3FIwg/FZqhMe7C24EWO41SGyGhPciEGVK4TioThu/xuHNSm3CvF3bS60S4/WNJERXJt49NMxBApZ/ZxiRCJMze9dx8FphyvIFgayw+ewMWb5h478DO0WBkknR4CumwEAAH47RGjvGvbzckCOF/nSQvVSALeNAQuizl7mxCNoHz8QTFyZGInTDlVZpHgU7TYGwURqdChqY3ggBHGK27uGkT/I7FXO9bmMC0lEmo16VaVcgd8O9QseG3Ou/UTVxrTT3jUcxCkm9itYvBuCIdGEv58jhWwBALD087CN3aqclk/dewhmlfOazY5PPi1vkNa3WbI8YAYNT0+K4dGxz/6BpyYKdf8f0ItPVjUPhB6brGtVDwYAADvZM3KO0jMP4AxmZEya8vGddzJv9/8kgQqv1SOlZBL8kqf9r93s0Lsl5YRU9q/OmUGNt7EkTyZ5tZfO0bXIn/1kVbNcNKZeB7KASd4ult5ueIY3AECpBA97fr7/SIiuzZ4Z8wZCX2Ne75j2c/ulDmApgcW5pYbuQ/54wYvfcX619DuBIYJRBWq3WGPoPpYtJv2zN4s3VcziTRWzeFPFLN5UMYs3VcziTRWzeFMFenKGZ+g+5I9FozklC2qyMiEcdjR4Rpz5AaapYtLi4S/+fh85Un9poYMZxVRnz3Rnn3IGIz8LplNXBK/VX5zYAcjauqYfDWg6b+FEJ6/xRt8sqr+0gGP/UgkA4ISxTh/6HZLogIenZfXC9wrkg0LMs0SazS8KUhYg4/mwIJLZqyAySZiSK73bgVkFgom28TvsUqMgKwoEAe9f2TnQVpy68B2vVAAAgAJ2XzibEuTn5aBUAjzf+VRHN87OVJsYesIbv35HdIqn5cugvx9rvWczKrC9azjxo+oFzPYKoXgk68rY5a8x814AAFYh/vTMAyTP+fk5xpntlRPSkbPXRs9e1RQemeVhn51AZq9CS/BNeDOKMV5F71qOuKgC89Ikdyen65mO/AxUOfrae/HgvBRkRbFLj3ZrvWQV4o9ZQSb4sf+Nw0NxXIVQjJToFi+ta+0PShhOylGMSNTPEihk+ukY1yYeOr31PZHsPl6enF2DJ2I8JGfXRCTf7H2M8aJWHdiF4cjPYJZ/qCnXSFL8TY/v3tFzfDCj0CZe3jf0OOLkwLbjmnI1bHb93q3j85VHIpCXxNIpeUZ+A2tnUVn1QzyB4qf8zqPV4Z9l5DdMymbw1KdseNm1iWefFYeZZTErlYlOFfWu42CLV05If8683LtWYyYEmeXh/O15Rn4ymglRUtXpF8bL4n1voMxk2bQ8i/c9a2dRSVUnrgYWRNt3wlybedR9oZjnp7sHMcQ/LavvYXNGuF/OSjFSS4k0G8aFJGZdLjpztHcNbz54NSqtwgg56QND41FpFaqpNNoh2ts6nD/i0pBHCfBVP/tMztxCbWxkTIp6pjG52zawbvdl/Pcmlr7uzMpsdTuc++YVQrHwaE5/4LualFuF+Ls0FtIzDyDKlUqQx7/ns4NnfOUovFKBzw5eHv+eEiNVBwPrP210a+HRkvegSYeE57Cx2pY+duTFo9zqJd+BJJbIjnKr2ZEXa1v68NRH7NC1uRCxQ7g/KEFL4irtxJ6Vh8LRjJ++J5IT52r1Ppkvkgfdoi3x/O2bvP56JBDdOaYFxA6lda2wFhujvx+LTubSKfky32Zys6brVsN/Eveyk9/2R/YMaoey4WWMSuq3gS/KBiPEDq9U3J+Xma2JZ8RjLgCSs2sM9P86DARih4U32rhJm1STdtWZE798bExf1P/Qr9MOYaC2GlMqwXLYP6MXeKWCkm8fztuHgwI7Xc9UfeSy3HZOLR7EDotKBfN2YAEACPNWY1vi+f9PylEQO9yV8jfV1SEBGHI1tty4WdOFrA6lU3IAAPyi2Ji+ULVDOCqtYqnjWQIQOzTp5/Zm8aaKWbypYhZvqvwPDyhi6xWcC0oAAAAASUVORK5CYII=" />
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                                <div class="tbox-language-text">
+                                    <p>English</p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="language-box">
+
+                                <div class="teacher-language-svg">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <circle cx="15" cy="15" r="14" fill="url(#patterng)" stroke="#F6F8FC"
+                                            stroke-width="2" />
+                                        <defs>
+                                            <pattern id="patterng" patternContentUnits="objectBoundingBox" width="1"
+                                                height="1">
+                                                <use xlink:href="#image0_2_16860" transform="scale(0.0119048)" />
+                                            </pattern>
+                                            <image id="image0_2_16860" width="84" height="84"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAIAAACTCYeWAAAAmklEQVR4nO3SsQ0CQRAEQe70DhJBXGIfLgkQCSYmYaxRXRFMS7POOQ/Vnh4wqXhV8ariVcWrilcVrypeVbyqeFXxquJVxauue3+nN4xZn+f0hDn07YtXFa8qXlW8qnhV8ariVcWrilcVrypeVbyqeNX6vacnzLn2a3rCHPr2xauKVxWvKl5VvKp4VfGq4lXFq4pXFa8qXlW86g+VOgT/F9wQqwAAAABJRU5ErkJggg==" />
+                                        </defs>
+                                    </svg>
+                                </div>
+
+                                <div class="tbox-language-text">
+                                    <p>German</p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="write-to-teacher-div">
+                        <a href="#">Write to teacher</a>
+                    </div>
+
+                </div>
+
+                <!-- teacher profile box end -->
+
+                <div class="sidebar2-main-div mt-20">
+
+                    <div class="sidebar2-div1">
+
+                        <p class="sidebar-tittle">Teaches</p>
+
+                        <div class="teacher-language-box-div">
+
+                            <div class="teacher-language-svg">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <circle cx="15" cy="15" r="14" fill="url(#pattern0)" stroke="#F6F8FC"
+                                        stroke-width="2" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_2_16854" transform="scale(0.0119048)" />
+                                        </pattern>
+                                        <image id="image0_2_16854" width="84" height="84"
+                                            xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <div class="tprofile-language-box">
+
+                                <div class="tprofile-language-tittle">
+                                    <p class="">English</p>
+                                </div>
+
+                                <div class="tprofile-language-sub-tittle">
+                                    <p class="">Kids, Students, Speaking</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="teacher-language-box-div mt-10">
+
+                            <div class="teacher-language-svg">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <circle cx="15" cy="15" r="14" fill="url(#patterng)" stroke="#F6F8FC"
+                                        stroke-width="2" />
+                                    <defs>
+                                        <pattern id="patterng" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_2_16854" transform="scale(0.0119048)" />
+                                        </pattern>
+                                        <image id="image0_2_16854" width="84" height="84"
+                                            xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <div class="tprofile-language-box">
+
+                                <div class="tprofile-language-tittle">
+                                    <p class="">German</p>
+                                </div>
+
+                                <div class="tprofile-language-sub-tittle">
+                                    <p class="">Adults, Speaking</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                    <div class="sidebar2-div2">
+
+                        <p class="sidebar-tittle mt-20">Teacher Jane also teaches</p>
+
+                        <!-- english course upcoming box div  -->
+                        <div class="tprofile-english-div">
+
+                            <div class="sidebar-sub-tittle-div">
+
+                                <div class="d-flex cgap-10 mt-10">
+                                    <div class="teacher-language-svg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <circle cx="15" cy="15" r="14" fill="url(#pattern0)" stroke="#F6F8FC"
+                                                stroke-width="2" />
+                                            <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                                    height="1">
+                                                    <use xlink:href="#image0_2_16854" transform="scale(0.0119048)" />
+                                                </pattern>
+                                                <image id="image0_2_16854" width="84" height="84"
+                                                    xlink:href="data:image/png;base64,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" />
+                                            </defs>
+                                        </svg>
+                                    </div>
+
+                                    <p class="tprofile-language-tittle">English Language Course</p>
+                                </div>
+
+                                <div>
+                                    <p class="upcoming-tittle-tprofile">Upcoming Lessons in the course</p>
+                                </div>
+
+                            </div>
+
+                            <!-- upcomeing box1 -->
+                            <div class="tprofile-upcomeing-box">
+
+                                <div class="tprofile-upcomeimg-tittle">
+                                    <p>Dialogues & Conversation Skills</p>
+                                </div>
+
+                                <div class="d-flex">
+
+                                    <div class="live-btn-tprofile">
+                                        <div class="live-svg">
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051" />
+                                            </svg>
+                                        </div>
+
+                                        <p>Live</p>
+                                    </div>
+
+                                    <div class="tprofile-upcomeing-date">
+                                        <p>Now 11:00 - 12:30</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="tprofile-upcomeing-name-div">
+
+                                    <div>
+                                        <img class="upcomeing-teacher-img" src="image/courses/Koce.svg"
+                                            alt="profile-img">
+                                    </div>
+
+                                    <div>
+                                        <p class="tprofile-name-card">Koce</p>
+                                    </div>
+
+                                    <div class="tprofile-gread-btn">
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A1-1</a>
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">A1-2</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- upcoming box2 -->
+
+                            <div class="tprofile-upcomeing-box">
+
+                                <div class="tprofile-upcomeimg-tittle">
+                                    <p>Speaking</p>
+                                </div>
+
+                                <div class="d-flex">
+
+                                    <div class="live-btn-tprofile">
+                                        <div class="live-svg">
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051" />
+                                            </svg>
+                                        </div>
+
+                                        <p>Live</p>
+                                    </div>
+
+                                    <div class="tprofile-upcomeing-date">
+                                        <p>Now 12:00 - 01:30</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="tprofile-upcomeing-name-div">
+
+                                    <div>
+                                        <img class="upcomeing-teacher-img" src="image/Randall.jpg" alt="profile-img">
+                                    </div>
+
+                                    <div>
+                                        <p class="tprofile-name-card">Randall</p>
+                                    </div>
+
+                                    <div class="tprofile-gread-btn">
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A2-1</a>
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">A2-2</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+                            <!-- upcoming box3 -->
+
+                            <div class="tprofile-upcomeing-box">
+
+                                <div class="tprofile-upcomeimg-tittle">
+                                    <p>Grammer Practice</p>
+                                </div>
+
+                                <div class="d-flex">
+
+                                    <div class="live-btn-tprofile">
+                                        <div class="live-svg">
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051" />
+                                            </svg>
+                                        </div>
+
+                                        <p>Live</p>
+                                    </div>
+
+                                    <div class="tprofile-upcomeing-date">
+                                        <p>Now 01:00 - 02:30</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="tprofile-upcomeing-name-div">
+
+                                    <div>
+                                        <img class="upcomeing-teacher-img" src="image/courses/Koce.svg"
+                                            alt="profile-img">
+                                    </div>
+
+                                    <div>
+                                        <p class="tprofile-name-card">Gregory</p>
+                                    </div>
+
+                                    <div class="tprofile-gread-btn">
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A1-2</a>
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-1</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+                            <!-- upcoming box4 -->
+
+                            <div class="tprofile-upcomeing-box">
+
+                                <div class="tprofile-upcomeimg-tittle">
+                                    <p>Beginners</p>
+                                </div>
+
+                                <div class="d-flex">
+
+                                    <div class="live-btn-tprofile">
+                                        <div class="live-svg">
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051" />
+                                            </svg>
+                                        </div>
+
+                                        <p>Live</p>
+                                    </div>
+
+                                    <div class="tprofile-upcomeing-date">
+                                        <p>Now 02:00 - 03:30</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="tprofile-upcomeing-name-div">
+
+                                    <div>
+                                        <img class="upcomeing-teacher-img" src="image/courses/Koce.svg"
+                                            alt="profile-img">
+                                    </div>
+
+                                    <div>
+                                        <p class="tprofile-name-card">Philip</p>
+                                    </div>
+
+                                    <div class="tprofile-gread-btn">
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">B2</a>
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-2</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                        <!-- german courses upcoming box div  -->
+
+                        <div class="tprofile-english-div">
+
+                            <div class="sidebar-sub-tittle-div">
+
+                                <div class="d-flex cgap-10 mt-10">
+                                    <div class="teacher-language-svg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <circle cx="15" cy="15" r="14" fill="url(#patterng)" stroke="#F6F8FC"
+                                                stroke-width="2" />
+                                            <defs>
+                                                <pattern id="patterng" patternContentUnits="objectBoundingBox" width="1"
+                                                    height="1">
+                                                    <use xlink:href="#image0_2_16854" transform="scale(0.0119048)" />
+                                                </pattern>
+                                                <image id="image0_2_16854" width="84" height="84"
+                                                    xlink:href="data:image/png;base64,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" />
+                                            </defs>
+                                        </svg>
+                                    </div>
+
+                                    <p class="tprofile-language-tittle">German Language Course</p>
+                                </div>
+
+                                <div>
+                                    <p class="upcoming-tittle-tprofile">Upcoming Lessons in the course</p>
+                                </div>
+
+                            </div>
+
+                            <!-- upcomeing box1 -->
+                            <div class="tprofile-upcomeing-box">
+
+                                <div class="tprofile-upcomeimg-tittle">
+                                    <p>Dialogues & Conversation Skills</p>
+                                </div>
+
+                                <div class="d-flex">
+
+                                    <div class="live-btn-tprofile">
+                                        <div class="live-svg">
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051" />
+                                            </svg>
+                                        </div>
+
+                                        <p>Live</p>
+                                    </div>
+
+                                    <div class="tprofile-upcomeing-date">
+                                        <p>Now 11:00 - 12:30 </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="tprofile-upcomeing-name-div">
+
+                                    <div>
+                                        <img class="upcomeing-teacher-img" src="image/courses/Koce.svg"
+                                            alt="profile-img">
+                                    </div>
+
+                                    <div>
+                                        <p class="tprofile-name-card">Shane</p>
+                                    </div>
+
+                                    <div class="tprofile-gread-btn">
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A2-2</a>
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-1</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- upcoming box2 -->
+
+                            <div class="tprofile-upcomeing-box">
+
+                                <div class="tprofile-upcomeimg-tittle">
+                                    <p>Dialogues & Conversation Skills</p>
+                                </div>
+
+                                <div class="d-flex">
+
+                                    <div class="live-btn-tprofile">
+                                        <div class="live-svg">
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051" />
+                                            </svg>
+                                        </div>
+
+                                        <p>Live</p>
+                                    </div>
+
+                                    <div class="tprofile-upcomeing-date">
+                                        <p>Now 11:00 - 12:30</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="tprofile-upcomeing-name-div">
+
+                                    <div>
+                                        <img class="upcomeing-teacher-img" src="image/gergana.jpg" alt="profile-img">
+                                    </div>
+
+                                    <div>
+                                        <p class="tprofile-name-card">Marvin</p>
+                                    </div>
+
+                                    <div class="tprofile-gread-btn">
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">B1-1</a>
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B2</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+                            <!-- upcoming box3 -->
+
+                            <div class="tprofile-upcomeing-box">
+
+                                <div class="tprofile-upcomeimg-tittle">
+                                    <p>Grammer Practice</p>
+                                </div>
+
+                                <div class="d-flex">
+
+                                    <div class="live-btn-tprofile">
+                                        <div class="live-svg">
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051" />
+                                            </svg>
+                                        </div>
+
+                                        <p>Live</p>
+                                    </div>
+
+                                    <div class="tprofile-upcomeing-date">
+                                        <p>Now 01:00 - 02:30</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="tprofile-upcomeing-name-div">
+
+                                    <div>
+                                        <img class="upcomeing-teacher-img" src="image/courses/Koce.svg"
+                                            alt="profile-img">
+                                    </div>
+
+                                    <div>
+                                        <p class="tprofile-name-card">Gregory</p>
+                                    </div>
+
+                                    <div class="tprofile-gread-btn">
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">A1-2</a>
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-1</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+                            <!-- upcoming box4 -->
+
+                            <div class="tprofile-upcomeing-box">
+
+                                <div class="tprofile-upcomeimg-tittle">
+                                    <p>Beginners</p>
+                                </div>
+
+                                <div class="d-flex">
+
+                                    <div class="live-btn-tprofile">
+                                        <div class="live-svg">
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.5" cy="5.5" r="5.5" fill="#8CC051" />
+                                            </svg>
+                                        </div>
+
+                                        <p>Live</p>
+                                    </div>
+
+                                    <div class="tprofile-upcomeing-date">
+                                        <p>Now 02:00 - 03:30</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="tprofile-upcomeing-name-div">
+
+                                    <div>
+                                        <img class="upcomeing-teacher-img" src="image/courses/Koce.svg"
+                                            alt="profile-img">
+                                    </div>
+
+                                    <div>
+                                        <p class="tprofile-name-card">Dustin</p>
+                                    </div>
+
+                                    <div class="tprofile-gread-btn">
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn1" href="">B2</a>
+                                        <a class="tprofile-card-gread-btn tprofile-card1-gread-btn2" href="">B1-2</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
+
+
+
+
+
+            <!-- side bar end -->
+
+
+
+            <!-- main content start  -->
+            <div class="tprofile-main-div">
+
+                <!-- content box 1  -->
+                <div class="tprofile-content tprofile-content1-div">
+
+                    <div class="description-div">
+
+                        <div class="description-tittle">
+                            <p>Description</p>
+                        </div>
+
+                        <div class="description-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra malesuada gravida
+                                rutrum vulputate ultricies ullamcorper in sapien, sed. Adipiscing id adipiscing amet in.
+                                Duis scelerisque tortor, pellentesque metus rhoncus. At dolor eu risus posuere tincidunt
+                                lorem pharetra convallis. In tempor, eget non ullamcorper consectetur pretium velit
+                                etiam. Duis urna, bibendum in vitae lorem aenean id ipsum tristique. Gravida nunc
+                                commodo at ac eu quis enim vitae. Rhoncus aliquam odio arcu at feugiat sapien elementum
+                                ut tortor. Nulla nec tellus lectus sit aenean quis in nibh. Tortor sapien elit interdum
+                                imperdiet vel laoreet augue. Nibh egestas in nisl amet nisi.</p>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="quote-div">
+
+                        <div class="description-tittle">
+                            <p>Quote</p>
+                        </div>
+
+                        <div class="description-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada eu neque condimentum
+                                nulla dictum ac nisl, enim. Enim enim, elementum aliquam mattis consectetur dolor, in
+                                faucibus aenean. Purus tristique nulla scelerisque sollicitudin faucibus quam sit
+                                elementum. Felis eget augue malesuada sit auctor ut facilisis.</p>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <!-- content box 2  -->
+                <div class="tprofile-content tprofile-content2-div mt-20">
+
+                    <div class="tprofile-content2-tittle-div description-tittle">
+
+                        <div class="">
+                            <p>Save Time</p>
+                        </div>
+
+                        <div class="infom-svg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C10.0222 2 8.0888 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.34591 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7414 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.76121C14.6136 2.25866 13.3132 2 12 2ZM12 20C10.4178 20 8.87104 19.5308 7.55544 18.6518C6.23985 17.7727 5.21447 16.5233 4.60897 15.0615C4.00347 13.5997 3.84504 11.9911 4.15372 10.4393C4.4624 8.88743 5.22433 7.46197 6.34315 6.34315C7.46197 5.22433 8.88744 4.4624 10.4393 4.15372C11.9911 3.84504 13.5997 4.00346 15.0615 4.60896C16.5233 5.21447 17.7727 6.23985 18.6518 7.55544C19.5308 8.87103 20 10.4178 20 12C20 14.1217 19.1572 16.1566 17.6569 17.6569C16.1566 19.1572 14.1217 20 12 20Z"
+                                    fill="#666666" />
+                                <path
+                                    d="M12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9Z"
+                                    fill="#666666" />
+                                <path
+                                    d="M12 10C11.7348 10 11.4804 10.1054 11.2929 10.2929C11.1054 10.4804 11 10.7348 11 11V16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16V11C13 10.7348 12.8946 10.4804 12.7071 10.2929C12.5196 10.1054 12.2652 10 12 10Z"
+                                    fill="#666666" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="tprofile-save-content">
+                        <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Malesuada eu neque condimentum nulla dictum ac nisl,
+                            enim. Enim enim, elementum aliquam mattis consectetur dolor, in faucibus aenean. Purus
+                            tristique nulla scelerisque sollicitudin faucibus quam sit elementum. </p>
+                    </div>
+
+
+                    <div class="tprofile-table-div">
+
+                        <!-- table 1 -->
+                        <div class="tprofile-table">
+                            <p>13-05-2022</p>
+
+                            <table>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>10:30</td>
+                                    <td>12:00</td>
+                                    <td>12:30</td>
+                                    <td>13:30</td>
+                                </tr>
+                                <tr>
+                                    <td>15:00</td>
+                                    <td>15:30</td>
+                                    <td>16:00</td>
+                                    <td>16:30</td>
+                                    <td>17:30</td>
+                                </tr>
+                                <tr>
+                                    <td>18:00</td>
+                                    <td>18:30</td>
+                                    <td>
+                                        <div class="table-active">19:00</div>
+                                    </td>
+                                    <td>19:30</td>
+                                    <td>20:30</td>
+                                </tr>
+                                <tr>
+                                    <td>21:00</td>
+                                    <td>21:30</td>
+                                    <td>22:00</td>
+                                    <td>22:30</td>
+                                    <td>23:30</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <!-- table 2-->
+                        <div class="tprofile-table">
+                            <p>14-05-2022</p>
+
+                            <table>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>10:30</td>
+                                    <td>12:00</td>
+                                    <td>12:30</td>
+                                    <td>13:30</td>
+                                </tr>
+                                <tr>
+                                    <td>15:00</td>
+                                    <td>
+                                        <div class="table-active">15:30</div>
+                                    </td>
+                                    <td>16:00</td>
+                                    <td>16:30</td>
+                                    <td>17:30</td>
+                                </tr>
+                                <tr>
+                                    <td>18:00</td>
+                                    <td>18:30</td>
+                                    <td>19:00</td>
+                                    <td>19:30</td>
+                                    <td>20:30</td>
+                                </tr>
+                                <tr>
+                                    <td>21:00</td>
+                                    <td>21:30</td>
+                                    <td>22:00</td>
+                                    <td>22:30</td>
+                                    <td>23:30</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <!-- table 3-->
+                        <div class="tprofile-table">
+                            <p>15-05-2022</p>
+
+                            <table>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>10:30</td>
+                                    <td>12:00</td>
+                                    <td>12:30</td>
+                                    <td>13:30</td>
+                                </tr>
+                                <tr>
+                                    <td>15:00</td>
+                                    <td>15:30</td>
+                                    <td>16:00</td>
+                                    <td>16:30</td>
+                                    <td>17:30</td>
+                                </tr>
+                                <tr>
+                                    <td>18:00</td>
+                                    <td>18:30</td>
+                                    <td>19:00</td>
+                                    <td>
+                                        <div class="table-active">19:30</div>
+                                    </td>
+                                    <td>20:30</td>
+                                </tr>
+                                <tr>
+                                    <td>21:00</td>
+                                    <td>21:30</td>
+                                    <td>22:00</td>
+                                    <td>22:30</td>
+                                    <td>23:30</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <!-- table 4-->
+                        <div class="tprofile-table">
+                            <p>16-05-2022</p>
+
+                            <table>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>10:30</td>
+                                    <td>12:00</td>
+                                    <td>12:30</td>
+                                    <td>13:30</td>
+                                </tr>
+                                <tr>
+                                    <td>15:00</td>
+                                    <td>15:30</td>
+                                    <td>16:00</td>
+                                    <td>16:30</td>
+                                    <td>17:30</td>
+                                </tr>
+                                <tr>
+                                    <td>18:00</td>
+                                    <td>18:30</td>
+                                    <td>19:00</td>
+                                    <td>19:30</td>
+                                    <td>
+                                        <div class="table-active">20:00</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>21:00</td>
+                                    <td>21:30</td>
+                                    <td>22:00</td>
+                                    <td>22:30</td>
+                                    <td>23:30</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <!-- table 5-->
+                        <div class="tprofile-table">
+                            <p>17-05-2022</p>
+
+                            <table>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>10:30</td>
+                                    <td>12:00</td>
+                                    <td>
+                                        <div class="table-active">12:30</div>
+                                    </td>
+                                    <td>13:30</td>
+                                </tr>
+                                <tr>
+                                    <td>15:00</td>
+                                    <td>15:30</td>
+                                    <td>16:00</td>
+                                    <td>16:30</td>
+                                    <td>17:30</td>
+                                </tr>
+                                <tr>
+                                    <td>18:00</td>
+                                    <td>18:30</td>
+                                    <td>19:00</td>
+                                    <td>19:30</td>
+                                    <td>20:30</td>
+                                </tr>
+                                <tr>
+                                    <td>21:00</td>
+                                    <td>21:30</td>
+                                    <td>22:00</td>
+                                    <td>22:30</td>
+                                    <td>23:30</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <!-- table 6-->
+                        <div class="tprofile-table">
+                            <p>18-05-2022</p>
+
+                            <table>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>10:30</td>
+                                    <td>12:00</td>
+                                    <td>12:30</td>
+                                    <td>13:30</td>
+                                </tr>
+                                <tr>
+                                    <td>15:00</td>
+                                    <td>
+                                        <div class="table-active">15:30</div>
+                                    </td>
+                                    <td>16:00</td>
+                                    <td>16:30</td>
+                                    <td>17:30</td>
+                                </tr>
+                                <tr>
+                                    <td>18:00</td>
+                                    <td>18:30</td>
+                                    <td>19:00</td>
+                                    <td>19:30</td>
+                                    <td>20:30</td>
+                                </tr>
+                                <tr>
+                                    <td>21:00</td>
+                                    <td>21:30</td>
+                                    <td>22:00</td>
+                                    <td>22:30</td>
+                                    <td>23:30</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="tprofile-save-time-btn d-flex">
+
+                        <div class="tprofile-book-class-btn">
+                            <a class="tprofile-book-class-btn-text" href="">Book Class</a>
+                        </div>
+
+                        <div class="tprofile-Suggest-btn">
+                            <a class="tprofile-Suggest-btn-text" href="">Suggest an hour</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- content box 3  -->
+                <div class="tprofile-content tprofile-content3-div mt-20">
+
+                    <div class="d-flex review-tittle-div">
+
+                        <div>
+                            <p class="review-tittle">Reviews</p>
+                        </div>
+
+                        <div class="review-score">
+                            <p>76</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- review 1  -->
+                    <div class="review-div">
+
+                        <div class="review-img">
+                            <img src="image/gergana.jpg" alt="profile-img">
+                        </div>
+
+                        <div class="review-content-div">
+
+                            <div class="review-sub-tittle">
+                                <p>Gergana</p>
+                            </div>
+
+                            <div class="review-content">
+                                <p>Wonderful speaking class, well-chosen activities, top English teacher! Thank you,
+                                    Teacher Koce!</p>
+                            </div>
+
+                            <div>
+                                <p class="review-time">1 month ago</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- review 2 -->
+
+                    <div class="review-div">
+
+                        <div class="review-img">
+                            <img src="image/Alexander.jpg" alt="profile-img">
+                        </div>
+
+                        <div class="review-content-div">
+
+                            <div class="review-sub-tittle">
+                                <p>Alexander</p>
+                            </div>
+
+                            <div class="review-content">
+                                <p>A good teacher and very good mentor</p>
+                            </div>
+
+                            <div>
+                                <p class="review-time">1 month ago</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- review 3 -->
+
+                    <div class="review-div">
+
+                        <div class="review-img">
+                            <img src="image/Angel.jpg" alt="profile-img">
+                        </div>
+
+                        <div class="review-content-div">
+
+                            <div class="review-sub-tittle">
+                                <p>Angel</p>
+                            </div>
+
+                            <div class="review-content">
+                                <p>Amazing teacher, turns boring lessons into a real adventure, thank you!</p>
+                            </div>
+
+                            <div>
+                                <p class="review-time">1 month ago</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- review 4 -->
+
+                    <div class="review-div">
+
+                        <div class="review-img">
+                            <img src="image/Kristin.jpg" alt="profile-img">
+                        </div>
+
+                        <div class="review-content-div">
+
+                            <div class="review-sub-tittle">
+                                <p>Kristin </p>
+                            </div>
+
+                            <div class="review-content">
+                                <p>A variety of exercises that help training to be easy and highly effective.</p>
+                            </div>
+
+                            <div>
+                                <p class="review-time">1 month ago</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- review 5 -->
+
+                    <div class="review-div">
+
+                        <div class="review-img">
+                            <img src="image/Victoria.jpg" alt="profile-img">
+                        </div>
+
+                        <div class="review-content-div">
+
+                            <div class="review-sub-tittle">
+                                <p>Victoria</p>
+                            </div>
+
+                            <div class="review-content">
+                                <p>Very good and very diligent teacher! A true professional! Thanks to her!</p>
+                            </div>
+
+                            <div>
+                                <p class="review-time">1 month ago</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- review 6 -->
+
+                    <div class="review-div">
+
+                        <div class="review-img">
+                            <img src="image/Ann.jpg" alt="profile-img">
+                        </div>
+
+                        <div class="review-content-div">
+
+                            <div class="review-sub-tittle">
+                                <p>Ann</p>
+                            </div>
+
+                            <div class="review-content">
+                                <p>Extremely useful lesson! Many thanks to Falk for his hard work and help!</p>
+                            </div>
+
+                            <div>
+                                <p class="review-time">1 month ago</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- review 7 -->
+
+                    <div class="review-div">
+
+                        <div class="review-img">
+                            <img src="image/Cody.jpg" alt="profile-img">
+                        </div>
+
+                        <div class="review-content-div">
+
+                            <div class="review-sub-tittle">
+                                <p>Gergana</p>
+                            </div>
+
+                            <div class="review-content">
+                                <p>Alina is extremely tactful, lets us speak and then tells us our mistakes. I really
+                                    like this approach.</p>
+                            </div>
+
+                            <div>
+                                <p class="review-time">1 month ago</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- review 8 -->
+
+                    <div class="review-div">
+
+                        <div class="review-img">
+                            <img src="image/Shane.jpg" alt="profile-img">
+                        </div>
+
+                        <div class="review-content-div">
+
+                            <div class="review-sub-tittle">
+                                <p>Shane</p>
+                            </div>
+
+                            <div class="review-content">
+                                <p>Great teacher! She explains so well and is so patient! I am very grateful for all her
+                                    lessons.</p>
+                            </div>
+
+                            <div>
+                                <p class="review-time">1 month ago</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- review end  -->
+
+
+                </div>
+
             </div>
-        </body>
+
+        </div>
+        </div>
+    </body>
 
 
 
@@ -1354,64 +1449,66 @@
 
 
 
-                   <!-- footer start -->
+    <!-- footer start -->
 
-                   <footer>
-                
-                    <div class="footer-container">
-                        
-                        <div class="footer-nav-bar" id="footermenu">
-                            <ul class="footer-nav-bar-ul">
-                                <li class="footer-nav-item"><a href="all_courses.html">Courses</a></li>
-                                <li class="footer-nav-item"><a href="all_teacher.html">Teachers</a></li>
-                                <li class="footer-nav-item"><a href="#">Items</a></li>
-                                <li class="footer-nav-item"><a href="#">Certificates</a></li>
-                                <li class="footer-nav-item"><a href="#">For companies</a></li>
-                                <li class="footer-nav-item"><a href="#">Opinions</a></li>
-                                <li class="footer-nav-item"><a href="Help.html">Contact</a></li>
-                            </ul>
-                        </div>
-    
-    
-                        <div class="footer-flex">
-                            <div class="footer-logo" id="footerlogo">    
-                                <img src="image/footer-logo.svg" alt="commpany-logo">
-                            </div>
-    
-                            <div class="footer-media-icon" id="mediaicon">
-                                <img src="image/linkedin.svg" alt="media-icon">
-                                <img src="image/instagram.svg" alt="media-icon">
-                                <img src="image/facebook.svg" alt="media-icon">
-                            </div>
-    
-                            <div class="footer-line web-footer-rights" id="footerline">
-                                <p>© 2000-2021, All Rights Reserved</p>
-                            </div>
-                        </div>
-                        <div class="footer-line mobile-footer-rights" id="footerline">
-                            <p>© 2000-2021, All Rights Reserved</p>
-                        </div>
-    
-                   </div>  
-                </footer>
-    
-                <script>
-    
-                    function myFunction() {
-                        var x = document.getElementById("mobile-menu-container");
-                        if (x.className === "mobile-menu-container") {
-                            x.className += " show-menu";
-                        } else {
-                            x.className = "mobile-menu-container";
-                        }
-                    }
-        
-                </script>
-    
-            </body>
-            </html>
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-nav-bar" id="footermenu">
+                <ul class="footer-nav-bar-ul">
+                    <li class="footer-nav-item"><a href="all_courses.html">Courses</a></li>
+                    <li class="footer-nav-item"><a href="all_teacher.html">Teachers</a></li>
+                    <li class="footer-nav-item"><a href="#">Items</a></li>
+                    <li class="footer-nav-item"><a href="#">Certificates</a></li>
+
+                    <li class="footer-nav-item"><a href="#">Opinions</a></li>
+                    <li class="footer-nav-item"><a href="Help.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-flex">
+                <div class="footer-logo" id="footerlogo">
+                    <img src="image/footer-logo.svg" alt="commpany-logo">
+                </div>
+
+                <div class="footer-media-icon" id="mediaicon">
+                    <img src="image/linkedin.svg" alt="media-icon">
+                    <img src="image/instagram.svg" alt="media-icon">
+                    <img src="image/facebook.svg" alt="media-icon">
+                </div>
+
+                <div class="footer-line web-footer-rights" id="footerline">
+                    <p>© 2000-2021, All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="footer-line mobile-footer-rights" id="footerline">
+                <p>© 2000-2021, All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("mobile-menu-container");
+            if (x.className === "mobile-menu-container") {
+                x.className += " show-menu";
+            } else {
+                x.className = "mobile-menu-container";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
 
 
 
 </body>
+
 </html>
